@@ -94,4 +94,7 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
