@@ -2,16 +2,17 @@
 theme: jekyll-theme-architect
 
 # Name of website
-title: Machine Learning engineer
+title: Machine Learning Engineer
 
 # Your name to show in the footer
+name: Pavel B. Chernov
 author: Pavel B. Chernov
-
+email: pavel.b.chernov@gmail.com
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "aboutme.md"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -88,7 +89,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Europe/Moscow"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
