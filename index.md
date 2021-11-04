@@ -1,5 +1,3 @@
-![This is me](/assets/avatar.png)
-
 # Projects
 
 ## Object detection for MapHub
