@@ -7,12 +7,12 @@ title: Machine Learning Engineer
 # Your name to show in the footer
 name: Pavel B. Chernov
 author: Pavel B. Chernov
-email: pavel.b.chernov@gmail.com
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme.md"
+  About Me: "/aboutme.md"
+  Education: "/education.md"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -98,4 +98,3 @@ paginate: 5
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
