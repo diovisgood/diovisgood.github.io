@@ -1,4 +1,4 @@
-![This is me](/img/avatar.png)
+![This is me](/assets/avatar.png)
 
 # Projects
 
@@ -12,7 +12,7 @@ to produce GeoTIFF.
 
 One team wants to make a service, so they can easily find each other and close deals.
 
-They asked me to create an object detection model to detect buildings, coconut trees, etc. in GeoTIFF files. 
+They asked me to create an object detection model to detect buildings, coconut palms, etc. in GeoTIFF files. 
 
 ### Challenges
 
@@ -76,15 +76,16 @@ to reach an optimal balance between speed and accuracy, which runs fast enough o
 <details>
 <summary>Examples: here are some examples of how real-time recognition works.</summary>
 
-![video1](/img/ocr_lol_rts_munity.1.avi)
+[video1](/assets/ocr_lol_rts_munity.1.avi)
 
-![video2](/img/ocr_lol_rts_munity.2.avi)
+[video2](/assets/ocr_lol_rts_munity.2.avi)
 
-![video3](/img/ocr_lol_rts_munity.3.avi)
+[video3](/assets/ocr_lol_rts_munity.3.avi)
 
-![video4](/img/ocr_lol_rts_munity.4.avi)
+[video4](/assets/ocr_lol_rts_munity.4.avi)
 
-![video5](/img/ocr_lol_rts_munity.5.avi)
+[video5](/assets/ocr_lol_rts_munity.5.avi)
+
 </details>
 
 ## OCR reader for RTS Munity s.a.
