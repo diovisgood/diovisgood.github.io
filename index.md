@@ -119,15 +119,15 @@ to reach an optimal balance between speed and accuracy, which runs fast enough o
 <details>
 <summary>Examples: here are some examples of how real-time recognition works.</summary>
 
-{% Video assets/ocr_lol_rts_munity.1.avi 640 360 %}
+<iframe width="640" height="360" src="assets/ocr_lol_rts_munity.1.avi"></iframe>
 
-{% Video assets/ocr_lol_rts_munity.2.avi 640 360 %}
+<iframe width="640" height="360" src="assets/ocr_lol_rts_munity.2.avi"></iframe>
 
-{% Video assets/ocr_lol_rts_munity.3.avi 640 360 %}
+<iframe width="640" height="360" src="assets/ocr_lol_rts_munity.3.avi"></iframe>
 
-{% Video assets/ocr_lol_rts_munity.4.avi 640 360 %}
+<iframe width="640" height="360" src="assets/ocr_lol_rts_munity.4.avi"></iframe>
 
-{% Video assets/ocr_lol_rts_munity.5.avi 1280 720 %}
+<iframe width="1280" height="720" src="assets/ocr_lol_rts_munity.5.avi"></iframe>
 
 </details>
 
