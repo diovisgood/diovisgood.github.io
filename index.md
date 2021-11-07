@@ -116,27 +116,27 @@ But this would have increased costs.
 Instead, I carefully constructed a lightweight CRNN-based model architecture,
 to reach an optimal balance between speed and accuracy, which runs fast enough on CPU.
 
+<video width="100%" controls>
+    <source src="/assets/ocr_lol_rts_munity.1.mp4">
+</video>
+
 <details>
-<summary>Examples: here are some examples of how real-time recognition works.</summary>
+<summary>View some other examples of how real-time recognition works</summary>
 
 <video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.1.avi">
+    <source src="/assets/ocr_lol_rts_munity.2.mp4">
 </video>
 
 <video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.2.avi">
+    <source src="/assets/ocr_lol_rts_munity.3.mp4">
 </video>
 
 <video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.3.avi">
+    <source src="/assets/ocr_lol_rts_munity.4.mp4">
 </video>
 
 <video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.4.avi">
-</video>
-
-<video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.5.avi">
+    <source src="/assets/ocr_lol_rts_munity.5.mp4">
 </video>
 
 </details>
