@@ -25,25 +25,25 @@
 }
 @media screen and (min-width:641px) {
   // portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
-  .wrapper {
+  section {
     width:640px;
   }
 }
 @media screen and (min-width:961px) {
   // tablet, landscape iPad, lo-res laptops ands desktops
-  .wrapper {
+  section {
     width:960px;
   }
 }
 @media screen and (min-width:1025px) {
   // big landscape tablets, laptops, and desktops
-  .wrapper {
+  section {
     width:1024px;
   }
 }
 @media screen and (min-width:1281px) {
   // hi-res laptops and desktops
-  .wrapper {
+  section {
     width:1200px;
   }
 }
