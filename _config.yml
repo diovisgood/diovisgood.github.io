@@ -107,9 +107,9 @@ analytics:
 # Site Author
 author:
   name             : "Pavel B. Chernov"
-  avatar           : "/assets/img/me100.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/me110.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Machine Learning Engineer"
-  location         :
+  location         : "Galaxy Milky Way"
   email            : "pavel.b.chernov@gmail.com"
   links:
     - label: "Email"
