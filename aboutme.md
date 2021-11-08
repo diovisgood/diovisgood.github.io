@@ -21,7 +21,7 @@ anomalies detection, recommendation systems, etc.
 
 My personal ultimate goal is to relocate to Europe or Canada.
 
-## Additional info about me
+## Additional info
 
 I'm 41 y.o.
 I do like: programming, running, climbing, skiing and snowboarding, hiking in mountains,

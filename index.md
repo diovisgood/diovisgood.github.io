@@ -43,6 +43,8 @@ As, docker images with PyTorch library can grow up to 2.5...3 Gb!
 I exported model into [ONNX](https://onnxruntime.ai/) format,
 and constructed a lightweight docker image of only 300 Mb.
 
+<br/>
+
 ## Pet Project - Intraday
 
 `Jun 2021 - Sep 2021`
