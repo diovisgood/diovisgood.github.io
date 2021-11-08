@@ -73,7 +73,9 @@ I mean, it will come to an end, and no human can affect that.
 For a more detailed understanding of modern science view on the future of the universe
 have a look at this video:
 
-[TIMELAPSE OF THE FUTURE: A Journey to the End of Time](https://youtu.be/uD4izuDMUQA)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uD4izuDMUQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+TIMELAPSE OF THE FUTURE: A Journey to the End of Time
 
 ---
 

@@ -32,4 +32,5 @@ I researched when each project was created, how it developed and where it is goi
 or has already been abandoned.
 
 Though the result of this analysis is proprietary,
-I shared some of my thoughts on this topic in this short [post](/analysis/2020-11-10-blockchain-fair-bets/).
+I shared some of my thoughts on this topic in this short
+[post]({% post_url 2020-11-10-blockchain-fair-bets %}).
