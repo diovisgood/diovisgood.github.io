@@ -1,7 +1,5 @@
-layout: post
 title: "Fair Bets for Blockchain"
 date: 2020-11-10 00:00:00 -0000
-categories: blockchain bets solidity
 
 # Fair Bets for Blockchain
 
