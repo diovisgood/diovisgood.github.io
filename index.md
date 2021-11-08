@@ -1,5 +1,7 @@
 # Projects
 
+Here is the list of my recent projects.
+
 ## Object detection for MapHub
 
 `Sep 2021 - Oct 2021`
@@ -21,7 +23,7 @@ After that I created script to build a lightweight docker image ready for deploy
 
 ### Challenges
 
-First challenge is that GeoTIFF files are typically very huge.
+First challenge was that GeoTIFF files are typically very huge.
 For example: `40,000 x 50,000` pixels, `RGBA`, with file sizes 1...3 Gb.
 
 Typically, the [GDAL](https://gdal.org/) library is used to work with GeoTIFF,
@@ -50,6 +52,8 @@ and constructed a lightweight docker image of only 300 Mb.
 Here should be description of a gym compatible environment to train agents for intraday trading
 for different assets like stocks or cryptocurrencies.
 
+<br/>
+
 ## Pet Project - Reinforce
 
 `Feb 2021 - Jun 2021`
@@ -69,12 +73,14 @@ That is why I implemented several algorithms from scratch and ensured they work 
 - Advantage Actor-Critic (A2C), the synchronized version of A3C, yet with multiple worker threads.
 - Proximal Policy Optimization (PPO)
 
+<br/>
+
 ## Analysis of Blockchain Betting Platforms for RTS Munity s.a.
 
 `Oct 2020 - Nov 2020`
 
 RTS Munity is an e-sports betting and trading provider.
-They asked me to analyze 
+They asked me to analyze new blockchain betting technology.
 
 I performed analysis of about 18 past and present blockchain projects,
 specially designed for making bets.
@@ -84,6 +90,11 @@ I studied and described types of blockchain bets:
 - Pool bets 
 - Peer-to-peer bets 
 - Multi-peer bets
+
+Though the result of this study is proprietary,
+I shared some of my thoughts on the theme in this short [post](/_posts/).
+
+<br/>
 
 ## OCR reader for RTS Munity s.a.
 
@@ -114,34 +125,39 @@ On possible solution is to utilize server with GPU card.
 But this would have increased costs.
 
 Instead, I carefully constructed a lightweight CRNN-based model architecture,
+with only ~ 3 million parameters,
 to reach an optimal balance between speed and accuracy, which runs fast enough on CPU.
 
-<video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.1.mp4">
+<video width="80%" controls>
+    <source src="/assets/ocr_lol_rts_munity.2.mp4">
 </video>
 
 <details>
 <summary>View some other examples of how real-time recognition works</summary>
 
-<video width="100%" controls>
-    <source src="/assets/ocr_lol_rts_munity.2.mp4">
+<video width="80%" controls>
+    <source src="/assets/ocr_lol_rts_munity.1.mp4">
 </video>
 
-<video width="100%" controls>
+<video width="80%" controls>
     <source src="/assets/ocr_lol_rts_munity.3.mp4">
 </video>
 
-<video width="100%" controls>
+<video width="80%" controls>
     <source src="/assets/ocr_lol_rts_munity.4.mp4">
 </video>
 
-<video width="100%" controls>
+<video width="80%" controls>
     <source src="/assets/ocr_lol_rts_munity.5.mp4">
 </video>
 
 </details>
 
-## OCR reader for RTS Munity s.a.
+<br/>
+
+## Pre-match prediction models for RTS Munity s.a.
+
+`Dec 2019 - Jan 2020`
 
 **R-language**
 
@@ -158,3 +174,4 @@ which I had no experience earlier.
 
 I learned new language and created a complete R-package with unit-tests and documentation.
 
+<br/>
