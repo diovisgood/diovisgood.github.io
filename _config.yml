@@ -75,7 +75,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "googledfc53297b4ad3ab1"
+google_site_verification : "5gTt4v5uUQWp4OY9vYXaKnqFVzB-oQ6lbN_OGFx1VfE"
 bing_site_verification   : "F42B369293D79910B0EA6BC6101B2C06"
 naver_site_verification  :
 yandex_site_verification : "30dbd8a25c72099e"
@@ -112,9 +112,9 @@ author:
   location         :
   email            : "pavel.b.chernov@gmail.com"
   links:
-    - label: "pavel.b.chernov@gmail.com"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:pavel.b.chernov@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
