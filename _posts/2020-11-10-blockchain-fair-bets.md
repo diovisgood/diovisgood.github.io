@@ -4,14 +4,12 @@ date: 2020-11-10 00:00:00 -0000
 categories: blockchain bets
 ---
 
-# Fair Bets for Blockchain
-
 ## Summary
 
 Here I share my thoughts on blockchain betting technology, its comparison to bookmaker betting,
 overview of currently existing kinds of blockchain bets and their disadvantages.
 
-I also propose a new kind of blockchain bets aimed to solve mentioned problems.
+I also propose a new kind of blockchain bets, aimed to solve mentioned problems.
 
 ## Introduction
 
@@ -64,7 +62,8 @@ But at the end of the game team A gained leadership,
 and many more people also placed their bets on team A.
 Thus making your part of revenue stake smaller.
 
-**Disadvantage**:
+**Disadvantage**: In pool bets an optimal strategy to win a bet
+is to make one bet at the end of the match, when you already 
 
 ### Peer-to-peer Bets
 

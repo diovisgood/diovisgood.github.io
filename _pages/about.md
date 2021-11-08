@@ -3,8 +3,6 @@ title: "About me"
 permalink: /about/
 ---
 
-# About me
-
 ## Summary
 
 Master in computer science.

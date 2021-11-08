@@ -3,8 +3,6 @@ title: "Education"
 permalink: /education/
 ---
 
-# Education
-
 ## Base education
 
 Master of Computer Science in South Ural State University, Chelyabinsk, Russia.
