@@ -1,6 +1,6 @@
 ---
 title: "Fair Bets for Blockchain"
-date: 2020-11-10 00:00:00 -0000
+date: 2020-11-10T00:00:00+00:00
 categories: blockchain bets
 ---
 
@@ -9,7 +9,7 @@ categories: blockchain bets
 Here I share my thoughts on blockchain betting technology, its comparison to bookmaker betting,
 overview of currently existing kinds of blockchain bets and their disadvantages.
 
-I also propose a new kind of blockchain bets, aimed to solve mentioned problems.
+I also propose a new kind of blockchain bets, aimed to solve described problems.
 
 ## Introduction
 
@@ -24,7 +24,7 @@ Typically, a **bookmaker** – a third party – is called to solve both problem
 People make bets and give a bookmaker their money;
 it computes results and distributes incomes, taking only a small percent for his work.
 
-However, according to the *game theory*, a bookmaker would have a desire to cheat.
+However, according to the *Game Theory*, a bookmaker would have a desire to cheat.
 Indeed, it can earn more money if it decides to compute revenue *incorrectly*.
 Simply because its clients don’t have all the information required to check its computation.
 Shortly – the more money a gamer loses – the more money bookmaker wins.
@@ -35,8 +35,9 @@ thought it was aimed initially for another target – for cryptocurrency transfe
 In general, Blockchain allows many people which are unfamiliar and don’t trust each other
 to safely utilize a common public database of some records.
 
-The features of Blockchain make it ideally suited for betting and solve both problems at once.
-Now any person can see all the bets of other persons, and revenues are computed automatically, so nobody can cheat.
+Features of Blockchain make it ideally suited for betting and solve both problems at once.
+Now any person can see all the bets of other persons, and revenues are computed automatically,
+so nobody can cheat.
 
 ### Kinds of Blockchain Bets
 
@@ -47,7 +48,7 @@ Currently, there are following kinds of bets possible:
 - Peer-to-peer bets
 - Multi-peer bets
 
-### Pool Bets
+#### Pool Bets
 
 Players bet on their desired outcomes and all stakes go into a single pool.
 Winners share the pool.
@@ -62,10 +63,32 @@ But at the end of the game team A gained leadership,
 and many more people also placed their bets on team A.
 Thus making your part of revenue stake smaller.
 
-**Disadvantage**: In pool bets an optimal strategy to win a bet
-is to make one bet at the end of the match, when you already 
+**Disadvantage**
 
-### Peer-to-peer Bets
+<pre>
+Does this betting scheme favors betters which place bets earlier, at the beginning of a match, on their favorite team?
+- No
+</pre>
+
+In pool bets the best strategy is to place one big bet towards the end of a match,
+when it becomes clear to you which team is leading.
+Also putting a lot of money increases your chance to get major part a winning stake.
+
+A naive better will soon realize that placing bets on his favorite team
+at the beginning of a match - is a bad strategy,
+and over time he may switch to the strategy, described above.
+
+If many betters follow this best strategy then winning pool will be almost empty,
+because towards the end of a match nobody will place bet on a team which is likely to lose.
+
+Of course, when the teams are almost equal,
+the leadership during the match shifts from one team to another several times.
+This makes it difficult to assess which team is more likely to win. 
+
+But of 
+Therefore, over time, interest in this type of bets will **fade away**.  
+
+#### Peer-to-peer Bets
 
 The purest form of peer-to-peer betting.
 One player opens the bet and defines the odds and another player matches the bet.
@@ -82,12 +105,22 @@ which can provide liquidity for some fixed fee.
 > Hence, your odds for team A is 2.0, and the same value for team B.
 > You place a bet (A: 2.0, B: 2.0) and wait for some other user, who thinks that team B will win, to join your bet.
 
-### Multi-peer Bets
+**Disadvantage**:
+
+#### Multi-peer Bets
 
 If you want to bet for a large amount, you may end up failing to find a peer for your bet.
 The solution for this case: your bet can be partially matched by multiple players.
 Similar to peer-to-peer bets, the odds are defined by the player who opens the bet.
 
+## Empirical Study
+
+In order to design a better blockchain betting scheme,
+we first need to select the evaluation criteria.
+
+
+
 ## New blockchain betting scheme
 
 Here will be description of proposed `Blockchain Fair Bets`
+

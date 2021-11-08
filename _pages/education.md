@@ -51,3 +51,9 @@ Graduated: June 2002
 
 Technology for Effective Personnel Management, interactive course
 accomplished Oct 2011
+
+## WTF
+
+- 10-day Vipassana course in Thailand, accomplished June 2010.
+
+- 10-day Vipassana course in Italy, accomplished Sept 2012.
