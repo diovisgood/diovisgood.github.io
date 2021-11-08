@@ -94,7 +94,7 @@ I studied and described types of blockchain bets:
 - Multi-peer bets
 
 Though the result of this study is proprietary,
-I shared some of my thoughts on the theme in this short [post](/_posts/).
+I shared some of my thoughts on the theme in this short [post](/blog/2020-11-10-blockchain-fair-bets/).
 
 <br/>
 

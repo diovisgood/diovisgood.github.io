@@ -1,3 +1,8 @@
+layout: post
+title: "Fair Bets for Blockchain"
+date: 2020-11-10 00:00:00 -0000
+categories: blockchain bets solidity
+
 # Fair Bets for Blockchain
 
 ## Summary
@@ -82,3 +87,7 @@ which can provide liquidity for some fixed fee.
 If you want to bet for a large amount, you may end up failing to find a peer for your bet.
 The solution for this case: your bet can be partially matched by multiple players.
 Similar to peer-to-peer bets, the odds are defined by the player who opens the bet.
+
+## New blockchain betting scheme
+
+Here will be description of proposed `Blockchain Fair Bets`

@@ -1,3 +1,7 @@
+layout: page
+title: "About me"
+permalink: /aboutme/
+
 # About me
 
 ## Summary
