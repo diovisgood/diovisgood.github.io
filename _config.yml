@@ -107,14 +107,14 @@ analytics:
 # Site Author
 author:
   name             : "Pavel B. Chernov"
-  avatar           : "/assets/img/me200.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/me256.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Machine Learning Engineer"
   location         :
   email            : "pavel.b.chernov@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:pavel.b.chernov@gmail.com"
+      # url: "mailto:pavel.b.chernov@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
