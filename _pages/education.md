@@ -1,5 +1,7 @@
+---
 title: "Education"
 permalink: /education/
+---
 
 # Education
 

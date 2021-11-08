@@ -1,5 +1,8 @@
+---
 title: "Fair Bets for Blockchain"
 date: 2020-11-10 00:00:00 -0000
+categories: blockchain bets
+---
 
 # Fair Bets for Blockchain
 
