@@ -17,13 +17,17 @@ sidebar:
     text: "Creating a logistic regression models"
 ---
 
-RTS Munity is an e-sport odds and trading provider.
+RTS Munity is an e-sports betting and trading provider.
+There are many online tournaments held every day,
+and there are a lot of people watching them online and making their bets.
+RTS Munity analyzes the gameplay and gives the chances (probabilities)
+of winning a particular team in real time. 
 
 I implemented a bundle of small models for predictions of different match outcomes
 for bets on e-sports games.
 Predictions were made based on some preliminary data available.
 
-## Challenge
+## Challenges
 
 The challenge for me was the necessity to use the **R-language**,
 which I had no experience earlier.
