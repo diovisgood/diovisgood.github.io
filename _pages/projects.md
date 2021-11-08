@@ -1,9 +1,7 @@
 ---
-layout: home
-author_profile: true
+title: "Projects"
+permalink: /projects/
 ---
-
-# Projects
 
 Here is the list of my recent projects.
 
@@ -136,26 +134,26 @@ with only ~ 3 million parameters,
 to reach an optimal balance between speed and accuracy, which runs fast enough on CPU.
 
 <video width="80%" controls>
-    <source src="/assets/ocr_lol_rts_munity.2.mp4">
+    <source src="/assets/video/ocr_lol_rts_munity.2.mp4">
 </video>
 
 <details>
 <summary>View some other examples of how real-time recognition works</summary>
 
 <video width="80%" controls>
-    <source src="/assets/ocr_lol_rts_munity.1.mp4">
+    <source src="/assets/video/ocr_lol_rts_munity.1.mp4">
 </video>
 
 <video width="80%" controls>
-    <source src="/assets/ocr_lol_rts_munity.3.mp4">
+    <source src="/assets/video/ocr_lol_rts_munity.3.mp4">
 </video>
 
 <video width="80%" controls>
-    <source src="/assets/ocr_lol_rts_munity.4.mp4">
+    <source src="/assets/video/ocr_lol_rts_munity.4.mp4">
 </video>
 
 <video width="80%" controls>
-    <source src="/assets/ocr_lol_rts_munity.5.mp4">
+    <source src="/assets/video/ocr_lol_rts_munity.5.mp4">
 </video>
 
 </details>
