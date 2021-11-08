@@ -1,6 +1,7 @@
 ---
 title: "Object detection for MapHub"
-excerpt: "object detection model to detect buildings, coconut palms, etc. in GeoTIFF files"
+excerpt: "Object detection model to detect buildings, coconut palms, etc. in GeoTIFF files"
+categories: pytorch detection yolo opencv docker python geotiff
 sidebar:
   - title: "Period"
     text: "Sep 2021 - Oct 2021"
@@ -16,7 +17,7 @@ Sometimes developer companies, farmers, or city mayors want to have a bird's vie
 On the other side, there are people who can launch their flying drones to collect aerial imagery
 to produce GeoTIFF.
 
-One team wants to make a service, so these two can easily find each other and close deals.
+One [team](https://maphub.online) wants to make a service, so these two can easily find each other and close deals.
 They asked me to create an object detection model to detect buildings, coconut palms, etc. in GeoTIFF files. 
 
 I wrote utility to grab image patches from GeoTIFF files and constructed the training dataset. 
@@ -36,10 +37,12 @@ I found a lightweight [library](https://github.com/KipCrossing/geotiff/),
 which is capable of loading some patches from large GeoTIFF files.
 
 Second challenge was that inference code from `YOLOv5` is not capable
-of processing large GeoTIFF files by parts.
+of processing large GeoTIFF files part by part.
 
 That is why I created my own code which runs model on multiple patches of source image
-and implements non-maximum suppression algorithm to produce the final predictions list.
+and implements
+[non-maximum suppression algorithm](https://learnopencv.com/non-maximum-suppression-theory-and-implementation-in-pytorch/)
+to produce the final predictions list.
 
 Third challenge was to build a docker image of some reasonable size.
 As, docker images with PyTorch library can grow up to 2.5...3 Gb!
