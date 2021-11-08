@@ -1,3 +1,8 @@
+---
+layout: home
+author_profile: true
+---
+
 # Projects
 
 Here is the list of my recent projects.
