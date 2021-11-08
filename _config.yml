@@ -20,7 +20,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Pavel Chernov"
+title                    : "diovisgood"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Pavel B. Chernov"
@@ -293,6 +293,9 @@ defaults:
       comments: # true
       share: true
       related: true
+      toc: true
+      toc_label: "Table of Contents"
+      toc_icon: "cog"
   # _pages
   - scope:
       path: ""
