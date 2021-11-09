@@ -1,8 +1,7 @@
 ---
 title: "Get yourself a goal in life or fade away"
 date: 2019-03-25T10:00:00+05:00
-categories:
-  - life style
+category: life
 tags:
   - goal
   - universe

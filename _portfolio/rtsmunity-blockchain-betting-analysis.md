@@ -1,8 +1,7 @@
 ---
 title: "Analysis of Blockchain Betting Platforms for RTS Munity s.a."
 excerpt: "Analysis of about 18 past and present blockchain projects, specially designed for making bets"
-categories:
-  - analysis
+category: analysis
 tags:
   - blockchain
   - bets
@@ -19,6 +18,8 @@ sidebar:
 
 RTS Munity is an e-sports betting and trading provider.
 They asked me to analyze new blockchain betting technology.
+
+## What I analysed
 
 I studied and described existing kinds of blockchain bets:
 
