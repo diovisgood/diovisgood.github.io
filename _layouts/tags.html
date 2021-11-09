@@ -45,13 +45,39 @@ layout: archive
 
 {% assign alldocs = site.documents %}
 {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
+
+{% assign tags_max = 0 %}
+{% for tag in grouptag %}
+  {% if tag.size > tags_max %}
+    {% assign tags_max = tag.size %}
+  {% endif %}
+{% endfor %}
+
+<ul class="taxonomy__index">
+  {% for i in (1..tags_max) reversed %}
+    {% for tag in grouptag %}
+      {% if tag.size == i %}
+        <li>
+          <a href="#{{ tag.name | slugify }}">
+            <strong>{{ tag.name }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+
 {%- for tag in grouptag -%}
-    <h1>{{- tag.name -}} - {{tag.size}}</h1>
-	{%- for post in alldocs -%}
-        {{- post.title -}} {{- post.collection -}}
-    	{% if (post.tags contains tag.name) and (! post.collection.empty?) %}
-            <p>{{- post.title -}}</p>
-            {% include archive-single.html type=entries_layout %}
-		 {% endif %}
+  <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ tag.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+    {%- for post in alldocs -%}
+      {% if (post.tags contains tag.name) and (! post.collection.empty?) %}
+        {% include archive-single.html type=entries_layout %}
+      {% endif %}
     {%- endfor -%}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
 {%- endfor -%}
