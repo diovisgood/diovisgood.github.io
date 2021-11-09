@@ -27,3 +27,7 @@ layout: archive
     {%- endfor -%}
   {%- endfor -%}
 </ul>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+<p>{{ entries_layout }}</p>
