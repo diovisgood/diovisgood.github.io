@@ -7,6 +7,9 @@ layout: archive
 {% assign alldocs = site.documents %}
 {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
 
+{% comment %}
+  {% raw %}
+
 {% assign tags_max = 0 %}
 {% for tag in grouptag %}
   {% if tag.size > tags_max %}
@@ -28,6 +31,8 @@ layout: archive
   {% endfor %}
 </ul>
 
+  {% endraw %}
+{% endcomment %}
 
 {%- for tag in grouptag -%}
   <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
