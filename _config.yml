@@ -124,6 +124,9 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/pavel.b.chernov/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/pavel-b-chernov/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/diovisgood/"
@@ -140,6 +143,9 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/pavel.b.chernov/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/pavel-b-chernov/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/diovisgood/"
@@ -246,6 +252,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+    merge_tags: true
 
 
 # Archives

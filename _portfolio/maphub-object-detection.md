@@ -1,5 +1,6 @@
 ---
 title: "Object detection for MapHub"
+date: 2021-11-04 18:00:00 +0500
 excerpt: "Object detection model to detect buildings, coconut palms, etc. in GeoTIFF files"
 categories:
   - machine learning

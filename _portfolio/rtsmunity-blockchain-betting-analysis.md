@@ -1,5 +1,6 @@
 ---
 title: "Analysis of Blockchain Betting Platforms for RTS Munity s.a."
+date: 2020-11-27 18:00:00 +0500
 excerpt: "Analysis of about 18 past and present blockchain projects, specially designed for making bets"
 category: analysis
 tags:

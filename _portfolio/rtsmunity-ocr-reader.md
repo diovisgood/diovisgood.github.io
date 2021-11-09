@@ -1,5 +1,6 @@
 ---
 title: "OCR reader for RTS Munity s.a."
+date: 2020-10-20 18:00:00 +0500
 excerpt: "Real-time OCR reader of different values of teams and players on video streams of League of Legends game"
 categories:
   - machine learning

@@ -1,6 +1,6 @@
 ---
 title: "Get yourself a goal in life or fade away"
-date: 2019-03-25T10:00:00+05:00
+date: 2019-03-25 10:00:00 +0500
 category: life
 tags:
   - goal
