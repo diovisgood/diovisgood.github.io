@@ -9,7 +9,7 @@ sidebar:
   - title: "Period"
     text: "Oct 2020 - Nov 2020"
   - title: "Technologies"
-    text: "**Blockchain**
+    text: "**Blockchain**"
   - title: "Role"
     text: "Analyst"
   - title: "Responsibilities"
@@ -18,8 +18,6 @@ sidebar:
 
 RTS Munity is an e-sports betting and trading provider.
 They asked me to analyze new blockchain betting technology.
-
-## What I analysed
 
 I studied and described existing kinds of blockchain bets:
 
