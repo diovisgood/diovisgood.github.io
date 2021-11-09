@@ -30,16 +30,20 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 
-{%- for tag in grouptag -%}
-  <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ tag.name }}</h2>
-    <div class="entries-{{ entries_layout }}">
-    {%- for post in alldocs -%}
-      {%- if post.tags contains tag.name -%}
-        {% include archive-single.html type=entries_layout %}
-      {%- endif -%}
-    {%- endfor -%}
-    </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-  </section>
+{%- for i in (1..tags_max) reversed -%}
+  {%- for tag in grouptag -%}
+    {%- if tag.size == i -%}
+      <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ tag.name }}</h2>
+        <div class="entries-{{ entries_layout }}">
+        {%- for post in alldocs -%}
+          {%- if post.tags contains tag.name -%}
+            {% include archive-single.html type=entries_layout %}
+          {%- endif -%}
+        {%- endfor -%}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {%- endif -%}
+  {%- endfor -%}
 {%- endfor -%}

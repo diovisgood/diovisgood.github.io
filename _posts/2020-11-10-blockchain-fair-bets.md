@@ -1,6 +1,7 @@
 ---
-title: "Fair Bets for Blockchain"
 date: 2020-11-10
+title: "Fair Bets for Blockchain"
+excerpt: "I propose a new kind of blockchain bets, aimed to solve some problems of existing schemes"
 category: analysis
 tags: blockchain bets
 ---
@@ -119,7 +120,15 @@ Similar to peer-to-peer bets, the odds are defined by the player who opens the b
 In order to design a better blockchain betting scheme,
 we first need to select the evaluation criteria.
 
+First we should separate experience a single gamer gets watching different matches:
 
+- When one team is stronger than other, and soon after the start of the match it gains leadership.
+  These matches become not interesting, as soon as you recognize the leader.
+  But, of course, surprises are still possible, albeit rare.
+- When competing teams are almost equal, and leadership during the match shifts from one team to another several times.
+  These matches are the most interesting, because until the end of match, no one knows which team will win.
+
+Next we should separate 
 
 ## New blockchain betting scheme
 

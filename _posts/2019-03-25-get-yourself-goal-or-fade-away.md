@@ -1,6 +1,7 @@
 ---
-title: "Get yourself a goal in life or fade away"
 date: 2019-03-25
+title: "Get yourself a goal in life or fade away"
+excerpt: "At first I explain that most of the people do not have a goal in life, and it is OK. But then I suggest that having some goal has its advantages."
 category: life
 tags: goal wine
 ---
@@ -37,21 +38,15 @@ what answer you would probably get?
 Do these extreme cases have something in common?
 
 **I believe that we all are like paper boats that are floating through streams of life.
-Your decisions matter as well as random events do.**
+These paper boats obey wind and water currents.
+But you can nudge the boat a little to one side or the other, avoiding pitfalls and sinking.
+Your decisions are as important as random events.**
 
-> A goal for life is not about 'attracting positive events'.
+> A goal for life is not about 'visualizing your positive future'.
 > It is about decision you make.
 > Do what you should and let the things happen.
 
 ---
-
-## Small goals are not enough
-
-A trip on a vacation is not a life goal.
-Building of a house is also a small task.
-Hope it is needless to explain why.
-
-Only big and hard-to-achieve goal can motivate you for a prolonged period of time.
 
 ## Not having a goal is normal
 
@@ -77,17 +72,27 @@ TIMELAPSE OF THE FUTURE: A Journey to the End of Time
 
 ---
 
-## Vague goals are not goals
+## Fake goals are not okay
 
 Some might believe that they have, of course, some goal for their life.
 So it is important to specify clearly what I don't accept as a goal for life:
 
-**Self-developing is not a goal.**
+### Small goals are not enough
+
+A trip on a vacation is not a life goal.
+Building of a house is also a small task.
+Hope it is needless to explain why.
+
+Only big and hard-to-achieve goal can motivate you for a prolonged period of time.
+
+### Self-developing is not a goal
+
 Unless you specify what exactly you are developing.
 For instance: becoming a better person - is not a goal, since it is hardly measurable.
 But becoming a professional in finance management, for example - is a fair goal, as it could be easily verified.
 
-**Being happy is not a goal.**
+### Being happy is not a goal
+
 Happiness is an emotion, a positive feedback, that reinforces successful behavior.
 A cocktail of endorphins, dopamine and serotonin that your brain gets when you did something good for you.
 For instance, stress is also a feedback, with a negative sign, which helps us learn to avoid bad behavior.
@@ -96,7 +101,8 @@ You can not be constantly happy, nor you can not be constantly sad.
 If you are constantly sad - you are probably sick of depression.
 If you are constantly happy - you should better call psychiatrist.
 
-**Changing the world is not a goal.**
+### Changing the world is not a goal
+
 Unless you specify in details what you want to achieve.
 The world was here long before you, and it will probably continue after you die.
 If you want to achieve peace in the world - you have chosen a dream but not a goal.
@@ -104,7 +110,7 @@ But if you want to decrease the rate of death by firearm in Oklahoma - you can w
 
 ---
 
-## You are free to choose any goal
+## How to choose a goal?
 
 One might ask:
 "Alright, mister! You don't like our goals. So tell us some examples of worthy goals".
@@ -127,27 +133,28 @@ You would hardly think about morality or creativity while you are struggling to 
 
 Here I can give a short list of examples of goals, that are worthy from my point of view.
 
-**Eat. Survive. Reproduce.**
-This is at least fair and distinct goal.
-Nowadays, it assumes you have to find a partner and gain enough profit for your family to buy a house,
-to grow up kids and give them good education.
+- **Eat. Survive. Reproduce.**
 
-![eat_survive_reproduce](/assets/img/goal_eat_survive_reproduce.jpg)
+  This is at least fair and distinct goal.
+  Nowadays, it assumes you have to find a partner and gain enough profit for your family to buy a house,
+  to grow up kids and give them good education.
 
-**Become famous.**
-Some people know since childhood, that they would like to become famous.
-I respect their goal even though it is not for me.
+  ![eat_survive_reproduce](/assets/img/goal_eat_survive_reproduce.jpg)
 
-**Make great Capital.**
-Grow up a business, become an ingenious investor, rob a bank, etc.
+- **Become famous.**
+  Some people know since childhood, that they would like to become famous.
+  I respect their goal even though it is not for me.
 
-**Create new scientific theory of everything.**
+- **Make great Capital.**
+  Grow up a business, become an ingenious investor, rob a bank, etc.
 
-**Create new drug that cures some tough disease.**
+- **Create new scientific theory of everything.**
 
-**Build up new astonishing buildings.**
+- **Create new drug that cures some tough disease.**
 
-**Prove that there is God. Or prove that there is not one.**
+- **Build up new astonishing buildings.**
+
+- **Prove that there is God. Or prove that there is not one.**
 
 ---
 
@@ -156,25 +163,25 @@ Grow up a business, become an ingenious investor, rob a bank, etc.
 Like I said before, not having goal is ok.
 But I would like to share with you some benefits that you get if you have some goal.
 
-**You realize that life is too short.**
-And you don't have much time to achieve your goal.
-So you should try hard and do your best.
-But even so it is not guaranteed that you will eventually achieve your goal.
+1. **You realize that life is too short.**
+  And you don't have much time to achieve your goal.
+  So you should try hard and do your best.
+  But even so it is not guaranteed that you will eventually achieve your goal.
 
-**You now don't have free time to kill.**
-Indeed, no more useless TV-shows or computer games.
-Get back to work!
+2. **You now don't have free time to kill.**
+  Indeed, no more useless TV-shows or computer games.
+  Get back to work!
 
-**You can now quickly evaluate what is important and what is not.**
-Things and events that might help to realize your goal are important.
-Others - are not.
+3. **You can now quickly evaluate what is important and what is not.**
+  Things and events that might help to realize your goal are important.
+  Others - are not.
 
-**You start to appreciate those rare moments when you spend time with your partner or with your friends.**
-Because your can't achieve your goal if you don't take any rest.
+4. **You start to appreciate those rare moments when you spend time with your partner or with your friends.**
+  Because your can't achieve your goal if you don't take any rest.
 
-**You now get the super ability to see whether other people have or don't have any life-goals.**
-I don't know how it works.
-But I asked people to verify my first suspicions and was almost always correct.
+5. **You now get the super ability to see whether other people have or don't have any life-goals.**
+  I don't know how it works.
+  But I asked people to verify my first suspicions and was almost always correct.
 
 ---
 
