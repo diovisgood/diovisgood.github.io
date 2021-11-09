@@ -30,10 +30,18 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 
-<p>{{ entries_layout }}</p>
+{% assign includedCollections = page.include_collections | default: [] | join: ',' | downcase | split: ',' %}
 
-<ul class="taxonomy__index">
-  {%- for col in page.include_collections | default: [] -%}
-    <p>{{  col  }}</p>
-  {%- endfor -%}
-</ul>
+{%- for tag in grouptag -%}
+  <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ tag.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+    {%- for post in alldocs -%}
+      {%- if post.tags contains tag.name -%}
+        {% include archive-single.html type=entries_layout %}
+      {%- endif -%}
+    {%- endfor -%}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{%- endfor -%}
