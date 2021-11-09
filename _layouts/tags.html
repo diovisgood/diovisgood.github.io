@@ -48,8 +48,9 @@ layout: archive
 {%- for tag in grouptag -%}
     <h1>{{- tag.name -}} - {{tag.size}}</h1>
 	{%- for post in alldocs -%}
-    	{% if post.tags contains tag.name %}
-        	 <p>{{- post.title -}}
+        {{- post.title -}} {{- post.collection -}}
+    	{% if (post.tags contains tag.name) and (! post.collection.empty?) %}
+            <p>{{- post.title -}}</p>
             {% include archive-single.html type=entries_layout %}
 		 {% endif %}
     {%- endfor -%}
