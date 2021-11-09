@@ -7,6 +7,13 @@ layout: archive
 {% assign alldocs = site.documents %}
 {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
 
+{%- assign tags_max = 0 -%}
+{%- for tag in grouptag -%}
+  {%- if tag.size > tags_max -%}
+    {%- assign tags_max = tag.size -%}
+  {%- endif -%}
+{%- endfor -%}
+
 <ul class="taxonomy__index">
   {%- for i in (1..tags_max) reversed -%}
     {%- for tag in grouptag -%}
