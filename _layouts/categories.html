@@ -1,0 +1,48 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign alldocs = site.documents %}
+{% assign groupcats = alldocs | map: 'categories' | join: ','  | split: ','  | group_by: category %}
+
+{%- assign categories_max = 0 -%}
+{%- for category in groupcats -%}
+  {%- if category.size > categories_max -%}
+    {%- assign categories_max = category.size -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<ul class="taxonomy__index">
+  {%- for i in (1..categories_max) reversed -%}
+    {%- for category in groupcats -%}
+      {%- if category[1].size == i -%}
+        <li>
+          <a href="#{{ category.name | slugify }}">
+            <strong>{{ category.name }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          </a>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+</ul>
+
+{%- assign entries_layout = page.entries_layout | default: 'list' -%}
+{%- for i in (1..categories_max) reversed -%}
+  {%- for category in groupcats -%}
+    {%- if category.size == i -%}
+      <section id="{{ category.name | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ category.name }}</h2>
+        <div class="entries-{{ entries_layout }}">
+          {%- for post in alldocs -%}
+            {%- if post.categories contains category.name -%}
+              {% include archive-single.html type=entries_layout %}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
