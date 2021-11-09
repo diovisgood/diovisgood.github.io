@@ -1,12 +1,11 @@
 ---
 title: "Get yourself a goal in life or fade away"
-date: 2019-03-25 10:00:00 +0500
+date: 2019-03-25
 category: life
-tags:
-  - goal
-  - universe
-  - wine
+tags: goal wine
 ---
+
+## Is life course a consequence of your decisions or random events?
 
 Most of the people I met are just drifting through their life.
 Some of them look serious and reliable, some look gorgeous,
@@ -46,7 +45,7 @@ Your decisions matter as well as random events do.**
 
 ---
 
-### Small goals are not enough
+## Small goals are not enough
 
 A trip on a vacation is not a life goal.
 Building of a house is also a small task.
@@ -54,7 +53,7 @@ Hope it is needless to explain why.
 
 Only big and hard-to-achieve goal can motivate you for a prolonged period of time.
 
-### Not having a goal is normal
+## Not having a goal is normal
 
 Since major part of population did not bother getting a goal - it is considered to be normal.
 
@@ -78,7 +77,7 @@ TIMELAPSE OF THE FUTURE: A Journey to the End of Time
 
 ---
 
-### Vague goals are not goals
+## Vague goals are not goals
 
 Some might believe that they have, of course, some goal for their life.
 So it is important to specify clearly what I don't accept as a goal for life:
@@ -105,7 +104,7 @@ But if you want to decrease the rate of death by firearm in Oklahoma - you can w
 
 ---
 
-### You are free to choose any goal
+## You are free to choose any goal
 
 One might ask:
 "Alright, mister! You don't like our goals. So tell us some examples of worthy goals".
@@ -152,7 +151,7 @@ Grow up a business, become an ingenious investor, rob a bank, etc.
 
 ---
 
-### Your life changes when you have a life goal
+## Your life changes when you have a life goal
 
 Like I said before, not having goal is ok.
 But I would like to share with you some benefits that you get if you have some goal.
@@ -179,7 +178,7 @@ But I asked people to verify my first suspicions and was almost always correct.
 
 ---
 
-### My experience
+## My experience
 
 I must confess, I did not have any goal before 2014.
 Of course, I thought differently before that.

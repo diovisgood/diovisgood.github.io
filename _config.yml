@@ -323,5 +323,6 @@ defaults:
     values:
       layout: single
       author_profile: false
+      show_date: true
       share: true
       related: true

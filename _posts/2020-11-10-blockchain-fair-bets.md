@@ -1,11 +1,8 @@
 ---
 title: "Fair Bets for Blockchain"
-date: 2020-11-10 00:00:00 +0500
-categories:
-  - analysis
-tags:
-  - blockchain
-  - bets
+date: 2020-11-10
+category: analysis
+tags: blockchain bets
 ---
 
 ## Summary
