@@ -31,3 +31,9 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 
 <p>{{ entries_layout }}</p>
+
+<ul class="taxonomy__index">
+  {%- for col in page.include_collections | default: [] -%}
+    <p>{{  col  }}</p>
+  {%- endfor -%}
+</ul>
