@@ -1,5 +1,5 @@
 ---
-title: "Pre-match prediction models for RTS Munity s.a."
+title: "Pre-match prediction models for RTS Munity"
 date: 2020-01-20
 excerpt: "Bundle of small models for predictions of different match outcomes for bets on e-sports games"
 category: machine-learning

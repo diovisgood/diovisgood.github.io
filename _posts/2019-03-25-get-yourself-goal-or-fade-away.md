@@ -80,8 +80,7 @@ So it is important to specify clearly what I don't accept as a goal for life:
 ### Small goals are not enough
 
 A trip on a vacation is not a life goal.
-Building of a house is also a small task.
-Hope it is needless to explain why.
+Building of a house is also too small task.
 
 Only big and hard-to-achieve goal can motivate you for a prolonged period of time.
 
