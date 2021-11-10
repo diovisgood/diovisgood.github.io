@@ -1,7 +1,7 @@
 ---
 title: "Reinforcement learning"
 date: 2021-06-30
-excerpt: "I studied several reinforcement-learning algorithms, implementing them in code from scratch."
+excerpt: "I studied several reinforcement-learning algorithms and implemented them in code from scratch."
 categories: machine-learning
 tags: reinforcement-learning cma-es dqn a3c a2c ppo pytorch python gym
 sidebar:

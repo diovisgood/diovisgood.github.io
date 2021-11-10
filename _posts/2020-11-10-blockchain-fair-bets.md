@@ -151,6 +151,11 @@ Next we should distinguish when the player made a bet:
 - during the match
 - almost the end of the match
 
+**This is important:** The earlier you place a bet - the less information you have to choose a team for the bet.
+Conversely, the closer to the end of the match you place your bet,
+the more confident you are in the most likely winner. 
+{: .notice}
+
 I believe, in a *fair* betting scheme
 **the earlier you make a bet - the more revenue you should get**.
 
@@ -245,6 +250,8 @@ This could be easily achieved if we change the algorithm of computing the revenu
 
 **Each player, whose bet is won, receives a part of the winning pie
 from the amounts of those players who made a bet AFTER him and lost.** 
+
+Next this scheme is described in details.
 
 ### Input data
 
@@ -343,6 +350,7 @@ Note, that Adam has all zeroes in his row.
 It means, he will receive nothing.
 
 Also note that Ezra column is all zeroes.
+This is because there is no bet on *teamA* before Ezra.
 There are several ways to manage her money:
 - we can return it back to Ezra
 - we can share it among all winners in proportion to the size of their bet.
@@ -491,7 +499,7 @@ The proposed scheme solves this problem by introducing
 new algorithm for computing revenue distributing coefficients.
 This algorithm provides that players get more revenue when place their bet earlier.
 
-Also proposed scheme has built-in mechanism to adjust the *softness** of revenue distribution.
+Also proposed scheme has built-in mechanism to adjust the *smoothness* of revenue distribution.
 
 If we evaluate proposed Blockchain Fair Bets according to the selected criteria, we get the following result:
 
@@ -507,3 +515,5 @@ If we evaluate proposed Blockchain Fair Bets according to the selected criteria,
 Blockchain Fair Bets is mostly suited for beginner players.
 
 **Please, consider this as an idea, which needs more research!**
+
+It would be great, though, if somebody could build a blockchain contract for this idea.
