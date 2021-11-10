@@ -101,12 +101,12 @@ I believe that a good betting scheme:
 
 Let's try to find some criteria for *easiness* and *fairness*.
 
-#### What kind of betting player you are?
+#### Kinds of Betting Players
 
 A beginner or an experienced one.
 These two kinds of players may have different expectation of *easiness* of placing bets.
 
-#### Does player have to specify odds manually?
+#### Manual Odds
 
 When you want to make a bet do you need to specify odds?
 Or you can simply bet on *team A* or *team B*? 
@@ -115,14 +115,14 @@ I believe, that beginners prefer to make simple bets.
 Whereas more experienced players may prefer to specify odds manually,
 as this way they can precisely manage their risk.
 
-#### Can player freely choose the amount to bet?
+#### Adjustable Bet Size
 
 Of course, a good betting scheme is one, where **you can freely choose the amount to bet**.
 So you can manage your risk.
 
 But this condition can contradict the previous condition, where you can specify odds manually.
 
-#### Does player have to wait or look for another player to place a bet? 
+#### Quick Bets 
 
 The quicker you can make a bet - the better the technology is.
 I believe, in a good betting scheme **you do NOT have to wait or look for another player to join your bet**.
@@ -130,7 +130,7 @@ I believe, in a good betting scheme **you do NOT have to wait or look for anothe
 But this condition depends on two previous conditions:
 can you choose the odds and the size of the bet.
 
-#### How obvious or uncertain leadership in match influences player behavior
+#### When Loser Wins
 
 First we should separate experience a player gets betting on different matches:
 
@@ -143,7 +143,7 @@ First we should separate experience a player gets betting on different matches:
 I believe, in a *fair* betting scheme
 **when you bet on an obvious loser, and it suddenly wins - you should get more revenue**.
 
-#### How does time when player makes a bet affect his revenue?
+#### Information Depended Revenue
 
 Next we should distinguish when the player made a bet:
 
@@ -151,9 +151,9 @@ Next we should distinguish when the player made a bet:
 - during the match
 - almost the end of the match
 
-**This is important:** The earlier you place a bet - the less information you have to choose a team for the bet.
+**This is important: The earlier you place a bet - the less information you have to choose a team for the bet.
 Conversely, the closer to the end of the match you place your bet,
-the more confident you are in the most likely winner. 
+the more confident you are in the most likely winner.** 
 {: .notice}
 
 I believe, in a *fair* betting scheme
@@ -161,14 +161,14 @@ I believe, in a *fair* betting scheme
 
 #### Table of Criteria
 
-| Criteria | Value | Good for beginners? | Good for matures? |
+| Criteria | Value | Score for beginners | Score for matures |
 | :---- | :---: | :---: | :---: |
-| Can player specify odds manually? | Yes/No | Yes/No | Yes/No |
-| Can player freely choose the amount to bet? | Yes/No | Yes/No | Yes/No |
-| You do NOT have to wait or look for another player? | Yes/No | Yes/No | Yes/No |
-| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes/No | Yes/No | Yes/No |
-| Do you get more revenue if place your bet earlier? | Yes/No | Yes/No | Yes/No |
-| **Results:** | # of Yes | # of Yes | # of Yes |
+| Can player specify odds manually? | Yes/No | 0..1 | 0..1 |
+| Can player freely choose the amount to bet? | Yes/No | 0..1 | 0..1 |
+| You do NOT have to wait or look for another player? | Yes/No | 0..1 | 0..1 |
+| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes/No | 0..1 | 0..1 |
+| Do you get more revenue if place your bet earlier? | Yes/No | 0..1 | 0..1 |
+| **Results:** |    | 0..5 | 0..5 |
 
 Now that we specified the criteria, we can evaluate existing blockchain betting schemes.
 
@@ -187,28 +187,28 @@ and over time he may switch to the strategy, described above.
 If many betters follow this best strategy then winning pool will be almost empty,
 because towards the end of a match nobody will place bet on a team which is likely to lose.
 
-| Criteria | Value | Good for beginners? | Good for matures? |
+| Criteria | Value | Score for beginners | Score for matures |
 | :---- | :---: | :---: | :---: |
-| Can player specify odds manually? | No | Yes | No |
-| Can player freely choose the amount to bet? | Yes | Yes | Yes |
-| You do NOT have to wait or look for another player? | Yes | Yes | Yes |
-| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | Yes | Yes |
-| Do you get more revenue if place your bet earlier? | No | No | No |
-| **Results:** | 3 | 4 | 3 |
+| Can player specify odds manually? | No | 1 | 0 |
+| Can player freely choose the amount to bet? | Yes | 1 | 1 |
+| You do NOT have to wait or look for another player? | Yes | 1 | 1 |
+| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | 1 | 1 |
+| Do you get more revenue if place your bet earlier? | No | 0 | 0 |
+| **Results:** |   | **4** | **3** |
 
 This betting scheme has its advantages for beginner players.
 But I believe, over time, interest in this kind of bets will **fade away**.  
 
 #### Peer-to-peer Bets
 
-| Criteria | Value | Good for beginners? | Good for matures? |
+| Criteria | Value | Score for beginners | Score for matures |
 | :---- | :---: | :---: | :---: |
-| Can player specify odds manually? | Yes | No | Yes |
-| Can player freely choose the amount to bet? | Yes | Yes | Yes |
-| You do NOT have to wait or look for another player? | No | No | No |
-| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | Yes | Yes |
-| Do you get more revenue if place your bet earlier? | No | No | No |
-| **Results:** | 3 | 2 | 3 |
+| Can player specify odds manually? | Yes | 0 | 0.5 |
+| Can player freely choose the amount to bet? | Yes | 0.5 | 0.5 |
+| You do NOT have to wait or look for another player? | No | 0 | 0 |
+| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | 1 | 1 |
+| Do you get more revenue if place your bet earlier? | No | 0 | 0 |
+| **Results:** |    | **1.5** | **2** |
 
 The main disadvantage of this betting scheme is the fact
 that player needs to search or wait for other player to place a bet.
@@ -216,40 +216,50 @@ that player needs to search or wait for other player to place a bet.
 Also, you can, of course, freely choose the odds and the amount to bet.
 But in fact you may fail to find a peer player who will agree to accept your numbers.
 
+That is why I put values of 0.5 for some criteria.
+
 #### Multi-peer Bets
 
-| Criteria | Value | Good for beginners? | Good for matures? |
+| Criteria | Value | Score for beginners | Score for matures |
 | :---- | :---: | :---: | :---: |
-| Can player specify odds manually? | Yes | No | Yes |
-| Can player freely choose the amount to bet? | Yes | Yes | Yes |
-| You do NOT have to wait or look for another player? | No | No | No |
-| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | Yes | Yes |
-| Do you get more revenue if place your bet earlier? | No | No | No |
-| **Results:** | 3 | 2 | 3 |
+| Can player specify odds manually? | Yes | 0 | 0.8 |
+| Can player freely choose the amount to bet? | Yes | 0.8 | 0.8 |
+| You do NOT have to wait or look for another player? | No | 0 | 0 |
+| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | 1 | 1 |
+| Do you get more revenue if place your bet earlier? | No | 0 | 0 |
+| **Results:** |   | **1.8** | **2.6** |
 
 The main disadvantage of this betting scheme is the same as with previous,
 that player needs to search or wait for other player to place a bet.
 
 In this scheme you may also freely choose the odds and the amount to bet,
 but fail to find a peer player who will agree to accept your numbers.
-Nevertheless, here you have more chances to make a bet than in a previous scheme.
+Nevertheless, here you have **more chances** to make a bet than in a previous scheme.
+
+That is why I put values of 0.8 for some criteria.
+
+#### Scores of Betting Schemes
+
+| Betting Scheme    | Score for beginners | Score for matures |
+| :-------------    | :---: | :---: |
+| Pool Bets         |  4    |  3    |
+| Peer-to-peer Bets |  1.5  |  2    |
+| Multi-peer Bets   |  1.8  |  2.6  |
+
 
 ## New Proposed Blockchain Betting Scheme
 
 ### Definition
 
-Probably, there could not be a betting scheme suitable for both beginners and matures.
 In fact, **Multi-peer Bets**, which is an evolution of **Peer-to-peer Bets**,
-seems to be the best scheme for mature players.
-
-Instead, I would like to focus attention on beginner players.
-Of all betting schemes **Pool bets** gain the biggest score for beginner players.
-But we need to change it so that player will get more revenue if he placed a bet earlier.
+seems to be good enough for mature players.
+But the biggest scores belong to the **Pool bets** scheme.
+We need to change it somehow so that player will get more revenue if he placed a bet earlier.
 
 This could be easily achieved if we change the algorithm of computing the revenue as follows:
 
-**Each player, whose bet is won, receives a part of the winning pie
-from the amounts of those players who made a bet AFTER him and lost.** 
+> **Each player, whose bet is won, receives a part of the winning pie
+> from the amounts of those players who made a bet AFTER him and lost.** 
 
 Next this scheme is described in details.
 
@@ -503,17 +513,17 @@ Also proposed scheme has built-in mechanism to adjust the *smoothness* of revenu
 
 If we evaluate proposed Blockchain Fair Bets according to the selected criteria, we get the following result:
 
-| Criteria | Value | Good for beginners? | Good for matures? |
+| Criteria | Value | Score for beginners | Score for matures |
 | :---- | :---: | :---: | :---: |
-| Can player specify odds manually? | No | Yes | No |
-| Can player freely choose the amount to bet? | Yes | Yes | Yes |
-| You do NOT have to wait or look for another player? | Yes | Yes | Yes |
-| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | Yes | Yes |
-| Do you get more revenue if place your bet earlier? | Yes | Yes | Yes |
-| **Results:** | 4 | 5 | 4 |
+| Can player specify odds manually? | No | 1 | 0 |
+| Can player freely choose the amount to bet? | Yes | 1 | 1 |
+| You do NOT have to wait or look for another player? | Yes | 1 | 1 |
+| Do you get more revenue if you bet on obvious loser, and it suddenly wins? | Yes | 1 | 1 |
+| Do you get more revenue if place your bet earlier? | Yes | 1 | 1 |
+| **Results:** |   | **5** | **4** |
 
-Blockchain Fair Bets is mostly suited for beginner players.
+According to the criteria we have chosen, it receives score 5 for beginners and 4 for matures. 
+We can conclude that Blockchain Fair Bets is suited for both beginner and mature players.
 
-**Please, consider this as an idea, which needs more research!**
-
-It would be great, though, if somebody could build a blockchain contract for this idea.
+It would be great, if somebody could develop this idea and build a blockchain contract for it.
+{: .notice}
