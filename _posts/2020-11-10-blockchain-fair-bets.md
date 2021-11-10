@@ -151,10 +151,9 @@ Next we should distinguish when the player made a bet:
 - during the match
 - almost the end of the match
 
-**This is important: The earlier you place a bet - the less information you have to choose a team for the bet.
-Conversely, the closer to the end of the match you place your bet,
-the more confident you are in the most likely winner.** 
-{: .notice}
+> **This is important: The earlier you place a bet - the less information you have to choose a team for the bet.
+> Conversely, the closer to the end of the match you place your bet,
+> the more confident you are in the most likely winner.** 
 
 I believe, in a *fair* betting scheme
 **the earlier you make a bet - the more revenue you should get**.
@@ -491,8 +490,10 @@ The table of coefficients for Pool Bets is very simple:
 |**SUM** |**240$**      |**1.0**|**1.0**|**1.0**|**1.0**|**1.0**|**1.0**|**1.0**|**280$**  |
 
 Notice, how much revenue receives Levi: **116.67$**.
+
 Imagine that *teamA* showed clear leadership during the match.
-And Levy decided to make a big bet, taking most of the total revenue. 
+And at the end of the match Levy decided to make a big bet, taking most of the total revenue.
+I believe, this is **not fair**, as Levi at the end of the match had more information than John, for example.
 
 Meanwhile, in the proposed betting scheme, Levi's revenue is only **51.08$ .. 55.32$**
 (depending on the `k` value).
@@ -525,5 +526,4 @@ If we evaluate proposed Blockchain Fair Bets according to the selected criteria,
 According to the criteria we have chosen, it receives score 5 for beginners and 4 for matures. 
 We can conclude that Blockchain Fair Bets is suited for both beginner and mature players.
 
-It would be great, if somebody could develop this idea and build a blockchain contract for it.
-{: .notice}
+> **It would be great, if somebody could develop this idea and build a blockchain contract for it.**

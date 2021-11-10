@@ -29,3 +29,7 @@ That is why I implemented several algorithms from scratch and ensured they work 
 - Proximal Policy Optimization (PPO)
 
 PPO demonstrated the best results.
+
+For more details:
+
+[View Project on Github](https://github.com/diovisgood/reinforce/){: .btn .btn--primary}

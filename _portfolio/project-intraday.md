@@ -157,3 +157,7 @@ If you want to train a trading bot, this sine generator
 would be a good test for it.
 If your algorithm fails to learn to make profit even on such simple data,
 it will never find any profit in a real market data.
+
+For more details:
+
+[View Project on Github](https://github.com/diovisgood/intraday/){: .btn .btn--primary}
