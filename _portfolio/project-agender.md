@@ -60,7 +60,7 @@ by Kinar Ravishankar.
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/KinarR/age-gender-estimator-keras
 - License: `MIT`
 - Framework: `Keras/TensorFlow`
@@ -74,6 +74,7 @@ Details:
   So there are approximately (4.24 MP + 1.05 MP) = 5.29 MP (=Million Parameters).
   Which is about **21 Mb** for `float32`. 
 - Pre-trained model available: **NO**
+</pre>
 
 </details>
 
@@ -83,7 +84,7 @@ by Cole Murray
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/ColeMurray/age-gender-estimation-tutorial
 - License: unspecified
 - Framework: `TensorFlow`
@@ -98,6 +99,7 @@ Details:
   `2400 + 51200 + 204800 + 102760448 + 103424 + 2048 = 103.1MP`
   Which is approximately **393 Mb**.
 - Pre-trained model available: **NO**
+</pre>
 
 </details>
 
@@ -107,7 +109,7 @@ by Youness Mansar
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/CVxTz/face_age_gender
 - License: `MIT`
 - Framework: `Keras/TensorFlow`
@@ -119,6 +121,8 @@ Details:
 - Model weights size: We can estimate it from model architecture: `ResNet50` -> `Dense(100)` -> `Dense(1)`.
   Approximately: **100 Mb**.
 - Pre-trained model available: **NO**
+</pre>
+
 </details>
 
 4. [**SSR-Net: A Compact Soft Stagewise Regression Network for Age Estimation**](https://github.com/shamangary/SSR-Net/blob/master/ijcai18_ssrnet_pdfa_2b.pdf)
@@ -127,7 +131,7 @@ by Tsun-Yi Yang, Yi-Hsuan Huang, Yen-Yu Lin, Pi-Cheng Hsiu, Yung-Yu Chuang.
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/shamangary/SSR-Net
 - Third party source code: https://github.com/shamangary/SSR-Net
 - License: `Apache License 2.0`
@@ -141,6 +145,7 @@ Details:
   - _age_: **0.32 Mb**,
 - Pre-trained model available: **YES**
 - Last models update: Apr 2018
+</pre>
 
 </details>
 
@@ -150,7 +155,7 @@ by @wayen820
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/wayen820/gender_age_estimation_mxnet
 - License: unspecified
 - Framework: `MXNET`
@@ -163,6 +168,7 @@ Details:
   - _age_: **1.95 Mb**
 - Pre-trained model available: **YES**
 - Last models update: Oct 2018
+</pre>
 
 </details>
 
@@ -172,7 +178,7 @@ by Gil Levi and Tal Hassner.
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/GilLevi/AgeGenderDeepLearning
 - License: `as is`
 - Framework: `Caffe`. But models could be loaded with `OpenCV`.
@@ -186,6 +192,7 @@ Details:
   - _age_: **43.5 Mb**.
 - Pre-trained model available: **YES**, separate models for _gender_ and _age_.
 - Last models update: Sep 2017
+</pre>
 
 </details>
 
@@ -195,7 +202,7 @@ by Rude Carnie (? Daniel Pressel)
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/dpressel/rude-carnie
 - License: unspecified
 - Framework: `TensorFlow`
@@ -209,6 +216,7 @@ Details:
   - _age_: inception_v3 based model - **166 Mb**.
 - Pre-trained model available: **YES**, separate networks for _gender_ and _age_.
 - Last models update: Apr/Feb 2017
+</pre>
 
 </details>
 
@@ -218,7 +226,7 @@ by Chengwei Zhang
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/Tony607/Keras_age_gender
 - License: unspecified
 - Framework: `Keras/TensorFlow`
@@ -229,6 +237,7 @@ Details:
 - Model weights size: **186 Mb**.
 - Pre-trained model available: **YES**
 - Last model update: Jan 2018
+</pre>
 
 </details>
 
@@ -238,7 +247,7 @@ by Yusuke Uchida
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/yu4u/age-gender-estimation
 - License: `MIT`
 - Framework: `Keras/TensorFlow`
@@ -249,6 +258,7 @@ Details:
 - Model weights size: **187 Mb**.
 - Pre-trained model available: **YES**
 - Last models update: Feb 2018
+</pre>
 
 </details>
 
@@ -258,7 +268,7 @@ by Boyuan Jiang
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/BoyuanJiang/Age-Gender-Estimate-TF
 - License: `MIT`
 - Framework: `TensorFlow`
@@ -269,6 +279,7 @@ Details:
 - Model weights size: **246.5 Mb**.
 - Pre-trained model available: **YES**
 - Last models update: Nov 2017
+</pre>
 
 </details>
 
@@ -278,7 +289,7 @@ by Sefik Ilkin Serengil
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/serengil/tensorflow-101/blob/master/python/age-gender-prediction-real-time.py
   and also https://github.com/serengil/tensorflow-101/blob/master/python/gender_prediction.ipynb
 - License: unspecified
@@ -292,6 +303,7 @@ Details:
   - _age_: **514 Mb**
 - Pre-trained model available: **YES**, separate models for _gender_ and _age_
 - Last models update: Nov 2017
+</pre>
 
 </details>
 
@@ -301,7 +313,7 @@ by Sanjaya Subedi
 <details>
 <summary>Details</summary>
 
-Details:
+<pre>
 - Source code: https://github.com/jangedoo/age-gender-race-prediction
 - License: unspecified
 - Framework: `Keras/TensorFlow`
@@ -312,6 +324,7 @@ Details:
   - _race_: vector of 5 classes: ['White', 'Black', 'Asian', 'Indian', 'Others']
 - Model weights size: unknown
 - Pre-trained model available: **NO**
+</pre>
 
 </details>
 
