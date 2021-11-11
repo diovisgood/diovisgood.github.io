@@ -15,8 +15,6 @@ But for me, they are all the same kind - a paper boat in a stream.
 
 {% include figure image_path="/assets/img/goal_paper_ship_drifting.jpg" alt="paper ship drifting" caption="This is a nearly exact portrait of an intelligent, educated person, open to new experience, with rich inner world and deep feelings... but with lack of any distinct life goal." %}
 
-![paper_ship_drifting](/assets/img/goal_paper_ship_drifting.jpg)
-
 This is a nearly exact portrait of an intelligent, educated person,
 open to new experience, with rich inner world and deep feelings...
 but with lack of any distinct life goal.
@@ -58,12 +56,11 @@ Generally speaking, no matter which way you choose, in either case it will lead 
 Besides, the sun will explode some day, killing life on our planet.
 And even if humanity survives the universe itself will not last forever!
 
-![universe_ends_anyway](/assets/img/goal_universe_ends_anyway.png)
-
-Life of an average human lasts about `0.0000000006` of the age of the universe.
+{% include figure image_path="/assets/img/goal_universe_ends_anyway.png"
+alt="Life of an average human lasts about `0.0000000006` of the age of the universe.
 So the question arises: why should we ever bother about getting any goal for life?
 Besides, the universe will either collapse or cool down or expand and also cool down.
-I mean, it will come to an end, and no human can affect that.
+I mean, it will come to an end, and no human can affect that." %}
 
 For a more detailed understanding of modern science view on the future of the universe
 have a look at this video:
@@ -123,10 +120,7 @@ Despite it is being criticized,
 it "explains human nature as something that most humans immediately recognize in themselves and others".
 This theory explains that the goal that suits you the most significantly depends on the conditions you live in.
 
-![maslow_pyramid](/assets/img/goal_maslow_pyramid.png)
-
-Maslow's hierarchy of needs.
-You would hardly think about morality or creativity while you are struggling to survive.
+{% include figure image_path="/assets/img/goal_maslow_pyramid.png" alt="maslow pyramid" caption="Maslow's hierarchy of needs. You would hardly think about morality or creativity while you are struggling to survive." %}
 
 > It is useless to discuss the rate of death by firearm with a person who has no food or shelter.
 > But it also does not mean, that this person could not have any other goal in his life.
@@ -140,7 +134,7 @@ Here I can give a short list of examples of goals, that are worthy from my point
   Nowadays, it assumes you have to find a partner and gain enough profit for your family to buy a house,
   to grow up kids and give them good education.
 
-  ![eat_survive_reproduce](/assets/img/goal_eat_survive_reproduce.jpg)
+{% include figure image_path="/assets/img/goal_eat_survive_reproduce.jpg" alt="eat survive reproduce" %}
 
 - **Become famous.**
   Some people know since childhood, that they would like to become famous.
@@ -195,7 +189,7 @@ Now that I have some goals I work hard trying to achieve them.
 But if you expected to find here description of my goals then sorry... you won't.
 Instead, you may find a picture of a man with a goal for life:
 
-![paper_ship_navigating](/assets/img/goal_paper_ship_navigating.jpg)
+{% include figure image_path="/assets/img/goal_paper_ship_navigating.jpg" alt="paper ship navigating" caption="This is a nearly exact portrait of a person who has a life-goal and tries to choose paths that might help to fulfill it." %}
 
 This is a nearly exact portrait of a person who has a life-goal
 and tries to choose paths that might help to fulfill it.
