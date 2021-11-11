@@ -15,10 +15,6 @@ But for me, they are all the same kind - a paper boat in a stream.
 
 {% include figure image_path="/assets/img/goal_paper_ship_drifting.jpg" alt="paper ship drifting" caption="This is a nearly exact portrait of an intelligent, educated person, open to new experience, with rich inner world and deep feelings... but with lack of any distinct life goal." %}
 
-This is a nearly exact portrait of an intelligent, educated person,
-open to new experience, with rich inner world and deep feelings...
-but with lack of any distinct life goal.
-
 All we start from different 'initial conditions'.
 Some have many years to get good education and plan their life.
 Others have to start to work at teenage.
@@ -56,11 +52,12 @@ Generally speaking, no matter which way you choose, in either case it will lead 
 Besides, the sun will explode some day, killing life on our planet.
 And even if humanity survives the universe itself will not last forever!
 
-{% include figure image_path="/assets/img/goal_universe_ends_anyway.png"
-alt="Life of an average human lasts about `0.0000000006` of the age of the universe.
+![universe_ends_anyway](/assets/img/goal_universe_ends_anyway.png)
+
+Life of an average human lasts about `0.0000000006` of the age of the universe.
 So the question arises: why should we ever bother about getting any goal for life?
 Besides, the universe will either collapse or cool down or expand and also cool down.
-I mean, it will come to an end, and no human can affect that." %}
+I mean, it will come to an end, and no human can affect that.
 
 For a more detailed understanding of modern science view on the future of the universe
 have a look at this video:
@@ -133,9 +130,9 @@ Here I can give a short list of examples of goals, that are worthy from my point
   This is at least fair and distinct goal.
   Nowadays, it assumes you have to find a partner and gain enough profit for your family to buy a house,
   to grow up kids and give them good education.
-
-{% include figure image_path="/assets/img/goal_eat_survive_reproduce.jpg" alt="eat survive reproduce" %}
-
+  
+  ![eat_survive_reproduce](/assets/img/goal_eat_survive_reproduce.jpg)
+  
 - **Become famous.**
   Some people know since childhood, that they would like to become famous.
   I respect their goal even though it is not for me.
@@ -190,9 +187,6 @@ But if you expected to find here description of my goals then sorry... you won't
 Instead, you may find a picture of a man with a goal for life:
 
 {% include figure image_path="/assets/img/goal_paper_ship_navigating.jpg" alt="paper ship navigating" caption="This is a nearly exact portrait of a person who has a life-goal and tries to choose paths that might help to fulfill it." %}
-
-This is a nearly exact portrait of a person who has a life-goal
-and tries to choose paths that might help to fulfill it.
 
 P.S. And yes, this story is here for some purpose.
 And also because me and my girlfriend are having some nice weekend with a bottle of wine :)
