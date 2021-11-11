@@ -5,15 +5,12 @@ author_profile: true
 
 <h3 class="archive__subtitle">Recent Projects</h3>
 
-{% assign posts = site.portfolio | sort: 'date' | reverse %}
-
-{% assign entries_layout = 'grid' %}
+{%- assign projects = site.portfolio | where_exp:"item", "item.tags contains 'featured'" | sort: 'date' | reverse -%}
+{%- assign entries_layout = 'list' -%}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts | limit: 4 %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+  {%- for post in projects | limit: 4 -%}
+    {%- include archive-single.html type=entries_layout -%}
+  {%- endfor -%}
 </div>
 
-<div float="left">
-    <a href="/portfolio/" class="btn btn--info">View full Portfolio</a>
-</div>
+[View full Portfolio](/portfolio/){: .btn .btn--info}
