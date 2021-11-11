@@ -902,3 +902,5 @@ Complete datasets with global market indicators like: S&P500 index, DAX index,
 manufacturing activity, retail sales, etc.
 - Optimize operations.
 Some operations are rarely used, for example: `Rank` and `iRank` - and could be easily removed.
+
+[View Project on Github](https://github.com/diovisgood/QGEN_Lua/){: .btn .btn--primary target="_blank"}
