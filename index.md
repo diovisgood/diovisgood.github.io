@@ -14,6 +14,6 @@ author_profile: true
   {% endfor %}
 </div>
 
-[View full Portfolio](/portfolio/){: .btn .btn--info float="left"}
+> [View full Portfolio](/portfolio/){: .btn .btn--info}
 
 ----
