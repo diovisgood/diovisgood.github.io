@@ -9,10 +9,6 @@ sidebar:
     text: "Jun 2021 - Sep 2021"
   - title: "Technologies"
     text: "**Gym**, **Numpy**, **Pandas**, **Pyglet**, **Python**, **Binance**"
-  - title: "Role"
-    text: "Python Programmer"
-  - title: "Responsibilities"
-    text: "Building a python package to simulate a trading exchange"
 ---
 
 I created a package which provides gym compatible environment to **simulate intraday trading**

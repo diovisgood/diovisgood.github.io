@@ -9,10 +9,6 @@ sidebar:
     text: "Feb 2021 - Jun 2021"
   - title: "Technologies"
     text: "**Reinforcement-Learning**, **CMA-ES**, **DQN**, **Duelling-DQN**, **A3C**, **A2C**, **PPO**, **PyTorch**, **Python**"
-  - title: "Role"
-    text: "Python Programmer"
-  - title: "Responsibilities"
-    text: "Building a python package to simulate a trading exchange"
 ---
 
 Here is a short summary of a project I recently completed
