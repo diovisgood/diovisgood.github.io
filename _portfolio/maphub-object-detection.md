@@ -3,7 +3,7 @@ title: "Object detection for MapHub"
 date: 2021-11-04
 excerpt: "Object detection model to detect buildings, coconut palms, etc. in GeoTIFF files"
 categories: machine-learning
-tags: pytorch detection yolo opencv docker python geotiff
+tags: pytorch detection yolo opencv docker python geotiff featured
 sidebar:
   - title: "Period"
     text: "Sep 2021 - Oct 2021"

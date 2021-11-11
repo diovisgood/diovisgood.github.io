@@ -3,7 +3,7 @@ title: "Intraday gym environment"
 date: 2021-09-29
 excerpt: "I created a gym compatible environment for reinforcement learning to train agents for intraday trading for different assets like stocks or cryptocurrencies."
 categories: machine-learning
-tags: gym numpy pandas pyglet python binance reinforcement-learning
+tags: gym numpy pandas pyglet python binance reinforcement-learning featured
 sidebar:
   - title: "Period"
     text: "Jun 2021 - Sep 2021"

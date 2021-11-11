@@ -3,7 +3,7 @@ title: "OCR reader for RTS Munity"
 date: 2020-10-20
 excerpt: "Real-time OCR reader of different values of teams and players on video streams of League of Legends game"
 category: machine-learning
-tags: ocr pytorch tensorflow opencv python aws esports
+tags: ocr pytorch tensorflow opencv python aws esports featured
 sidebar:
   - title: "Period"
     text: "June 2020 - Oct 2020"
