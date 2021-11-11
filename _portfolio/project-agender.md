@@ -60,6 +60,7 @@ by Kinar Ravishankar.
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/KinarR/age-gender-estimator-keras
 - License: `MIT`
 - Framework: `Keras/TensorFlow`
@@ -82,6 +83,7 @@ by Cole Murray
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/ColeMurray/age-gender-estimation-tutorial
 - License: unspecified
 - Framework: `TensorFlow`
@@ -104,6 +106,8 @@ by Youness Mansar
 
 <details>
 <summary>Details</summary>
+
+Details:
 - Source code: https://github.com/CVxTz/face_age_gender
 - License: `MIT`
 - Framework: `Keras/TensorFlow`
@@ -123,6 +127,7 @@ by Tsun-Yi Yang, Yi-Hsuan Huang, Yen-Yu Lin, Pi-Cheng Hsiu, Yung-Yu Chuang.
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/shamangary/SSR-Net
 - Third party source code: https://github.com/shamangary/SSR-Net
 - License: `Apache License 2.0`
@@ -145,6 +150,7 @@ by @wayen820
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/wayen820/gender_age_estimation_mxnet
 - License: unspecified
 - Framework: `MXNET`
@@ -166,6 +172,7 @@ by Gil Levi and Tal Hassner.
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/GilLevi/AgeGenderDeepLearning
 - License: `as is`
 - Framework: `Caffe`. But models could be loaded with `OpenCV`.
@@ -188,6 +195,7 @@ by Rude Carnie (? Daniel Pressel)
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/dpressel/rude-carnie
 - License: unspecified
 - Framework: `TensorFlow`
@@ -210,6 +218,7 @@ by Chengwei Zhang
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/Tony607/Keras_age_gender
 - License: unspecified
 - Framework: `Keras/TensorFlow`
@@ -229,6 +238,7 @@ by Yusuke Uchida
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/yu4u/age-gender-estimation
 - License: `MIT`
 - Framework: `Keras/TensorFlow`
@@ -248,6 +258,7 @@ by Boyuan Jiang
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/BoyuanJiang/Age-Gender-Estimate-TF
 - License: `MIT`
 - Framework: `TensorFlow`
@@ -267,6 +278,7 @@ by Sefik Ilkin Serengil
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/serengil/tensorflow-101/blob/master/python/age-gender-prediction-real-time.py
   and also https://github.com/serengil/tensorflow-101/blob/master/python/gender_prediction.ipynb
 - License: unspecified
@@ -289,6 +301,7 @@ by Sanjaya Subedi
 <details>
 <summary>Details</summary>
 
+Details:
 - Source code: https://github.com/jangedoo/age-gender-race-prediction
 - License: unspecified
 - Framework: `Keras/TensorFlow`
