@@ -13,6 +13,8 @@ Some of them look serious and reliable, some look gorgeous,
 other smell dangerous or self decaying.
 But for me, they are all the same kind - a paper boat in a stream.
 
+{% include figure image_path="/assets/img/goal_paper_ship_drifting.jpg" alt="paper ship drifting" caption="This is a nearly exact portrait of an intelligent, educated person, open to new experience, with rich inner world and deep feelings... but with lack of any distinct life goal." %}
+
 ![paper_ship_drifting](/assets/img/goal_paper_ship_drifting.jpg)
 
 This is a nearly exact portrait of an intelligent, educated person,
