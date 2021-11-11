@@ -14,3 +14,5 @@ author_profile: true
 </div>
 
 [View full Portfolio](/portfolio/){: .btn .btn--info}
+
+<br/>
