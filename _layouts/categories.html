@@ -4,7 +4,7 @@ layout: archive
 
 {{ content }}
 
-{% assign alldocs = site.documents %}
+{% assign alldocs = site.documents | sort: 'date' | reverse %}
 {% assign groupcats = alldocs | map: 'categories' | join: ','  | split: ','  | group_by: category %}
 
 {%- assign categories_max = 0 -%}
