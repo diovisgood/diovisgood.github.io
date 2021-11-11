@@ -289,7 +289,7 @@ Note, that the order in which bets are placed is important!
 Total sum of bets for *teamA* is: 240$.
 Total sum of bets for *teamB* is: 280$.
 
-### Distribution Coefficients
+### Revenue Distribution Coefficients
 
 Imagine: *teamA* wins the match.
 It means that John, Liam, Noah, Jack, Levi and Adam win, and others lose.
@@ -354,6 +354,9 @@ Now that we have computed **coefficients of revenue** we can write them in the t
 |**SUM** |**240$**      |**0.0**|**1.0**|**1.0**|**1.929**|**1.929**|**2.8**|**2.8**|     |
 
 The rows correspond to winner players, and the columns - to losers.
+
+Each column defines the coefficients to distribute the money of a particular loser to all the winners.
+Note: the sum of coefficients must be 1.0, which it is not right now. This will be fixed at the next step.
 
 Note, that Adam has all zeroes in his row.
 It means, he will receive nothing.
@@ -488,6 +491,9 @@ The table of coefficients for Pool Bets is very simple:
 |**Levi**| 100$         | 0.417 | 0.417 | 0.417 | 0.417 | 0.417 | 0.417 | 0.417 |**116.67$**|
 |**Adam**| 20$          | 0.083 | 0.083 | 0.083 | 0.083 | 0.083 | 0.083 | 0.083 |**23.33$**|
 |**SUM** |**240$**      |**1.0**|**1.0**|**1.0**|**1.0**|**1.0**|**1.0**|**1.0**|**280$**  |
+
+The coefficients for each winner are computed as the amount of his bet divided by the total sum of
+the amounts of all winners. For example, coefficient for Levi is: ``100$ / 240$ = 0.417``.
 
 Notice, how much revenue receives Levi: **116.67$**.
 

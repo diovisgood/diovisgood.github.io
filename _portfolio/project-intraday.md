@@ -20,7 +20,7 @@ based on stream of trades, either historical or real-time.
 
 ![gif animation of trained agent](/assets/img/intraday_ethusdt_trained.gif)
 
-This project was inspired by [TensorTrade](https://github.com/tensortrade-org/tensortrade),
+This project was inspired by [TensorTrade](https://github.com/tensortrade-org/tensortrade){:target="_blank"},
 but it was written from scratch, and it is a completely original source code.
 
 The main idea was to go deeper from candles to the actual stream of trades.
@@ -160,4 +160,4 @@ it will never find any profit in a real market data.
 
 For more details:
 
-[View Project on Github](https://github.com/diovisgood/intraday/){: .btn .btn--primary}
+[View Project on Github](https://github.com/diovisgood/intraday/){: .btn .btn--primary target="_blank"}

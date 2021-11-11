@@ -32,4 +32,4 @@ PPO demonstrated the best results.
 
 For more details:
 
-[View Project on Github](https://github.com/diovisgood/reinforce/){: .btn .btn--primary}
+[View Project on Github](https://github.com/diovisgood/reinforce/){: .btn .btn--primary target="_blank"}
