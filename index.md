@@ -14,4 +14,6 @@ author_profile: true
   {% endfor %}
 </div>
 
+<br/>
+
 [View full Portfolio](/portfolio/){: .btn .btn--info}
