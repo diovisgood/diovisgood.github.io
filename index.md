@@ -5,7 +5,7 @@ author_profile: true
 
 <h3 class="archive__subtitle">Recent Projects</h3>
 
-<div>
+<div class="container">
     {%- assign projects = site.portfolio | where_exp:"item", "item.tags contains 'featured'" | sort: 'date' | reverse -%}
     {%- assign entries_layout = 'grid' -%}
     <div class="entries-{{ entries_layout }}">
@@ -14,6 +14,8 @@ author_profile: true
       {%- endfor -%}
     </div>
 </div>
+
+<div style="clear: both;"></div>
 
 [View full Portfolio](/portfolio/){: .btn .btn--info}
 
