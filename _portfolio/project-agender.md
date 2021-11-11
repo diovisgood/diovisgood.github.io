@@ -3,7 +3,7 @@ title: "Agender Project"
 date: 2019-05-10
 excerpt: "This is a small demo project to try and test OpenCV library, implement on-the-fly face detection, age and gender estimation using pre-trained models."
 categories: machine-learning
-tags: genetic-algorithm evolution lua
+tags: detection haar face tensorflow opencv python
 sidebar:
   - title: "Period"
     text: "Apr 2019 - May 2019"
@@ -60,19 +60,20 @@ by Kinar Ravishankar.
 <details>
 <summary>Details</summary>
 
-    - Source code: https://github.com/KinarR/age-gender-estimator-keras
-    - License: `MIT`
-    - Framework: `Keras/TensorFlow`
-    - Input: RGB images of any size, author used: `224x224x3`
-    - Output:
-      - _gender_: two binary classes: Male and Female, choose maximum. 
-      - _age_: 21 class, use softmax, choose maximum and multiply it's index by 4.76,
-        which gives you roughly [0 - 100] years interval.
-    - Model weights size: we can estimate it as this model is based on `MobileNet_v1_224`,
-    followed by one `Dense(1024->1024)` layer plus two output `Dense(1024->1)` layers.
-    So there are approximately (4.24 MP + 1.05 MP) = 5.29 MP (=Million Parameters).
-    Which is about **21 Mb** for `float32`. 
-    - Pre-trained model available: **NO**
+- Source code: https://github.com/KinarR/age-gender-estimator-keras
+- License: `MIT`
+- Framework: `Keras/TensorFlow`
+- Input: RGB images of any size, author used: `224x224x3`
+- Output:
+  - _gender_: two binary classes: Male and Female, choose maximum. 
+  - _age_: 21 class, use softmax, choose maximum and multiply it's index by 4.76,
+    which gives you roughly [0 - 100] years interval.
+- Model weights size: we can estimate it as this model is based on `MobileNet_v1_224`,
+  followed by one `Dense(1024->1024)` layer plus two output `Dense(1024->1)` layers.
+  So there are approximately (4.24 MP + 1.05 MP) = 5.29 MP (=Million Parameters).
+  Which is about **21 Mb** for `float32`. 
+- Pre-trained model available: **NO**
+
 </details>
 
 2. [**How to build an age and gender multi-task predictor with deep learning in TensorFlow**](https://medium.freecodecamp.org/how-to-build-an-age-and-gender-multi-task-predictor-with-deep-learning-in-tensorflow-20c28a1bd447)
@@ -81,20 +82,21 @@ by Cole Murray
 <details>
 <summary>Details</summary>
 
-    - Source code: https://github.com/ColeMurray/age-gender-estimation-tutorial
-    - License: unspecified
-    - Framework: `TensorFlow`
-    - Input: RGB images`224x224x3`
-    - Output:
-      - _gender_: two binary classes: Male and Female, choose maximum. 
-      - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
-    - Model weights size: we can estimate it from model architecture:
-      `Conv(5x5, 3->32)` -> `MaxPool(2->1)` -> `Conv(5x5, 32->64)` -> `MaxPool(2->1)` ->
-      `Conv(5x5, 64->128)` -> `MaxPool(2->1)` ->
-      `Dense(28*28*128 -> 1024)` -> `Dense(1024 -> 101)`, `Dense(1024 -> 2)`.
-      `2400 + 51200 + 204800 + 102760448 + 103424 + 2048 = 103.1MP`
-      Which is approximately **393 Mb**.
-    - Pre-trained model available: **NO**
+- Source code: https://github.com/ColeMurray/age-gender-estimation-tutorial
+- License: unspecified
+- Framework: `TensorFlow`
+- Input: RGB images`224x224x3`
+- Output:
+  - _gender_: two binary classes: Male and Female, choose maximum. 
+  - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
+- Model weights size: we can estimate it from model architecture:
+  `Conv(5x5, 3->32)` -> `MaxPool(2->1)` -> `Conv(5x5, 32->64)` -> `MaxPool(2->1)` ->
+  `Conv(5x5, 64->128)` -> `MaxPool(2->1)` ->
+  `Dense(28*28*128 -> 1024)` -> `Dense(1024 -> 101)`, `Dense(1024 -> 2)`.
+  `2400 + 51200 + 204800 + 102760448 + 103424 + 2048 = 103.1MP`
+  Which is approximately **393 Mb**.
+- Pre-trained model available: **NO**
+
 </details>
 
 3. [**Predicting apparent Age and Gender from face picture : Keras + Tensorflow**](https://medium.com/@CVxTz/predicting-apparent-age-and-gender-from-face-picture-keras-tensorflow-a99413d8fd5e)
@@ -102,17 +104,17 @@ by Youness Mansar
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/CVxTz/face_age_gender
-    - License: `MIT`
-    - Framework: `Keras/TensorFlow`
-    - Input: RGB images `224x224x3`
-    - Output:
-      - _gender_: one number in range [0..1], where 0 = Female, 1 = Male.
-      - _age_: 8 classes [0..2], [4..6], [8..12], [15..20], [25..32], [38..43], [48..53], [60..100],
-        use softmax, choose maximum.
-    - Model weights size: We can estimate it from model architecture: `ResNet50` -> `Dense(100)` -> `Dense(1)`.
-      Approximately: **100 Mb**.
-    - Pre-trained model available: **NO**
+- Source code: https://github.com/CVxTz/face_age_gender
+- License: `MIT`
+- Framework: `Keras/TensorFlow`
+- Input: RGB images `224x224x3`
+- Output:
+  - _gender_: one number in range [0..1], where 0 = Female, 1 = Male.
+  - _age_: 8 classes [0..2], [4..6], [8..12], [15..20], [25..32], [38..43], [48..53], [60..100],
+    use softmax, choose maximum.
+- Model weights size: We can estimate it from model architecture: `ResNet50` -> `Dense(100)` -> `Dense(1)`.
+  Approximately: **100 Mb**.
+- Pre-trained model available: **NO**
 </details>
 
 4. [**SSR-Net: A Compact Soft Stagewise Regression Network for Age Estimation**](https://github.com/shamangary/SSR-Net/blob/master/ijcai18_ssrnet_pdfa_2b.pdf)
@@ -120,19 +122,21 @@ by Tsun-Yi Yang, Yi-Hsuan Huang, Yen-Yu Lin, Pi-Cheng Hsiu, Yung-Yu Chuang.
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/shamangary/SSR-Net
-    - Third party source code: https://github.com/shamangary/SSR-Net
-    - License: `Apache License 2.0`
-    - Framework: `Keras/TensorFlow`
-    - Input: RGB images `64x64x3`
-    - Output:
-      - _gender_: one number in range [0..1], where 0 = Female, 1 = Male.
-      - _age_: one number
-    - Model weights size:
-      - _gender_: **0.32 Mb**,
-      - _age_: **0.32 Mb**,
-    - Pre-trained model available: **YES**
-    - Last models update: Apr 2018
+
+- Source code: https://github.com/shamangary/SSR-Net
+- Third party source code: https://github.com/shamangary/SSR-Net
+- License: `Apache License 2.0`
+- Framework: `Keras/TensorFlow`
+- Input: RGB images `64x64x3`
+- Output:
+  - _gender_: one number in range [0..1], where 0 = Female, 1 = Male.
+  - _age_: one number
+- Model weights size:
+  - _gender_: **0.32 Mb**,
+  - _age_: **0.32 Mb**,
+- Pre-trained model available: **YES**
+- Last models update: Apr 2018
+
 </details>
 
 5. [**Mxnet version implementation of SSR-Net for age and gender estimation**](https://github.com/wayen820/gender_age_estimation_mxnet){:target="_blank"}
@@ -140,18 +144,20 @@ by @wayen820
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/wayen820/gender_age_estimation_mxnet
-    - License: unspecified
-    - Framework: `MXNET`
-    - Input: RGB image `112x112x3`
-    - Output:
-      - _gender_: one number in range [0..1], where 0 = Female, 1 = Male.
-      - _age_: one number
-    - Model weights size:
-      - _gender_: **3.94 Mb**
-      - _age_: **1.95 Mb**
-    - Pre-trained model available: **YES**
-    - Last models update: Oct 2018
+
+- Source code: https://github.com/wayen820/gender_age_estimation_mxnet
+- License: unspecified
+- Framework: `MXNET`
+- Input: RGB image `112x112x3`
+- Output:
+  - _gender_: one number in range [0..1], where 0 = Female, 1 = Male.
+  - _age_: one number
+- Model weights size:
+  - _gender_: **3.94 Mb**
+  - _age_: **1.95 Mb**
+- Pre-trained model available: **YES**
+- Last models update: Oct 2018
+
 </details>
 
 6. [**Age and Gender Classification Using Convolutional Neural Networks**](https://talhassner.github.io/home/publication/2015_CVPR){:target="_blank"}
@@ -159,19 +165,21 @@ by Gil Levi and Tal Hassner.
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/GilLevi/AgeGenderDeepLearning
-    - License: `as is`
-    - Framework: `Caffe`. But models could be loaded with `OpenCV`.
-    - Input: `256x256x3`
-    - Output:
-      - _gender_: two binary classes: Male and Female, choose maximum. 
-      - _age_: 8 classes: [0..2], [4..6], [8..12], [15..20], [25..32], [38..43], [48..53], [60..100],
-        use softmax, choose maximum.
-    - Model weights size:
-      - _gender_: **43.5 Mb**,
-      - _age_: **43.5 Mb**.
-    - Pre-trained model available: **YES**, separate models for _gender_ and _age_.
-    - Last models update: Sep 2017
+
+- Source code: https://github.com/GilLevi/AgeGenderDeepLearning
+- License: `as is`
+- Framework: `Caffe`. But models could be loaded with `OpenCV`.
+- Input: `256x256x3`
+- Output:
+  - _gender_: two binary classes: Male and Female, choose maximum. 
+  - _age_: 8 classes: [0..2], [4..6], [8..12], [15..20], [25..32], [38..43], [48..53], [60..100],
+    use softmax, choose maximum.
+- Model weights size:
+  - _gender_: **43.5 Mb**,
+  - _age_: **43.5 Mb**.
+- Pre-trained model available: **YES**, separate models for _gender_ and _age_.
+- Last models update: Sep 2017
+
 </details>
 
 7. [**Age and Gender Deep Learning with TensorFlow**](https://github.com/dpressel/rude-carnie){:target="_blank"}
@@ -179,19 +187,21 @@ by Rude Carnie (? Daniel Pressel)
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/dpressel/rude-carnie
-    - License: unspecified
-    - Framework: `TensorFlow`
-    - Input: RGB images `256x256x3`
-    - Output:
-      - _gender_: two binary classes: Male and Female, choose maximum.
-      - _age_: 8 classes: [0..2], [4..6], [8..12], [15..20], [25..32], [38..43], [48..53], [60..100],
-        use softmax, choose maximum.
-    - Model weights size: 
-      - _gender_: inception_v3 based model - **166 Mb**,
-      - _age_: inception_v3 based model - **166 Mb**.
-    - Pre-trained model available: **YES**, separate networks for _gender_ and _age_.
-    - Last models update: Apr/Feb 2017
+
+- Source code: https://github.com/dpressel/rude-carnie
+- License: unspecified
+- Framework: `TensorFlow`
+- Input: RGB images `256x256x3`
+- Output:
+  - _gender_: two binary classes: Male and Female, choose maximum.
+  - _age_: 8 classes: [0..2], [4..6], [8..12], [15..20], [25..32], [38..43], [48..53], [60..100],
+    use softmax, choose maximum.
+- Model weights size: 
+  - _gender_: inception_v3 based model - **166 Mb**,
+  - _age_: inception_v3 based model - **166 Mb**.
+- Pre-trained model available: **YES**, separate networks for _gender_ and _age_.
+- Last models update: Apr/Feb 2017
+
 </details>
 
 8. [**Easy Real time gender age prediction from webcam video with Keras**](https://www.dlology.com/blog/easy-real-time-gender-age-prediction-from-webcam-video-with-keras/){:target="_blank"}
@@ -199,16 +209,18 @@ by Chengwei Zhang
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/Tony607/Keras_age_gender
-    - License: unspecified
-    - Framework: `Keras/TensorFlow`
-    - Input: RGB images `64x64x3`. Possibly, any size can be chosen.
-    - Output:
-      - _gender_: one number [0..1], where 1 means Female,
-      - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
-    - Model weights size: **186 Mb**.
-    - Pre-trained model available: **YES**
-    - Last model update: Jan 2018
+
+- Source code: https://github.com/Tony607/Keras_age_gender
+- License: unspecified
+- Framework: `Keras/TensorFlow`
+- Input: RGB images `64x64x3`. Possibly, any size can be chosen.
+- Output:
+  - _gender_: one number [0..1], where 1 means Female,
+  - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
+- Model weights size: **186 Mb**.
+- Pre-trained model available: **YES**
+- Last model update: Jan 2018
+
 </details>
 
 9. [**Age and Gender Estimation**](https://github.com/yu4u/age-gender-estimation){:target="_blank"}
@@ -216,16 +228,18 @@ by Yusuke Uchida
 
 <details>
 <summary>Details</summary>
-    - Source code: https://github.com/yu4u/age-gender-estimation
-    - License: `MIT`
-    - Framework: `Keras/TensorFlow`
-    - Input: RGB image of any size. Author used `32x32x3`
-    - Output:
-      - _gender_: one number [0..1], where 1 means Female,
-      - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
-    - Model weights size: **187 Mb**.
-    - Pre-trained model available: **YES**
-    - Last models update: Feb 2018
+
+- Source code: https://github.com/yu4u/age-gender-estimation
+- License: `MIT`
+- Framework: `Keras/TensorFlow`
+- Input: RGB image of any size. Author used `32x32x3`
+- Output:
+  - _gender_: one number [0..1], where 1 means Female,
+  - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
+- Model weights size: **187 Mb**.
+- Pre-trained model available: **YES**
+- Last models update: Feb 2018
+
 </details>
 
 10. [**Age and gender estimation based on Convolutional Neural Network and TensorFlow**](https://github.com/BoyuanJiang/Age-Gender-Estimate-TF){:target="_blank"}
@@ -233,16 +247,18 @@ by Boyuan Jiang
 
 <details>
 <summary>Details</summary>
-     - Source code: https://github.com/BoyuanJiang/Age-Gender-Estimate-TF
-     - License: `MIT`
-     - Framework: `TensorFlow`
-     - Input: RGB image `160x160x3`
-     - Output:
-       - _gender_: one number, 0 = Female, 1 = Male.
-       - _age_: one number
-     - Model weights size: **246.5 Mb**.
-     - Pre-trained model available: **YES**
-     - Last models update: Nov 2017
+
+- Source code: https://github.com/BoyuanJiang/Age-Gender-Estimate-TF
+- License: `MIT`
+- Framework: `TensorFlow`
+- Input: RGB image `160x160x3`
+- Output:
+  - _gender_: one number, 0 = Female, 1 = Male.
+  - _age_: one number
+- Model weights size: **246.5 Mb**.
+- Pre-trained model available: **YES**
+- Last models update: Nov 2017
+
 </details>
 
 11. [**Apparent Age and Gender Prediction in Keras**](https://sefiks.com/2019/02/13/apparent-age-and-gender-prediction-in-keras/){:target="_blank"}
@@ -250,19 +266,21 @@ by Sefik Ilkin Serengil
 
 <details>
 <summary>Details</summary>
-     - Source code: https://github.com/serengil/tensorflow-101/blob/master/python/age-gender-prediction-real-time.py
-       and also https://github.com/serengil/tensorflow-101/blob/master/python/gender_prediction.ipynb
-     - License: unspecified
-     - Framework: `Keras/TensorFlow`
-     - Input: RGB image `224x224x3`
-     - Output:
-       - _gender_: one number, 0 = Woman, 1 = Man
-       - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
-     - Model weights size:
-       - _gender_: **553 Mb**
-       - _age_: **514 Mb**
-     - Pre-trained model available: **YES**, separate models for _gender_ and _age_
-     - Last models update: Nov 2017
+
+- Source code: https://github.com/serengil/tensorflow-101/blob/master/python/age-gender-prediction-real-time.py
+  and also https://github.com/serengil/tensorflow-101/blob/master/python/gender_prediction.ipynb
+- License: unspecified
+- Framework: `Keras/TensorFlow`
+- Input: RGB image `224x224x3`
+- Output:
+  - _gender_: one number, 0 = Woman, 1 = Man
+  - _age_: vector of 101 classes probabilities for ages [0..100], choose maximum or use weighted sum
+- Model weights size:
+  - _gender_: **553 Mb**
+  - _age_: **514 Mb**
+- Pre-trained model available: **YES**, separate models for _gender_ and _age_
+- Last models update: Nov 2017
+
 </details>
 
 12. [**Multi output neural network in Keras (Age, gender and race classification)**](https://sanjayasubedi.com.np/deeplearning/multioutput-keras/){:target="_blank"}
@@ -270,16 +288,18 @@ by Sanjaya Subedi
 
 <details>
 <summary>Details</summary>
-     - Source code: https://github.com/jangedoo/age-gender-race-prediction
-     - License: unspecified
-     - Framework: `Keras/TensorFlow`
-     - Input: RGB image `198x198x3`
-     - Output:
-       - _gender_: one number, 0 = Male, 1 = Female
-       - _age_: one number
-       - _race_: vector of 5 classes: ['White', 'Black', 'Asian', 'Indian', 'Others']
-     - Model weights size: unknown
-     - Pre-trained model available: **NO**
+
+- Source code: https://github.com/jangedoo/age-gender-race-prediction
+- License: unspecified
+- Framework: `Keras/TensorFlow`
+- Input: RGB image `198x198x3`
+- Output:
+  - _gender_: one number, 0 = Male, 1 = Female
+  - _age_: one number
+  - _race_: vector of 5 classes: ['White', 'Black', 'Asian', 'Indian', 'Others']
+- Model weights size: unknown
+- Pre-trained model available: **NO**
+
 </details>
 
 ### Summary table
