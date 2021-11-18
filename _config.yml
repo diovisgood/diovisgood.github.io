@@ -112,6 +112,9 @@ author:
   location         : "Galaxy Milky Way"
   email            : "pavel.b.chernov@gmail.com"
   links:
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf-o"
+      url: "/assets/cv.pdf"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:pavel.b.chernov@gmail.com"
