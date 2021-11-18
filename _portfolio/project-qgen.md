@@ -1,6 +1,6 @@
 ---
 date: 2019-05-29
-title: "QGEN Project - Competing Genetic Algorithm"
+title: "QGEN Project"
 excerpt: "This is a project I made trying new approach to find profitable trading strategies. I could not beat the market, but developed Competing Genetic Algorithm that can be useful for many other problems!"
 categories: machine-learning
 tags: genetic-algorithm evolution lua
