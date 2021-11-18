@@ -63,7 +63,8 @@ Hence, it is a **Multi-Label Classification** problem.
 
 The solution I ended up with is to use multiple CatBoostClassifier instances, one for each disease.
 
-More technical details can be found in this
-[post]({% post_url 2021-11-18-agrocode-contest %}).
+More technical details can be found in this post:
+
+[Read the Full Story]({% post_url 2021-11-18-agrocode-contest %}){: .btn .btn--info}
 
 [View Project on Github](https://github.com/diovisgood/agrocode/){: .btn .btn--primary target="_blank"}
