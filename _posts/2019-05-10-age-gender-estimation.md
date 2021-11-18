@@ -1,6 +1,6 @@
 ---
 date: 2019-05-10
-title: "Age and Gender Estimation"
+title: "Age and Gender Estimation Explained"
 excerpt: "This is a small demo project to try and test OpenCV library, implement on-the-fly face detection, age and gender estimation using pre-trained models."
 categories: machine-learning
 tags: detection haar face tensorflow opencv python
