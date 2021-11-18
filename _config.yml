@@ -137,7 +137,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "CV"
-      icon: "fa fa-file-pdf-o"
+      icon: "fab fa-fw fa-file-pdf"
       url: "/assets/cv.pdf"
 
 # Site Footer
@@ -168,7 +168,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
     - label: "CV"
-      icon: "fa fa-file-pdf-o"
+      icon: "fab fa-fw fa-file-pdf"
       url: "/assets/cv.pdf"
 
 
