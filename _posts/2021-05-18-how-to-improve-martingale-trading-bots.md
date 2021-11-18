@@ -184,7 +184,7 @@ The scenario for liquidation is the following:
 
 5. Your SHORT bots close their positions with profit.
    Now they have to randomly choose the direction for the next position.
-   About 50 of your remaining bots choose long, the other half chooses short again.
+   About 25 of your remaining bots choose long, the other 25 chooses short again.
    It means that now 75 of your bots are in long, and 25 are in short. 
 
 6. If news were really important the market continues to move downwards.
@@ -212,6 +212,16 @@ Does using the SURF mode help to avoid this scenario?
 
 No. In fact, it will happen even faster in the SURF mode.
 Because all bots will choose LONG mode immediately after SHORT, and get stuck in a downtrend market.
+
+What if you switch all your bots to the SHORT mode manually?
+
+This is not a good a solution, because:
+- You can not switch already opened positions.
+  And many of your bots are already stuck in LONG.
+- What if you manage to put half of your bots in SHORT mode,
+  but market will suddenly reverse? Now you got many bots stuck in SHORT positions.
+- This also means that your bot farm is no longer autonomous.
+  You have to manually *tune it* all the time.
 
 ## The Proposed Solution
 
@@ -245,7 +255,7 @@ Of course, not!
 
 Remember, this way of making money is neither safe, nor reliable.
 
-I have sent my idea to the **MyBotGarage** team.
+I have sent my idea to the **MyBotGarage** team in their Telegram channel.
 
 
 > **UPDATE FROM 2021-08-04** 
@@ -253,6 +263,6 @@ I have sent my idea to the **MyBotGarage** team.
 > *MyBotGarage* team announced that they will soon implement my idea:
 > ![](/assets/img/mybotgarage_new_hedge_mode.jpg)
 >
-> [https://t.me/mybotgarage/2753](https://t.me/mybotgarage/2753){: .btn .btn--primary target="_blank"}
+> [Link to the announcement in Telegram thread](https://t.me/mybotgarage/2753){: .btn .btn--primary target="_blank"}
 >
 > This is good news! Maybe, someday I will try martingale trading bots one more time :)
