@@ -139,7 +139,8 @@ And it gained perfect profits day by day.
 Until it was eventually liquidated.
 
 And this scenario repeated 2 or 3 times.
-They have live-streaming on twitch, so you can check it out.
+They have [live-streaming](https://www.twitch.tv/mybotgarage){: target="_blank"}
+on twitch, so you can check it out.
 
 Note: in most cases they managed to get enough profit and withdraw it from trading account
 before the liquidation happened.
