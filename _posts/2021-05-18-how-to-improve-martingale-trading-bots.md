@@ -205,7 +205,7 @@ The scenario for liquidation is the following:
     It means that all you 12 long bots got stuck, and 4 short bots get good profit:
     
     | L | L | L | L | L | L | L | L | L | L | L | L | S | S | S | S |
-    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:smile:|:smile:|:smile:|:smile:| 
     
 7.  When the profit of short bots reaches desired target, they close their positions.
@@ -217,7 +217,7 @@ The scenario for liquidation is the following:
     and only 2 of bots in short position.
     
     | L | L | L | L | L | L | L | L | L | L | L | L | L | L | S | S |
-    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:smile:|:smile:| 
     
 9.  After some time ALL your bots get stuck in the long position.
@@ -226,7 +226,7 @@ The scenario for liquidation is the following:
     Thus, reducing the free money on your account to cover the uncovered losses of your positions.
     
     | L | L | L | L | L | L | L | L | L | L | L | L | L | L | L | L |
-    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+    |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:| 
     
 10. Now everything is prepared for the liquidation of your whole account.
