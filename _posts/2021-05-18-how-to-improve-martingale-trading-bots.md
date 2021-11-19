@@ -170,25 +170,42 @@ and how to change the scheme to avoid it.
 
 The scenario for liquidation is the following:
 
-1. Imagine, you run 100 martingale bots, in RANDOM mode.
+1. Imagine, you run 16 martingale bots, in RANDOM mode.
    It means: each bot will choose its next direction randomly.
+   On average, you'll have 8 bots in LONG, and 8 bots in SHORT, all bots are doing fine:
+   
+   | L | L | L | L | L | L | L | L | S | S | S | S | S | S | S | S |
+   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+   |:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:| 
 
 2. This works just fine until some **important news** appear.
    After it the whole market moves rapidly up or down.
    Suppose, that it moves DOWN.
 
 3. Nearly half of your martingale bots were in LONG positions.
-   Now these bots **got stuck**.
+   Now these bots **got stuck**:
+
+   | L | L | L | L | L | L | L | L | S | S | S | S | S | S | S | S |
+   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+   |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:| 
 
 4. Other bots are in SHORT position, and they gained a some good profit,
    as whole market went down!
 
 5. Your SHORT bots close their positions with profit.
    Now they have to randomly choose the direction for the next position.
-   About 25 of your remaining bots choose long, the other 25 chooses short again.
-   It means that now 75 of your bots are in long, and 25 are in short. 
+   About 50% of your remaining bots choose long, the other 50% chooses short again.
+   It means that now 12 of your bots are in long, and 4 are in short: 
+
+   | L | L | L | L | L | L | L | L | L | L | L | L | S | S | S | S |
+   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+   |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:|:smile:| 
 
 6. If news were really important the market continues to move downwards.
+
+   | L | L | L | L | L | L | L | L | L | L | L | L | S | S | S | S |
+   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+   |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:smile:|:smile:|:smile:|:smile:| 
 
 7. It means that all you long bots got stuck, and short bots get good profit.
 
@@ -197,13 +214,21 @@ The scenario for liquidation is the following:
    A half of them will choose long, the other half will choose short.
 
 9. I hope, you grasped the idea.
-   Now you got nearly 87 of your bots stuck in the long position,
-   and only 13 of bots in short position.
+   Now you got 14 of 16 your bots stuck in the long position,
+   and only 2 of bots in short position.
+
+   | L | L | L | L | L | L | L | L | L | L | L | L | L | L | S | S |
+   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+   |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:smile:|:smile:| 
 
 10. After some time ALL your bots get stuck in the long position.
     It means, they will periodically increase their positions,
     by buying more assets, according to the Martingale strategy.
     Thus, reducing the free money on your account to cover the uncovered losses of your positions.
+
+   | L | L | L | L | L | L | L | L | L | L | L | L | L | L | L | L |
+   |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+   |:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:|:fearful:| 
 
 11. Now everything is prepared for the liquidation of your whole account.
     If price of some asset will suddenly drop down -
