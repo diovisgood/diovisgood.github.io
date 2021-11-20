@@ -532,4 +532,25 @@ If we evaluate proposed Blockchain Fair Bets according to the selected criteria,
 According to the criteria we have chosen, it receives score 5 for beginners and 4 for matures. 
 We can conclude that Blockchain Fair Bets is suited for both beginner and mature players.
 
-> **It would be great, if somebody could develop this idea and build a blockchain contract for it.**
+It would be great, if somebody could develop this idea and build a blockchain contract for it.
+
+> **UPDATE from 2021-11-20**
+> 
+> A discussion in the Wagerr's discord
+> [thread](https://discord.com/channels/365496580519886850/416378614872014848/908333983715188757){: target="_blank"}
+> revealed that [Wagerr](https://wagerr.com/){: target="_blank"} invented a decent alternative to pool bets -
+> the **Peerless Direct Chain Betting**.
+> 
+> It is when some Oracle (the "House"), updates odds in real-time during a match,
+> so when you decide to make your bet, you can only accept the specified odds
+> and place a bet into the wagerr's blockchain.
+> 
+> This way no player can use the latest information to capture the most revenue.
+> Because the "House" uses the same latest information and updates the odds in real-time.
+> 
+> You can read more info in this
+> [article](https://medium.com/coin-hunter/wagerr-a-punt-on-value-coupling-8f330dd38d36){: target="_blank"}.
+> 
+> I think this is a good alternative to the Pool Bets.
+> Though, the **commissions** in this scheme would still **be higher**,
+> as the "House" itself takes some part of the profit.
