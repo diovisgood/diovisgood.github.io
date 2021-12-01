@@ -47,6 +47,10 @@ Graduated: June 2002
   accomplished Oct 2020,
   [certificate](/assets/img/cert_coursera_epfl_interest_rate_models_BP9PTHR3RNYY.png)
 
+- **Trading Strategies**<br/>
+  accomplished Dec 2021,
+  [certificate](/assets/img/cert_coursera_isb_trading_strategies_QELZETFW6CF2.png)
+
 ## Additional education
 
 Technology for Effective Personnel Management, interactive course
