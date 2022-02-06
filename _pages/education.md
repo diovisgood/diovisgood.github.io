@@ -51,6 +51,22 @@ Graduated: June 2002
   accomplished Dec 2021,
   [certificate](/assets/img/cert_coursera_isb_trading_strategies_QELZETFW6CF2.png)
 
+- **Natural Language Processing with Classification and Vector Spaces**<br/>
+  accomplished Jan 2022,
+  [certificate](/assets/img/cert_coursera_deeplearning_nlp_1_QJ4CN52QMAVZ.png)
+
+- **Natural Language Processing with Probabilistic Models**<br/>
+  accomplished Jan 2022,
+  [certificate](/assets/img/cert_coursera_deeplearning_nlp_2_W5WRVWALMZP9.png)
+
+- **Natural Language Processing with Sequence Models**<br/>
+  accomplished Jan 2022,
+  [certificate](/assets/img/cert_coursera_deeplearning_nlp_3_LTLJ9H7FNE9F.png)
+
+- **Natural Language Processing with Attention Models**<br/>
+  accomplished Feb 2022,
+  [certificate](/assets/img/cert_coursera_deeplearning_nlp_3_LTLJ9H7FNE9F.png)
+
 ## Additional education
 
 Technology for Effective Personnel Management, interactive course
