@@ -65,7 +65,7 @@ Graduated: June 2002
 
 - **Natural Language Processing with Attention Models**<br/>
   accomplished Feb 2022,
-  [certificate](/assets/img/cert_coursera_deeplearning_nlp_3_LTLJ9H7FNE9F.png)
+  [certificate](/assets/img/cert_coursera_deeplearning_nlp_4_J3JQYB4QN6GZ.png)
 
 ## Additional education
 
