@@ -67,6 +67,11 @@ Graduated: June 2002
   accomplished Feb 2022,
   [certificate](/assets/img/cert_coursera_deeplearning_nlp_4_J3JQYB4QN6GZ.png)
 
+- **Build Basic Generative Adversarial Networks (GANs)**<br/>
+  accomplished Feb 2022,
+  [certificate](/assets/img/cert_сoursera_deeplearning_gan_1_UM33PPGNEGHW.png)
+
+
 ## Additional education
 
 Technology for Effective Personnel Management, interactive course
