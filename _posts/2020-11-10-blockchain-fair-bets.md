@@ -418,7 +418,7 @@ For example, here is how the revenue is computed for John:
 
 #### Softmax Normalization
 
-I believe, it would be better to use the [softmax](https://en.wikipedia.org/wiki/Softmax_function)
+I believe, it would be better to use the [softmax](https://en.wikipedia.org/wiki/Softmax_function){:target="_blank"}
 function, or any of its variations.
 
 For softmax we first need to compute the: ``Exp(k * coefficient)`` for each coefficient in the table.

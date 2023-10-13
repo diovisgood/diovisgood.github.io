@@ -49,7 +49,7 @@ pre-trained model availability, etc.
 
 Here is what I've found for the topic:
 
-1. [**Age and Gender Classification using MobileNets**](https://medium.com/ymedialabs-innovation/estimating-age-and-gender-with-mobilenets-13eaee1e819c)
+1. [**Age and Gender Classification using MobileNets**](https://medium.com/ymedialabs-innovation/estimating-age-and-gender-with-mobilenets-13eaee1e819c){:target="_blank"}
 by Kinar Ravishankar.
 
 <details>
@@ -73,7 +73,7 @@ by Kinar Ravishankar.
 
 </details>
 
-2. [**How to build an age and gender multi-task predictor with deep learning in TensorFlow**](https://medium.freecodecamp.org/how-to-build-an-age-and-gender-multi-task-predictor-with-deep-learning-in-tensorflow-20c28a1bd447)
+2. [**How to build an age and gender multi-task predictor with deep learning in TensorFlow**](https://medium.freecodecamp.org/how-to-build-an-age-and-gender-multi-task-predictor-with-deep-learning-in-tensorflow-20c28a1bd447){:target="_blank"}
 by Cole Murray
 
 <details>
@@ -120,7 +120,7 @@ by Youness Mansar
 
 </details>
 
-4. [**SSR-Net: A Compact Soft Stagewise Regression Network for Age Estimation**](https://github.com/shamangary/SSR-Net/blob/master/ijcai18_ssrnet_pdfa_2b.pdf)
+4. [**SSR-Net: A Compact Soft Stagewise Regression Network for Age Estimation**](https://github.com/shamangary/SSR-Net/blob/master/ijcai18_ssrnet_pdfa_2b.pdf){:target="_blank"}
 by Tsun-Yi Yang, Yi-Hsuan Huang, Yen-Yu Lin, Pi-Cheng Hsiu, Yung-Yu Chuang.
 
 <details>
