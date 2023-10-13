@@ -8,7 +8,7 @@ tags: ads
 
 ## Introduction
 
-Some time ago I have completed an interesting [project](/_portfolio/indata-webpages-semantic-analysis.md)
+Some time ago I have completed an interesting [project]({% link _portfolio/indata-webpages-semantic-analysis.md %})
 in the online ads industry.
 My role was: a Data Scientist, then a Team Lead and System Architect.
 

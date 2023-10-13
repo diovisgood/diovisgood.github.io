@@ -22,7 +22,7 @@ RTS Munity analyzes the gameplay and gives the chances (probabilities)
 of winning a particular team in real time. 
 
 I created a real-time OCR reader of different values of teams and players
-on video streams of [**League of Legends**](https://www.leagueoflegends.com/) game.
+on video streams of [**League of Legends**](https://www.leagueoflegends.com/){:target="_blank"} game.
 
 ## Challenges
 
