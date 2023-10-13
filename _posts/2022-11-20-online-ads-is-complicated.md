@@ -42,8 +42,8 @@ the mechanics for displaying an advertisement is the same.
 It often happens so, that a website owner may decide to monetize his website traffic.
 Especially when content there is useful and website is popular.
 
-To do this, the website owner enters into a deal with some online advertising platform and becomes a *Publisher*.
-The platform is called - *Supply-Side Platform* (SSP), because it provides: "places to show ads".
+To do this, the website owner enters into a deal with some online advertising platform and becomes a **Publisher**.
+The platform is called - **Supply-Side Platform (SSP)**, because it provides: "places to show ads".
 
 Back to our user. First, a browser loads the webpage - a HTML document.
 Then it starts to load all the other content, such as: scripts, fonts, images.
@@ -66,7 +66,7 @@ One important note here:
 Before opening an auction, the SSP collects as much information about you,
 as possible, taking into account the time limits for an auction.
 
-Often this is performed with the help of another party: the Data Management Platform (DMP).
+Often this is performed with the help of another party: the **Data Management Platform (DMP)**.
 These are companies, which collect or, sometimes, buy information about you.
 This may include:
 - your visits to a certain webpages, which have their trackers installed;
@@ -80,7 +80,8 @@ It is compiled into a packet and sent to the auction.
 
 ![ssp starts auction](/assets/img/online-ads-2.png)
 
-For obvious reason, this auction lasts just a fraction of a second.
+For obvious reason, this auction lasts just a fraction of a second (100...200ms).
+It is called: **Real-Time Bidding (RTB)**. 
 There are millions of auctions being held in each second.
 That is why only the fastest computers can participate in it.
 Moreover, as a rule, these computers must be located in the same data center
@@ -203,14 +204,14 @@ This scheme has been working for decades. But now the situation is changing...
 
 In August 2019 Google announced the
 ["privacy sandbox"](https://www.blog.google/products/chrome/building-a-more-private-web){:target="_blank"} initiative,
-with was about to restrict third-party cookies.
+which was about to restrict third-party cookies.
 This announcement was made due to the trend for privacy,
 earlier supported by Apple Safari [in 2020](https://www.theverge.com/2020/3/24/21192830/apple-safari-intelligent-tracking-privacy-full-third-party-cookie-blocking){:target="_blank"}
 and [Mozilla Firefox](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection?redirectslug=disable-third-party-cookies&redirectlocale=en-US){:target="_blank"}.
 Yet, Google Chrome occupies the major stake of the browser market, that is why its actions are more important,
 than those of its rivals.
 
-As a substitute Google offered: *Federated Learning of Cohorts* (FLoC).
+As a substitute Google offered: **Federated Learning of Cohorts (FLoC)**.
 Let me quote from a [source](https://devops.com/google-floc-is-dead-meta-ai-supercomputer-lives-arm-deal-is-dead/){:target="_blank"}: 
 
 > FLoC lets advertisers use behavioral targeting without cookies.
@@ -221,7 +222,7 @@ Let me quote from a [source](https://devops.com/google-floc-is-dead-meta-ai-supe
 > a cohort share without being able to identify individuals within that cohort,
 > because each person’s browser is given an anonymized ID.
 
-But in January 2022 Google abandoned FLoC and proposed another idea: *Topics*.
+But in January 2022 Google abandoned FLoC and proposed another idea: **Topics**.
 Quote from an [article](https://devops.com/google-floc-is-dead-meta-ai-supercomputer-lives-arm-deal-is-dead/){:target="_blank"}:
 
 > Your browser will learn about your interests as you move around the web.
@@ -242,7 +243,7 @@ it will start "experiments to deprecate third-party cookies for one percent of C
 *Stay tuned* and keep the track of events here: [www.privacysandbox.com](https://www.privacysandbox.com/intl/en_us/){:target="_blank"}
 
 Despite the long history of third-party cookies and its importance for online ads,
-I believe, this functionality will be prohibited sooner or later.
+I believe, this functionality will be prohibited in Google Chrome sooner or later.
 
 ### What is the Future of Online Ads Industry?
 
