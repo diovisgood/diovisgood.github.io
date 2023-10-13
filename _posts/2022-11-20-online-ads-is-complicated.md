@@ -208,8 +208,7 @@ which was about to restrict third-party cookies.
 This announcement was made due to the trend for privacy,
 earlier supported by Apple Safari [in 2020](https://www.theverge.com/2020/3/24/21192830/apple-safari-intelligent-tracking-privacy-full-third-party-cookie-blocking){:target="_blank"}
 and [Mozilla Firefox](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection?redirectslug=disable-third-party-cookies&redirectlocale=en-US){:target="_blank"}.
-Yet, Google Chrome occupies the major stake of the browser market, that is why its actions are more important,
-than those of its rivals.
+Yet, Google Chrome is the most popular browser, that is why its policy influences the market significantly.
 
 As a substitute Google offered: **Federated Learning of Cohorts (FLoC)**.
 Let me quote from a [source](https://devops.com/google-floc-is-dead-meta-ai-supercomputer-lives-arm-deal-is-dead/){:target="_blank"}: 
