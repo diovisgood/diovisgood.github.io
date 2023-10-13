@@ -244,19 +244,46 @@ I believe, this functionality will be prohibited sooner or later.
 
 ### What is the Future of Online Ads Industry?
 
-- probabilistic identifiers
-- monopolies
+For now, I see the following possible outcomes:
+- probabilistic identifiers prove their efficiency and are massively adopted by industry,
+- parties concur and create some industry standard of how to store and share information about a user,
+- the worst scenario: a few monopolies are sharing the whole market, which drives the prices up. 
 
-Probabilistic identifiers, an example: [id5](https://wiki.id5.io/){:target="_blank"}.
+#### Probabilistic identifiers
 
-Monopolies
+An example: [id5](https://wiki.id5.io/){:target="_blank"}.
+
+They try to identify a particular user by analysing some sparce available information:
+- IP address,
+- browser/device fingerprint,
+- login information, if provided by a website (not all websites require login),
+- etc.
+
+Probabilistic identifiers assign some long unique identifier to each user. Example:
+
+```ID5*9L-LURfnuiHBtUH21KR1sE4PESzdsavUEHaDx-oPW5oc4tAFJtNcehD92RkenqN2```
+
+They claim they can recognize this user even when he is using another device or connects from another network.
+But from my own experience of processing a large amounts of data,
+this is not always true.
+
+#### Common Industry Standard
+
+This is the preferred scenario, when all industry parties come to an agreement on how to
+collect, store and share information about a user and its interests.
+
+Probably, a browser is the best place to store such information.
+If it gives a user the right to control this information.
+
+#### Monopolization
+
+This is the worst scenario, when the whole market is owned by large companies like:
+Google, Apple, Facebook, Microsoft, etc.
+
+This will surely lead to the increase of costs for a regular Advertiser and, probably, decrease of quality.
 
 ## Conclusion
 
 I believe, the industry will adapt to changes and find a solution of how
 to let advertisement find a way to those people which may be interested in it.
-
-Because we all will benefit from it:
-- Users prefer to get only relevant ad. Nobody likes to see irrelevant banners!
-- Advertisers want to spend their budget efficiently, displaying their ads to only those people,
-  that might be interested in their goods or services.
+Because we all will benefit from it!
