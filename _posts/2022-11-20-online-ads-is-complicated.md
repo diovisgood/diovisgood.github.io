@@ -8,7 +8,8 @@ tags: ads
 
 ## Introduction
 
-Some time ago I have completed an interesting project in the online ads industry.
+Some time ago I have completed an interesting [project](/_portfolio/indata-webpages-semantic-analysis.md)
+in the online ads industry.
 My role was: a Data Scientist, then a Team Lead and System Architect.
 
 This was a completely new world for me.
@@ -130,18 +131,71 @@ And if the user clicked it - what did he do on the Advertiser's webpage?
 This way the Advertiser may compute the statistics of how his campaign is going.
 Advertisers do often correct their campaigns on the fly.
 
-### Tracking as the Foundation for Online Ads
+### Third-Party Cookies as the Foundation for Online Ads
 
-TODO
+An important thing in the process described above is the ability of
+parties to recognize a user and its interests.
 
 ### The Ongoing Change in the Industry
 
-TODO
+In August 2019 Google announced the
+["privacy sandbox"](https://www.blog.google/products/chrome/building-a-more-private-web) initiative,
+with was about to restrict third-party cookies.
+This announcement was made due to the trend for privacy,
+supported by Apple Safari [in 2020](https://www.theverge.com/2020/3/24/21192830/apple-safari-intelligent-tracking-privacy-full-third-party-cookie-blocking)
+and [Mozilla Firefox](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection?redirectslug=disable-third-party-cookies&redirectlocale=en-US).
+Yet, Google Chrome occupies the major stake of the browser market, that is why its actions are more important,
+than those of its rivals.
+
+As a substitute Google offered: *Federated Learning of Cohorts* (FLoC).
+Let me quote from a [source](https://devops.com/google-floc-is-dead-meta-ai-supercomputer-lives-arm-deal-is-dead/): 
+
+> FLoC lets advertisers use behavioral targeting without cookies.
+> It runs in Google’s Chrome browser and tracks a user’s online behavior.
+> Then, it assigns that browser history an identifier and adds it to a group
+> of other browsers with similar behaviors called a “cohort.”
+> Supposedly, advertisers would be able to see the behaviors that people in
+> a cohort share without being able to identify individuals within that cohort,
+> because each person’s browser is given an anonymized ID.
+
+But in January 2022 Google abandoned FLoC and proposed another idea: *Topics*.
+Quote from an [article](https://devops.com/google-floc-is-dead-meta-ai-supercomputer-lives-arm-deal-is-dead/):
+
+> Your browser will learn about your interests as you move around the web.
+> … When you hit upon a site that supports the Topics API for ad purposes,
+> the browser will share three topics you are interested in.
+> … The site can then share this with its advertising partners to decide which ads to show you.
+> … Users will be able to review and remove topics from their lists [or] turn off the entire Topics API.
+> … FLoC was doing unsupervised clustering of users, whereas Topics allocates users into predetermined clusters.
+> This makes it potentially more transparent and also seems designed
+> to work around the “protected categories” objection.
+
+Yet, on July 27, 2022, Google [postponed](https://blog.google/products/chrome/update-testing-privacy-sandbox-web/)
+the restriction of third-party cookies.
+
+On May 18, 2023, Google [announced](https://privacysandbox.com/news/the-next-stages-of-privacy-sandbox-general-availability)
+it will start "experiments to deprecate third-party cookies for one percent of Chrome users in Q1 of 2024".
+
+Stay tuned and keep the track of event here: https://www.privacysandbox.com/intl/en_us/
+
+Despite the long history of third-party cookies and its importance for online ads,
+I believe, this functionality will be prohibited sooner or later.
 
 ### What is the Future of Online Ads Industry?
 
-TODO
+- probabilistic identifiers
+- monopolies
+
+Probabilistic identifiers, an example: [id5](https://wiki.id5.io/).
+
+Monopolies
 
 ## Conclusion
 
-TODO
+I believe, the industry will adapt to changes and find a solution of how
+to let advertisement find a way to those people which may be interested in it.
+
+Because we all will benefit from it:
+- Users prefer to get only relevant ad. Nobody likes to see irrelevant banners!
+- Advertisers want to spend their budget efficiently, displaying their ads to only those people,
+  that might be interested in their goods or services.

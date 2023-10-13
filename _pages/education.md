@@ -5,7 +5,7 @@ permalink: /education/
 
 ## Base education
 
-Master of Computer Science in South Ural State University, Chelyabinsk, Russia.
+Master of Computer Science (with honors) in South Ural State University, Russia.
 GPA: 4.85 out of 5 (Note: the larger - the better).
 Graduated: June 2002
 
@@ -70,6 +70,14 @@ Graduated: June 2002
 - **Build Basic Generative Adversarial Networks (GANs)**<br/>
   accomplished Feb 2022,
   [certificate](/assets/img/cert_сoursera_deeplearning_gan_1_UM33PPGNEGHW.png)
+
+- **AWS Cloud Quest: Cloud Practitioner**<br/>
+  accomplished Dec 2022,
+  [certificate](https://www.credly.com/badges/c1708f1d-ea07-4c9b-bad4-9a37be1c8a2c/linked_in_profile)
+
+- **AWS Certified Cloud Practitioner**<br/>
+  accomplished Feb 2023,
+  [certificate](https://www.credly.com/badges/fb6fcc6a-c715-4b44-9e18-77a8bbafdaad/public_url)
 
 
 ## Additional education
