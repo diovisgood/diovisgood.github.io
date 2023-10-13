@@ -34,6 +34,10 @@ So lets dive in.
 ### A User Opens a Webpage...
 
 Imagine, a user opens a webpage in a browser.
+You can change it to: "a user launches a game on a smartphone" -
+the mechanics for displaying an advertisement is the same.
+
+> Disclaimer: the mechanics for YouTube advertisement is different.
 
 It often happens so, that a website owner may decide to monetize his website traffic.
 Especially when content there is useful and website is popular.
@@ -46,7 +50,7 @@ Then it starts to load all the other content, such as: scripts, fonts, images.
 
 One of the parts of a webpage is a special placeholder for an ad - a frame,
 which is to be loaded from the SSP.
-That is why at this point the browser connects to the SSP and ask it for the frame.
+That is why at this point the browser connects to the SSP and asks it for the frame.
 
 ![user opens webpage](/assets/img/online-ads-1.png)
 
@@ -131,10 +135,67 @@ And if the user clicked it - what did he do on the Advertiser's webpage?
 This way the Advertiser may compute the statistics of how his campaign is going.
 Advertisers do often correct their campaigns on the fly.
 
-### Third-Party Cookies as the Foundation for Online Ads
+### Recognizing User and its Interests
 
 An important thing in the process described above is the ability of
 parties to recognize a user and its interests.
+Without this Advertisers would waste their budget showing irrelevant advertisement to some random users.
+Typically, the Data Management Platform (DMP) is doing this.
+
+Recognizing a user can be difficult because of the following reasons:
+- Internet providers often pass user's request through a NAT gateway.
+  This allows to use a single IP for multiple users.
+  Which is good for providers which experience the lack of IPv4 addresses nowadays.
+- A user can access Internet through multiple devices:
+  PC, mobile phone, tablet, home assistant, multimedia in car, etc.
+- Family members with completely different interests can access Internet through the same devices.
+
+![multiple users share the same IP](/assets/img/online-ads-6.png)
+
+Recognizing users interests is even harder.
+Imagine, you were browsing Internet and spent some time reading an article about a new car model.
+Does this mean you are interested in this product?
+Should a car selling company spend their budget showing you their advertisement?
+
+Yet, a lot of companies try to do this. Here are some examples:
+- When you search for some goods or services your search engine keeps that in mind.
+- When you speak near your smartphone or home assistant they are eager to hear some keywords
+  of products or services you might be interested in.
+- When you watch video on a streaming platform like YouTube or TikTok,
+  they all pay attention to what videos you watched and liked.
+- When you read some webpages about goods or services,
+  trackers on these websites save this information for the latter usage.
+
+Another problem is that this information about a user is being collected by competing parties,
+which do not want to share it with an arbitrary Advertiser for free:
+- Google (Search Engine, YouTube, Chrome, Android, Assistant, ...) knows a lot about your interests.
+  An Advertiser can use it only if it pays to Google Ads.
+- Facebook knows a lot about you. As an Advertiser you can use it, but only on the Facebook.
+- Apple knows a lot about you. Of course, it does not share this information with others.
+- etc.
+
+No single platform has all the information about a user and its interests.
+
+> An Advertiser often has to run multiple campaigns on different platforms,
+> as they all provide some different audience targeting services.
+> This is not very efficient for the Advertiser's budget,
+> as a single user can receive the same advertisement
+> multiple times through different channels.
+
+
+### Third-Party Cookies as the Foundation for Online Ads
+
+The solution to these problems is the [**Third-Party Cookies**](https://en.wikipedia.org/wiki/HTTP_cookie){:target="_blank"}.
+Following is just a short description of how they work.
+
+Many webpages often contain some small scripts: **Trackers**.
+When a user loads such webpage, this script saves the information about a date and time of visit to a certain webpage
+in a browser's local storage.
+
+Later, when the user opens another webpage, and this webpage wants to show some advertisement to this user,
+this collected information is being sent to the SSP, which can now identify the user and its interests.
+
+This scheme has been working for decades. But now the situation is changing...
 
 ### The Ongoing Change in the Industry
 
@@ -142,7 +203,7 @@ In August 2019 Google announced the
 ["privacy sandbox"](https://www.blog.google/products/chrome/building-a-more-private-web){:target="_blank"} initiative,
 with was about to restrict third-party cookies.
 This announcement was made due to the trend for privacy,
-supported by Apple Safari [in 2020](https://www.theverge.com/2020/3/24/21192830/apple-safari-intelligent-tracking-privacy-full-third-party-cookie-blocking){:target="_blank"}
+earlier supported by Apple Safari [in 2020](https://www.theverge.com/2020/3/24/21192830/apple-safari-intelligent-tracking-privacy-full-third-party-cookie-blocking){:target="_blank"}
 and [Mozilla Firefox](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection?redirectslug=disable-third-party-cookies&redirectlocale=en-US){:target="_blank"}.
 Yet, Google Chrome occupies the major stake of the browser market, that is why its actions are more important,
 than those of its rivals.
@@ -176,7 +237,7 @@ the restriction of third-party cookies.
 On May 18, 2023, Google [announced](https://privacysandbox.com/news/the-next-stages-of-privacy-sandbox-general-availability){:target="_blank"}
 it will start "experiments to deprecate third-party cookies for one percent of Chrome users in Q1 of 2024".
 
-Stay tuned and keep the track of event here: [www.privacysandbox.com](https://www.privacysandbox.com/intl/en_us/){:target="_blank"}
+*Stay tuned* and keep the track of events here: [www.privacysandbox.com](https://www.privacysandbox.com/intl/en_us/){:target="_blank"}
 
 Despite the long history of third-party cookies and its importance for online ads,
 I believe, this functionality will be prohibited sooner or later.
