@@ -197,7 +197,9 @@ this collected information is being sent to the SSP, which can now identify the 
 
 This scheme has been working for decades. But now the situation is changing...
 
-### The Ongoing Change in the Industry
+## The Ongoing Change in the Industry
+
+### Third-Party Cookies are Being Forbidden
 
 In August 2019 Google announced the
 ["privacy sandbox"](https://www.blog.google/products/chrome/building-a-more-private-web){:target="_blank"} initiative,
@@ -269,18 +271,18 @@ this is not always true.
 
 #### Common Industry Standard
 
-This is the preferred scenario, when all industry parties come to an agreement on how to
+This is the preferred scenario, when all parties in industry come to an agreement on how to
 collect, store and share information about a user and its interests.
 
 Probably, a browser is the best place to store such information.
-If it gives a user the right to control this information.
+Yet it must give a user the right to control this function.
 
 #### Monopolization
 
 This is the worst scenario, when the whole market is owned by large companies like:
 Google, Apple, Facebook, Microsoft, etc.
 
-This will surely lead to the increase of costs for a regular Advertiser and, probably, decrease of quality.
+This will surely lead to the increase of costs and decrease of quality for a regular Advertiser.
 
 ## Conclusion
 
