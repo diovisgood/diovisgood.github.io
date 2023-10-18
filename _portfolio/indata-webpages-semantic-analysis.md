@@ -15,27 +15,31 @@ sidebar:
     text: "Researching the best way to analyze a webpage, designing whole system architecture, writing big data processing pipeline, deploying system on AWS"
 ---
 
-In the industry of online ads agents need to quickly decide what ads to display on a particular webpage
+In the industry of online ads agents need to quickly decide which ads to display on a particular webpage
 for a particular user, taking into account the content of a webpage and user interests.
 
-We have completed an interesting project for a developing company
+Some time ago we have completed a challenging project for a fast-growing company
 which is exploring new ways to target an audience.
 NDA forbids me to reveal any details.
-But one thing I can tell is that estimating a user's interests
-is the most essential task where a lot of efforts are concentrated in this industry.
+But one thing I can say with confidence is that the most critical objective in this industry
+is accurately determining a user's interests,
+and a significant amount of efforts is concentrated to achieving this.
 
 First I solely implemented and proved the idea during the PoC phase.
 Then, during the second phase me and a team of other engineers created MVP.
 I researched different approaches for web-scraping and semantic analysis,
 investigated the feasibility of small response timings.
 
-The challenge was to deploy this system on the AWS cloud platform.
+The challenge was to deploy this system on the AWS cloud platform,
+as there are many ways to do this,
+so you need to choose wisely to reach a balance between an optimal cost and performance.
+
 I designed the loosely coupled architecture of the whole system and implemented
-a part of it related to the processing of large amount of data.
+a crucial part of it related to the stream processing of large amounts of data.
 Also, I deployed our models in AWS SageMaker.
 
-This project involved many aspects:
-- data retrieving and preprocessing from variety of open sources
+This project involved multiple aspects:
+- data retrieving and preprocessing from variety of public sources
 - solution for web-scraping and text extraction from HTML
 - solution to detect if a particular webpage has ads on it or not
 - verifying different approaches to compute text embeddings: Zero-Shot Classification and Sentence Transformers
