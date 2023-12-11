@@ -14,7 +14,7 @@ My role was: a Data Scientist, then a Team Lead and System Architect.
 
 This was a completely new world for me.
 This established industry has some specializations and definitions for each of the parties involved.  
-Now it is undergoing a tektonik shift, that may change it dramatically.
+Now it is undergoing a tectonic shift, that may change it dramatically.
 But more on that later.
 
 Please treat this essay not as a comprehensive guide,
@@ -49,7 +49,7 @@ Back to our user. First, a browser loads the webpage - a HTML document.
 Then it starts to load all the other content, such as: scripts, fonts, images.
 
 One of the parts of a webpage is a special placeholder for an ad - a frame,
-which is to be loaded from the SSP.
+which is to be loaded from the **SSP**.
 That is why at this point the browser connects to the SSP and asks it for the frame.
 
 ![user opens webpage](/assets/img/online-ads-1.png)
@@ -63,7 +63,7 @@ Instead, it initiates an auction **for the right to display an advertisement to 
 > but also pays all intermediate parties from his budget for this.
 
 One important note here: 
-Before opening an auction, the SSP collects as much information about you,
+Before opening an auction, the **SSP** collects as much information about you,
 as possible, taking into account the time limits for an auction.
 
 Often this is performed with the help of another party: the **Data Management Platform (DMP)**.
@@ -111,37 +111,37 @@ There could be different kinds of criteria:
 > The interests of a user is the hardest thing to estimate.
 > And this is where the most efforts of industry are concentrated.
 
-Another important thing which Advertiser specifies is the overall budget
+Another important thing which **Advertiser** specifies is the overall budget
 which will be spent on a campaign.
-Advertiser can set a limit for how much money to bid for each display of an advertisement.
+**Advertiser** can set a limit for how much money to bid for each display of an advertisement.
 
 Each event when advertisement is displayed to an end user is called: **Impression**.
-The more you are ready to pay for each Impression - the faster you spend your budget.
+The more you are ready to pay for each **Impression** - the faster you spend your budget.
 
 ![dsp which won sends creative to ssp](/assets/img/online-ads-4.png)
 
-Once all interested DSPs have submitted their bids to the auction server,
+Once all interested **DSPs** have submitted their bids to the auction server,
 the auction ends and the winner is determined.
 Its Creative is then sent back to the end user.
 
 ![creative is displayed to the user](/assets/img/online-ads-5.png)
 
-Finally, the advertisement (Creative) is displayed to the user, but the story does not end.
+Finally, the advertisement (**Creative**) is displayed to the user, but the story does not end.
 Because user's reaction to this Impression is also being tracked.
 
 For how long have the user been observing an advertisement?
 Did the user click it or not?
-And if the user clicked it - what did he do on the Advertiser's webpage?
+And if the user clicked it - what did he do on the **Advertiser's** webpage?
 
-This way the Advertiser may compute the statistics of how his campaign is going.
+This way the **Advertiser** may compute the statistics of how his campaign is going.
 Advertisers do often correct their campaigns on the fly.
 
 ### Recognizing User and its Interests
 
 An important thing in the process described above is the ability of
 parties to recognize a user and its interests.
-Without this Advertisers would waste their budget showing irrelevant advertisement to some random users.
-Typically, the Data Management Platform (DMP) is doing this.
+Without this **Advertisers** would waste their budget showing irrelevant advertisement to some random users.
+Typically, the **Data Management Platform (DMP)** is doing this.
 
 Recognizing a user can be difficult because of the following reasons:
 - Internet providers often pass user's request through a NAT gateway.
@@ -168,7 +168,7 @@ Yet, a lot of companies try to do this. Here are some examples:
   trackers on these websites save this information for the latter usage.
 
 Another problem is that this information about a user is being collected by competing parties,
-which do not want to share it with an arbitrary Advertiser for free:
+which do not want to share it with an arbitrary **Advertiser** for free:
 - Google (Search Engine, YouTube, Chrome, Android, Assistant, ...) knows a lot about your interests.
   An Advertiser can use it only if it pays to Google Ads.
 - Facebook knows a lot about you. As an Advertiser you can use it, but only on the Facebook.
@@ -194,7 +194,7 @@ When a user loads such webpage, this script saves the information about a date a
 in a browser's local storage.
 
 Later, when the user opens another webpage, and this webpage wants to show some advertisement to this user,
-this collected information is being sent to the SSP, which can now identify the user and its interests.
+this collected information is being sent to the **SSP**, which can now identify the user and its interests.
 
 This scheme has been working for decades. But now the situation is changing...
 
