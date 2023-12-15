@@ -6,6 +6,8 @@ category: analysis
 tags: ads
 ---
 
+![](/assets/img/online-ads-poster.jpg)
+
 ## Introduction
 
 Some time ago I have completed an interesting [project]({% link _portfolio/indata-webpages-semantic-analysis.md %})
@@ -267,7 +269,7 @@ Probabilistic identifiers assign some long unique identifier to each user. Examp
 
 They claim they can recognize this user even when he is using another device or connects from another network.
 But from my own experience of processing a large amounts of data,
-this is not always true.
+this is not true.
 
 #### Common Industry Standard
 
