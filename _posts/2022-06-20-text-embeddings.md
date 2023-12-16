@@ -88,7 +88,7 @@ as a list of numbers (of fixed length).
 Here are six texts to be used throughout this article. I tried to make them as short as possible, because... well,
 nobody likes long texts nowadays.
 
-> ### Thermos Ads
+> **Thermos Ads**
 > ![Thermos](/assets/img/text-embed-thermos.jpg){:width="167"}
 > <br/>
 > Introducing the Adventure Thermos – your ideal companion for outdoor excursions!
@@ -97,7 +97,7 @@ nobody likes long texts nowadays.
 > trust PeakPro to keep your drinks at the perfect temperature throughout your adventure.
 > Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.
 
-> ### How to become an Uber driver
+> **How to become an Uber driver**
 > ![Driver](/assets/img/text-embed-driver.jpg){:width="167"}
 > <br/>
 > Embark on a flexible and rewarding journey by becoming an Uber driver today!
@@ -107,7 +107,7 @@ nobody likes long texts nowadays.
 > Once approved, you're ready to hit the road, set your own schedule, and earn money on your terms.
 > Join the community of Uber drivers and turn your car into a source of income and independence.
 
-> ### Crypto vs S&P500
+> **Crypto vs S&P500**
 > ![Crypto](/assets/img/text-embed-crypto.jpg){:width="167"}
 > <br/>
 > Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable,
@@ -117,14 +117,14 @@ nobody likes long texts nowadays.
 > As the S&P undergoes correction, the crypto market's steadiness prompts a reevaluation of
 > investment portfolios in the ever-evolving financial landscape.
 
-> ### Used boots for sale
+> **Used boots for sale**
 > ![Used boots](/assets/img/text-embed-shoes.jpg){:width="167"}
 > <br/>
 > For sale: Gently-used rubber boots in excellent condition!
 > These reliable boots are ready for their next adventure, offering comfort and durability.
 > Don't miss the chance to snag a great pair at a fantastic price!
 
-> ### EU central bank fights inflation
+> **EU central bank fights inflation**
 > ![EU central bank](/assets/img/text-embed-ecb.jpg){:width="167"}
 > <br/>
 > In a bold move to tackle inflationary pressures, the European Union's central bank has announced
@@ -133,7 +133,7 @@ nobody likes long texts nowadays.
 > Investors and economists will closely monitor the impacts of this decision on financial markets
 > and the broader economic landscape.
 
-> ### VW tries to resurrect the Bus
+> **VW tries to resurrect the Bus**
 > ![VW electric bus](/assets/img/text-embed-vw-bus.jpg){:width="167"}
 > <br/>
 > Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine.
@@ -141,6 +141,38 @@ nobody likes long texts nowadays.
 > the electric VW Bus aims to redefine road-tripping for the modern era.
 > Get ready to experience the classic charm of the VW Bus with a sustainable twist,
 > as Volkswagen pioneers a new chapter in electric mobility.
+
+### Measure one dimension: Physical product vs. Service
+
+First we can start by "measuring" how each of these texts is related to Physical Product vs Service.
+Where:
+- -1 means: a text is about a physical product,
+- 0 means: text is not about a physical product or service,
+- 1 means: text is about a service.
+
+![](/assets/img/text-embed-1.png)
+
+    Note: it is sometimes hard to explicitly tell a text is about a product or a service!
+
+### Add another dimension: Relation to Travel
+
+Then we can add another dimension: Relation of a text to Travel, where:
+- -1 means: a text is not related to travelling,
+- 0 means: text is not about a physical product or service,
+- 1 means: text is related to travelling.
+
+![](/assets/img/text-embed-2.png)
+
+
+### Add many more dimensions
+
+Then we can add many more dimensions:
+- Relation to Finance
+- Relation to News
+- etc.
+
+![](/assets/img/text-embed-3.png)
+
 
 ## Pros and Cons of Text Embeddings
 
@@ -157,12 +189,7 @@ nobody likes long texts nowadays.
    nor how to add new dimensions to already pre-trained word embeddings, if we find out it is not enough.
    A typical NLP system lacks any tools to change embeddings dimensionality.
 
-2. The number of words is fixed in a vocabulary, used to process a text.
-   Meanwhile, new words appear every year.
-   Also, the semantic meaning of old words slowly changes over time.
-   A typical NLP system lacks any tools to add new words or adjust the semantic meaning of old words.
-
-3. Text embedding are fixed.
+2. Text embedding are fixed.
    Because they are produced by a model with fixed weights on the base of word embeddings, which are also fixed.
    A typical NLP system lacks any tools to adjust model weights to new information.
    This is different from how human brain is changing when it grasps new ideas and concepts.
