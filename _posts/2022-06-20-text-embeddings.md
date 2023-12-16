@@ -157,7 +157,7 @@ Where:
 
 ![](/assets/img/text-embed-1.jpg)
 
-    Note: it is sometimes hard to explicitly tell a text is about a product or a service!
+> Note: it is sometimes hard to explicitly tell a text is about a product or a service!
 
 ### Add another dimension: Relation to Travel
 
