@@ -150,7 +150,7 @@ Where:
 - 0 means: text is not about a physical product or service,
 - 1 means: text is about a service.
 
-![](/assets/img/text-embed-1.png)
+![](/assets/img/text-embed-1.jpg)
 
     Note: it is sometimes hard to explicitly tell a text is about a product or a service!
 
@@ -161,7 +161,7 @@ Then we can add another dimension: Relation of a text to Travel, where:
 - 0 means: text is not about a physical product or service,
 - 1 means: text is related to travelling.
 
-![](/assets/img/text-embed-2.png)
+![](/assets/img/text-embed-2.jpg)
 
 
 ### Add many more dimensions
@@ -171,7 +171,46 @@ Then we can add many more dimensions:
 - Relation to News
 - etc.
 
-![](/assets/img/text-embed-3.png)
+![](/assets/img/text-embed-3.jpg)
+
+### How to choose dimensions?
+
+In the examples above we have specified the meaning of dimensions manually:
+1. Physical vs Service
+2. Relation to Travel
+3. Relation to Finance
+4. Relation to News
+5. etc.
+
+While in practice we allow a computer algorithm to choose the meaning of the coordinate axes algorithmically.
+The semantic space we obtain in this way is better suited for our purpose:
+to determine whether two texts are similar or not. (See:
+[Sentence Transformers](http://www.sbert.net/){:target="_blank"}).
+
+### Euclidean vs Cosine Distances
+
+![](/assets/img/text-embed-5.jpg)
+
+### From Cosine Distance to Dot Product
+
+![](/assets/img/text-embed-6.jpg)
+
+### Dealing With Long Texts
+
+Most of attention-based models have limitation of only 512 input tokens.
+Because self-attention approach has a quadratic complexity O(n²) in terms of the sequence length n.
+This is roughly equivalent to nearly 200 words.
+
+![](/assets/img/text-embed-7.jpg)
+
+Typical approaches are:
+1. Use only one part of a text to compute embeddings (first, middle or last).
+2. Split text into chunks, process each of them individually and combine the results back together.
+3. Use chunks (as in option 2) but feed the output token for each chunk to another network to produce the final result.
+
+Processing Long Texts by Chunks looks like this:
+
+![](/assets/img/text-embed-8.jpg)
 
 
 ## Pros and Cons of Text Embeddings
