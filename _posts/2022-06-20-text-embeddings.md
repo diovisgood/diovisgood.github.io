@@ -89,7 +89,7 @@ Here are six texts to be used throughout this article. I tried to make them as s
 nobody likes long texts nowadays.
 
 > ### Thermos Ads
-> ![Thermos](/assets/img/text-embed-thermos.jpg){:max-width="30%"}
+> ![Thermos](/assets/img/text-embed-thermos.jpg){:width="167"}
 > <br/>
 > Introducing the Adventure Thermos – your ideal companion for outdoor excursions!
 > Engineered for durability and optimum insulation, this thermos keeps your beverages hot or cold in any terrain.
@@ -98,7 +98,7 @@ nobody likes long texts nowadays.
 > Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.
 
 > ### How to become an Uber driver
-> ![Driver](/assets/img/text-embed-driver.jpg){:max-width="30%"}
+> ![Driver](/assets/img/text-embed-driver.jpg){:width="167"}
 > <br/>
 > Embark on a flexible and rewarding journey by becoming an Uber driver today!
 > Getting started is easy – simply visit the Uber website or download the app to begin your driver application.
@@ -108,7 +108,7 @@ nobody likes long texts nowadays.
 > Join the community of Uber drivers and turn your car into a source of income and independence.
 
 > ### Crypto vs S&P500
-> ![Crypto](/assets/img/text-embed-crypto.jpg){:max-width="30%"}
+> ![Crypto](/assets/img/text-embed-crypto.jpg){:width="167"}
 > <br/>
 > Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable,
 > showcasing its resilience in the face of traditional market fluctuations.
@@ -118,14 +118,14 @@ nobody likes long texts nowadays.
 > investment portfolios in the ever-evolving financial landscape.
 
 > ### Used boots for sale
-> ![Used boots](/assets/img/text-embed-shoes.jpg){:max-width="30%"}
+> ![Used boots](/assets/img/text-embed-shoes.jpg){:width="167"}
 > <br/>
 > For sale: Gently-used rubber boots in excellent condition!
 > These reliable boots are ready for their next adventure, offering comfort and durability.
 > Don't miss the chance to snag a great pair at a fantastic price!
 
 > ### EU central bank fights inflation
-> ![EU central bank](/assets/img/text-embed-ecb.jpg){:max-width="30%"}
+> ![EU central bank](/assets/img/text-embed-ecb.jpg){:width="167"}
 > <br/>
 > In a bold move to tackle inflationary pressures, the European Union's central bank has announced
 > an increase in its key interest rate.
@@ -134,7 +134,7 @@ nobody likes long texts nowadays.
 > and the broader economic landscape.
 
 > ### VW tries to resurrect the Bus
-> ![VW electric bus](/assets/img/text-embed-vw-bus.jpg){:max-width="30%"}
+> ![VW electric bus](/assets/img/text-embed-vw-bus.jpg){:width="167"}
 > <br/>
 > Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine.
 > Combining nostalgia with environmental consciousness,
