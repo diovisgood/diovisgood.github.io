@@ -8,8 +8,7 @@ tags: nlp embedding transformers
 
 ## Introduction
 
-This is "yet another explanation of text embeddings for beginners",
-with some code examples, though.
+This is "yet another explanation of text embeddings for beginners".
 
 Sometimes I have to explain potential clients the concept of text embeddings.
 That is why I have created this article.
@@ -89,6 +88,7 @@ Here are six texts to be used throughout this article. I tried to make them as s
 nobody likes long texts nowadays.
 
 > **Thermos Ads**
+> <br/>
 > ![Thermos](/assets/img/text-embed-thermos.jpg){:width="167"}
 > <br/>
 > Introducing the Adventure Thermos – your ideal companion for outdoor excursions!
@@ -98,6 +98,7 @@ nobody likes long texts nowadays.
 > Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.
 
 > **How to become an Uber driver**
+> <br/>
 > ![Driver](/assets/img/text-embed-driver.jpg){:width="167"}
 > <br/>
 > Embark on a flexible and rewarding journey by becoming an Uber driver today!
@@ -108,6 +109,7 @@ nobody likes long texts nowadays.
 > Join the community of Uber drivers and turn your car into a source of income and independence.
 
 > **Crypto vs S&P500**
+> <br/>
 > ![Crypto](/assets/img/text-embed-crypto.jpg){:width="167"}
 > <br/>
 > Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable,
@@ -118,6 +120,7 @@ nobody likes long texts nowadays.
 > investment portfolios in the ever-evolving financial landscape.
 
 > **Used boots for sale**
+> <br/>
 > ![Used boots](/assets/img/text-embed-shoes.jpg){:width="167"}
 > <br/>
 > For sale: Gently-used rubber boots in excellent condition!
@@ -125,6 +128,7 @@ nobody likes long texts nowadays.
 > Don't miss the chance to snag a great pair at a fantastic price!
 
 > **EU central bank fights inflation**
+> <br/>
 > ![EU central bank](/assets/img/text-embed-ecb.jpg){:width="167"}
 > <br/>
 > In a bold move to tackle inflationary pressures, the European Union's central bank has announced
@@ -134,6 +138,7 @@ nobody likes long texts nowadays.
 > and the broader economic landscape.
 
 > **VW tries to resurrect the Bus**
+> <br/>
 > ![VW electric bus](/assets/img/text-embed-vw-bus.jpg){:width="167"}
 > <br/>
 > Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine.
@@ -182,7 +187,7 @@ In the examples above we have specified the meaning of dimensions manually:
 4. Relation to News
 5. etc.
 
-While in practice we allow a computer algorithm to choose the meaning of the coordinate axes algorithmically.
+While in practice we allow a computer algorithm to choose the meaning of the coordinate axes **algorithmically**.
 The semantic space we obtain in this way is better suited for our purpose:
 to determine whether two texts are similar or not. (See:
 [Sentence Transformers](http://www.sbert.net/){:target="_blank"}).
@@ -232,3 +237,9 @@ Processing Long Texts by Chunks looks like this:
    Because they are produced by a model with fixed weights on the base of word embeddings, which are also fixed.
    A typical NLP system lacks any tools to adjust model weights to new information.
    This is different from how human brain is changing when it grasps new ideas and concepts.
+
+
+## Conclusion
+
+[TODO]
+
