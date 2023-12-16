@@ -178,6 +178,12 @@ Then we can add many more dimensions:
 
 ![](/assets/img/text-embed-3.jpg)
 
+Now for each text we get a list of N numbers. It is called: **text embedding**.
+
+This list defines the coordinates of a text in N-dimensional space.
+Texts with related content are located nearby in this space.
+
+
 ### How to choose dimensions?
 
 In the examples above we have specified the meaning of dimensions manually:
@@ -194,11 +200,46 @@ to determine whether two texts are similar or not. (See:
 
 ### Euclidean vs Cosine Distances
 
+Now that we have computed the vector embeddings for all texts,
+we can measure the distance between them to compare their similarity. 
+
+We are used to understanding the distance as the Euclidean distance.
+Meanwhile, there are many other measures which can be computed of two vectors.
+
+In fact, for the task of text-embedding comparison the **cosine similarity** measure is more appropriate.
+
 ![](/assets/img/text-embed-5.jpg)
 
 ### From Cosine Distance to Dot Product
 
+One minor addition here is the fact, that when using the **cosine similarity**,
+it is better to keep embedding vectors normalized (to the unit length).
+As this measure does not depend on the length of vectors, but only on their directions.
+This helps to slightly decrease the computations when working with a large amount of embeddings.
+
 ![](/assets/img/text-embed-6.jpg)
+
+## Computing Text Embeddings
+
+Here are described several methods of how text embeddings can be computed:
+
+1. Text Classification
+2. Zero-Shot Classification
+3. Sentence Transformers
+
+### 1. Text Classification
+
+[TODO]
+
+### 2. Zero-Shot Classification
+
+[TODO]
+
+### 3. Sentence Transformers
+
+[TODO]
+
+## Additional Notes
 
 ### Dealing With Long Texts
 
@@ -228,12 +269,17 @@ Processing Long Texts by Chunks looks like this:
 
 ### Cons
 
-1. The number of dimensions of embeddings is fixed.
+1. Sometimes text embedding methods struggle to deal with negation.
+   For example: `I like coffee` and `I do not like coffee` can produce text embeddings,
+   which are located very close to each other in the embeddings space,
+   despite having an opposite meaning.
+
+2. The number of dimensions of embeddings is fixed.
    We still do not know what is the optimal dimensionality to describe the world,
    nor how to add new dimensions to already pre-trained word embeddings, if we find out it is not enough.
    A typical NLP system lacks any tools to change embeddings dimensionality.
 
-2. Text embedding are fixed.
+3. Text embedding are fixed.
    Because they are produced by a model with fixed weights on the base of word embeddings, which are also fixed.
    A typical NLP system lacks any tools to adjust model weights to new information.
    This is different from how human brain is changing when it grasps new ideas and concepts.
@@ -241,5 +287,7 @@ Processing Long Texts by Chunks looks like this:
 
 ## Conclusion
 
-[TODO]
+Text embeddings revolutionized text comparison and processing.
 
+Yet I believe this is not the end stop, as there are ways for improvement.
+A better and adjustable solution is yet to be discovered.
