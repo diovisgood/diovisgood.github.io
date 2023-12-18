@@ -10,7 +10,7 @@ tags: nlp embedding transformers
 
 This is "yet another explanation of text embeddings for beginners".
 
-Sometimes I have to explain potential clients the concept of text embeddings.
+Sometimes I have to explain potential clients the concept of **text embeddings**.
 That is why I have created this article.
 
 The task of comparing texts often arises in many areas. Just a few examples:
@@ -28,6 +28,26 @@ Working with raw texts is not very practical if you need to process and compare 
 - They can be of arbitrary lengths.
 - Words can have different meaning depending on the context.
 - Two different phrases can mean the same.
+
+It would be great is we could represent a text with a number,
+because we can easily compare two numbers.
+
+But a single number is not enough!
+Imagine, you need to assign a single number to a book.
+What meaning would you choose for it?
+A price? A rating?
+
+A single number can not describe:
+- Is it a fantasy, a science fiction, a romance book, ...?
+- What is the book's rating among different categories of readers?
+- How many characters are there?
+- Is the ending of the book negative or positive?
+- etc.
+
+This is how we came up with the idea to assign **a list of numbers** to describe a text.
+
+But before we dive into that I would like first to describe the long journey of textual analysis
+that has led us to this point. 
 
 ### Long history of text analysis. Briefly.
 
@@ -155,7 +175,7 @@ Where:
 - 0 means: text is not about a physical product or service,
 - 1 means: text is about a service.
 
-![](/assets/img/text-embed-1.jpg)
+{% include figure image_path="/assets/img/text-embed-1.jpg" alt="physical vs service" caption="Measure each text along the dimension: Physical product vs. Service" %}
 
 > Note: it is sometimes hard to explicitly tell a text is about a product or a service!
 
@@ -163,10 +183,10 @@ Where:
 
 Then we can add another dimension: Relation of a text to Travel, where:
 - -1 means: a text is not related to travelling,
-- 0 means: text is not about a physical product or service,
+- 0 means: it is hard to tell,
 - 1 means: text is related to travelling.
 
-![](/assets/img/text-embed-2.jpg)
+{% include figure image_path="/assets/img/text-embed-2.jpg" alt="relation to travel" caption="Measure each text along the dimension: Relation to Travel" %}
 
 
 ### Add many more dimensions
@@ -176,7 +196,7 @@ Then we can add many more dimensions:
 - Relation to News
 - etc.
 
-![](/assets/img/text-embed-3.jpg)
+{% include figure image_path="/assets/img/text-embed-3.jpg" alt="many more dimensions" caption="Measure each text along many more dimensions" %}
 
 Now for each text we get a list of N numbers. It is called: **text embedding**.
 
@@ -193,7 +213,7 @@ In the examples above we have specified the meaning of dimensions manually:
 4. Relation to News
 5. etc.
 
-While in practice we allow a computer algorithm to choose the meaning of the coordinate axes **algorithmically**.
+While in practice we allow a computer program to choose the meaning of the coordinate axes **algorithmically**.
 The semantic space we obtain in this way is better suited for our purpose:
 to determine whether two texts are similar or not. (See:
 [Sentence Transformers](http://www.sbert.net/){:target="_blank"}).
@@ -208,7 +228,8 @@ Meanwhile, there are many other measures which can be computed of two vectors.
 
 In fact, for the task of text-embedding comparison the **cosine similarity** measure is more appropriate.
 
-![](/assets/img/text-embed-5.jpg)
+{% include figure image_path="/assets/img/text-embed-5.jpg" alt="Euclidean vs Cosine" caption="Euclidean (left) vs Cosine (right) Distances" %}
+
 
 ### From Cosine Distance to Dot Product
 
@@ -217,7 +238,7 @@ it is better to keep embedding vectors normalized (to the unit length).
 As this measure does not depend on the length of vectors, but only on their directions.
 This helps to slightly decrease the computations when working with a large amount of embeddings.
 
-![](/assets/img/text-embed-6.jpg)
+{% include figure image_path="/assets/img/text-embed-6.jpg" alt="From Cosine Distance to Dot Product" caption="Normalizing vectors can slightly reduce computations required to compute their similarity" %}
 
 ## Computing Text Embeddings
 
@@ -279,7 +300,7 @@ Processing Long Texts by Chunks looks like this:
    nor how to add new dimensions to already pre-trained word embeddings, if we find out it is not enough.
    A typical NLP system lacks any tools to change embeddings dimensionality.
 
-3. Text embedding are fixed.
+3. Text embeddings are fixed.
    Because they are produced by a model with fixed weights on the base of word embeddings, which are also fixed.
    A typical NLP system lacks any tools to adjust model weights to new information.
    This is different from how human brain is changing when it grasps new ideas and concepts.
