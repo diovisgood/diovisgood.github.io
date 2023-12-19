@@ -1,6 +1,6 @@
 ---
 date: 2022-06-20
-title: "Text Embeddings Explained"
+title: "Text Embeddings Explanation"
 excerpt: "Did some research and experiments on how to compare texts. Sharing my knowledge here."
 category: machine-learning
 tags: nlp embedding transformers
@@ -13,6 +13,11 @@ This is "yet another explanation of text embeddings for beginners".
 Sometimes I have to explain potential clients the concept of **text embeddings**.
 That is why I have created this article.
 
+### What is the problem of comparing two texts?
+
+Almost anyone can easily compare texts.
+But when you need to process and compare many texts - you may want to use a machine for this task.
+
 The task of comparing texts often arises in many areas. Just a few examples:
 - You need to recognize user interests by studying the webpages, he visited.
   This is to find out if user might be interested in a certain product or services,
@@ -22,12 +27,13 @@ The task of comparing texts often arises in many areas. Just a few examples:
 - You are building a recommendation system and need to compare descriptions of products or services (or movies).
   Using a vector representation simplified the task.
 - etc.
-  
 
 Working with raw texts is not very practical if you need to process and compare them programmatically:
 - They can be of arbitrary lengths.
 - Words can have different meaning depending on the context.
 - Two different phrases can mean the same.
+
+### From Text to Numbers
 
 It would be great is we could represent a text with a number,
 because we can easily compare two numbers.
@@ -44,12 +50,20 @@ A single number can not describe:
 - Is the ending of the book negative or positive?
 - etc.
 
+In order for machine to compare two books, for example,
+it may require you to describe them with quite a lot of numbers:
+
+{% include figure image_path="/assets/img/text-embed-0.jpg" alt="compare books with numbers" caption="How many numbers are needed to describe two books?" %}
+
 This is how we came up with the idea to assign **a list of numbers** to describe a text.
+
+> Note: It is important to understand, that no matter how long or short a text is
+> the size of list of numbers must always be the same.
 
 But before we dive into that I would like first to describe the long journey of textual analysis
 that has led us to this point. 
 
-### Long history of text analysis. Briefly.
+### Long History of Text Analysis. Briefly.
 
 The history of text analysis, especially in the comparison of two texts,
 has been evolving over many years, starting from simple statistical approaches
@@ -67,7 +81,7 @@ to more sophisticated techniques like text embeddings.
    [Term Frequency-Inverse Document Frequency (TF-IDF)](http://mlwiki.org/index.php/TF-IDF){:target="_blank"}
    is the most well-known example of such method.
    It measures the importance of terms in a document relative to importance of these terms in a corpus.
-
+   
 4. 1980s - 1990s: [Latent Semantic Analysis (LSA)](http://mlwiki.org/index.php/Latent_Semantic_Analysis){:target="_blank"}:
    Introduced the concept of capturing latent semantic relationships between terms.
    It uses [Singular Value Decomposition (SVD)](https://en.wikipedia.org/wiki/Singular_value_decomposition){:target="_blank"}
@@ -102,70 +116,82 @@ to more sophisticated techniques like text embeddings.
 Now I'm going to walk you through the idea of how to represent a text (of arbitrary length)
 as a list of numbers (of fixed length).
 
-### Sample texts
+### Sample Texts
 
 Here are six texts to be used throughout this article. I tried to make them as short as possible, because... well,
 nobody likes long texts nowadays.
 
-> **Thermos Ads**
-> <br/>
-> ![Thermos](/assets/img/text-embed-thermos.jpg){:width="167"}
-> <br/>
-> Introducing the Adventure Thermos – your ideal companion for outdoor excursions!
-> Engineered for durability and optimum insulation, this thermos keeps your beverages hot or cold in any terrain.
-> Whether you're hiking, camping, or simply enjoying the great outdoors,
-> trust PeakPro to keep your drinks at the perfect temperature throughout your adventure.
-> Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.
+**Thermos Ads**
+<br/>
+![Thermos](/assets/img/text-embed-thermos.jpg){:width="167"}
+<details>
+<summary>Expand text</summary>
+Introducing the Adventure Thermos – your ideal companion for outdoor excursions!
+Engineered for durability and optimum insulation, this thermos keeps your beverages hot or cold in any terrain.
+Whether you're hiking, camping, or simply enjoying the great outdoors,
+trust PeakPro to keep your drinks at the perfect temperature throughout your adventure.
+Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.
+</details>
 
-> **How to become an Uber driver**
-> <br/>
-> ![Driver](/assets/img/text-embed-driver.jpg){:width="167"}
-> <br/>
-> Embark on a flexible and rewarding journey by becoming an Uber driver today!
-> Getting started is easy – simply visit the Uber website or download the app to begin your driver application.
-> Provide the required documents, including a valid driver's license, insurance, and vehicle registration,
-> and undergo a straightforward background check.
-> Once approved, you're ready to hit the road, set your own schedule, and earn money on your terms.
-> Join the community of Uber drivers and turn your car into a source of income and independence.
+**How to become an Uber driver**
+<br/>
+![Driver](/assets/img/text-embed-driver.jpg){:width="167"}
+<details>
+<summary>Expand text</summary>
+Embark on a flexible and rewarding journey by becoming an Uber driver today!
+Getting started is easy – simply visit the Uber website or download the app to begin your driver application.
+Provide the required documents, including a valid driver's license, insurance, and vehicle registration,
+and undergo a straightforward background check.
+Once approved, you're ready to hit the road, set your own schedule, and earn money on your terms.
+Join the community of Uber drivers and turn your car into a source of income and independence.
+</details>
 
-> **Crypto vs S&P500**
-> <br/>
-> ![Crypto](/assets/img/text-embed-crypto.jpg){:width="167"}
-> <br/>
-> Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable,
-> showcasing its resilience in the face of traditional market fluctuations.
-> Investors find solace in the consistent performance of cryptocurrencies,
-> highlighting their potential as a diversification strategy.
-> As the S&P undergoes correction, the crypto market's steadiness prompts a reevaluation of
-> investment portfolios in the ever-evolving financial landscape.
+**Crypto vs S&P500**
+<br/>
+![Crypto](/assets/img/text-embed-crypto.jpg){:width="167"}
+<details>
+<summary>Expand text</summary>
+Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable,
+showcasing its resilience in the face of traditional market fluctuations.
+Investors find solace in the consistent performance of cryptocurrencies,
+highlighting their potential as a diversification strategy.
+As the S&P undergoes correction, the crypto market's steadiness prompts a reevaluation of
+investment portfolios in the ever-evolving financial landscape.
+</details>
 
-> **Used boots for sale**
-> <br/>
-> ![Used boots](/assets/img/text-embed-shoes.jpg){:width="167"}
-> <br/>
-> For sale: Gently-used rubber boots in excellent condition!
-> These reliable boots are ready for their next adventure, offering comfort and durability.
-> Don't miss the chance to snag a great pair at a fantastic price!
+**Used boots for sale**
+<br/>
+![Used boots](/assets/img/text-embed-shoes.jpg){:width="167"}
+<details>
+<summary>Expand text</summary>
+For sale: Gently-used rubber boots in excellent condition!
+These reliable boots are ready for their next adventure, offering comfort and durability.
+Don't miss the chance to snag a great pair at a fantastic price!
+</details>
 
-> **EU central bank fights inflation**
-> <br/>
-> ![EU central bank](/assets/img/text-embed-ecb.jpg){:width="167"}
-> <br/>
-> In a bold move to tackle inflationary pressures, the European Union's central bank has announced
-> an increase in its key interest rate.
-> This strategic measure aims to curb rising inflation and maintain economic stability within the EU.
-> Investors and economists will closely monitor the impacts of this decision on financial markets
-> and the broader economic landscape.
+**EU central bank fights inflation**
+<br/>
+![EU central bank](/assets/img/text-embed-ecb.jpg){:width="167"}
+<details>
+<summary>Expand text</summary>
+In a bold move to tackle inflationary pressures, the European Union's central bank has announced
+an increase in its key interest rate.
+This strategic measure aims to curb rising inflation and maintain economic stability within the EU.
+Investors and economists will closely monitor the impacts of this decision on financial markets
+and the broader economic landscape.
+</details>
 
-> **VW tries to resurrect the Bus**
-> <br/>
-> ![VW electric bus](/assets/img/text-embed-vw-bus.jpg){:width="167"}
-> <br/>
-> Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine.
-> Combining nostalgia with environmental consciousness,
-> the electric VW Bus aims to redefine road-tripping for the modern era.
-> Get ready to experience the classic charm of the VW Bus with a sustainable twist,
-> as Volkswagen pioneers a new chapter in electric mobility.
+**VW tries to resurrect the Bus**
+<br/>
+![VW electric bus](/assets/img/text-embed-vw-bus.jpg){:width="167"}
+<details>
+<summary>Expand text</summary>
+Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine.
+Combining nostalgia with environmental consciousness,
+the electric VW Bus aims to redefine road-tripping for the modern era.
+Get ready to experience the classic charm of the VW Bus with a sustainable twist,
+as Volkswagen pioneers a new chapter in electric mobility.
+</details>
 
 ### Measure one dimension: Physical product vs. Service
 
@@ -223,10 +249,13 @@ to determine whether two texts are similar or not. (See:
 Now that we have computed the vector embeddings for all texts,
 we can measure the distance between them to compare their similarity. 
 
-We are used to understanding the distance as the Euclidean distance.
+We are used to understanding the distance as the
+[**Euclidean Distance**](https://en.wikipedia.org/wiki/Euclidean_distance){:target="_blank"}.
 Meanwhile, there are many other measures which can be computed of two vectors.
 
-In fact, for the task of text-embedding comparison the **cosine similarity** measure is more appropriate.
+In fact, for the task of text-embedding comparison the
+[**Cosine Similarity**](https://en.wikipedia.org/wiki/Cosine_similarity){:target="_blank"}
+measure is more appropriate.
 
 {% include figure image_path="/assets/img/text-embed-5.jpg" alt="Euclidean vs Cosine" caption="Euclidean (left) vs Cosine (right) Distances" %}
 
@@ -242,23 +271,13 @@ This helps to slightly decrease the computations when working with a large amoun
 
 ## Computing Text Embeddings
 
-Here are described several methods of how text embeddings can be computed:
-
+I am going to describe several methods of how text embeddings can be computed:
 1. Text Classification
 2. Zero-Shot Classification
 3. Sentence Transformers
 
-### 1. Text Classification
-
-[TODO]
-
-### 2. Zero-Shot Classification
-
-[TODO]
-
-### 3. Sentence Transformers
-
-[TODO]
+You may find these methods in the [Second Part]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"},
+with code examples. 
 
 ## Additional Notes
 
