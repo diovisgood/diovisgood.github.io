@@ -1,5 +1,5 @@
 ---
-date: 2022-06-20
+date: 2022-06-24
 title: "Text Embeddings (3/3) - Conclusion"
 excerpt: "Did some research and experiments on how to compare texts. Sharing my knowledge here."
 category: machine-learning

@@ -38,11 +38,11 @@ This is a representation of words as dense vectors in a continuous vector space,
 capturing semantic relationships.
 This allowed for more nuanced text comparisons.
 
-{% include figure image_path="/assets/img/text-embed-space.jpg" alt="words embeddings space" caption="Words embeddings space capture semantic relations between words" %}
+{% include figure image_path="/assets/img/text-embed-space.png" alt="words embeddings space" caption="Words embeddings space capture semantic relations between words" %}
 
 The simplest solution to compute text embedding is to take the mean value over all of its words:
 
-{% include figure image_path="/assets/img/text-embed-words.jpg" alt="text embedding from words embeddings" caption="Take text embedding as the mean value over words embeddings" %}
+{% include figure image_path="/assets/img/text-embed-words.png" alt="text embedding from words embeddings" caption="Take text embedding as the mean value over words embeddings" %}
 
 #### Computation
 
@@ -69,7 +69,7 @@ We can take out input text as premise and each of the categories as hypothesis.
 Then we can compute the probabilities of a pair and take the **entailnment** probability as
 the measurement of a text across a category.
 
-{% include figure image_path="/assets/img/text-embed-zeroshot.jpg" alt="zero-shot classification" caption="Text embedding computed from zero-shot classification" %}
+{% include figure image_path="/assets/img/text-embed-zeroshot.png" alt="zero-shot classification" caption="Text embedding computed from zero-shot classification" %}
 
 
 #### Computation
@@ -137,7 +137,7 @@ A text in such model is processed in multiple stages:
 6. At the output of a final layer only the first computed value, at the position of the `[CLS]` token, is used.
 7. It is passed into a small classifier network, which computes the final probabilities for the required classes.
 
-{% include figure image_path="/assets/img/text-embed-classifier.jpg" alt="BERT-based classifier" caption="Text embeddings as the output of a BERT-based classifier model" %}
+{% include figure image_path="/assets/img/text-embed-classifier.png" alt="BERT-based classifier" caption="Text embeddings as the output of a BERT-based classifier model" %}
 
 The model outputs 41 numbers - these are the probabilities that a text belongs to a certain category.
 Typically, the category with the highest probability is taken as the final outcome.
@@ -262,7 +262,7 @@ A text in such model is processed in multiple stages, similar to the **Text Clas
 6. As the output of a final layer we get transformed embeddings for each input word.
 7. Typically, we compute text embedding as the mean value of all output embeddings.
 
-{% include figure image_path="/assets/img/text-embed-sbert.jpg" alt="SBERT" caption="Sentence Transformers take into account the contextual relationships between words in a sentence" %}
+{% include figure image_path="/assets/img/text-embed-sbert.png" alt="SBERT" caption="Sentence Transformers take into account the contextual relationships between words in a sentence" %}
 
 #### Computation
 
