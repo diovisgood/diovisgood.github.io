@@ -23,6 +23,7 @@ Here are described several methods of how text embeddings can be computed:
 2. Zero-Shot Classification
 3. Text Classification
 4. Sentence Transformers
+5. OpenAI
 
 <hr/>
 
@@ -74,7 +75,64 @@ the measurement of a text across a category.
 
 #### Computation
 
-TODO
+Lets use the following model for zero-shot classification:
+[MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli](https://huggingface.co/MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli){:target="_blank"}.
+
+To run this code you need to install the `transformers` library.
+
+```python
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from typing import Union, Sequence
+import pandas as pd
+import numpy as np
+import torch
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+model_name = 'MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli'
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSequenceClassification.from_pretrained(model_name).to(device)
+
+classes = "Advertisement,Arts,Auto,Beauty,Business,College,Comedy,Crime,Culture,Economics,Education,Entertainment,Environment,Finance,Food & Drink,Good News,Green,Health,Home & Living,Impact,Media,Money,News,Parenting,Politics,Religion,Science,Sports,Style,Taste,Tech,Tourism,Travel,Weddings,Weird News,Wellness,Women,World News".split(',')
+print(f'Have: {len(classes)} classes in total')
+
+texts = {
+    'Thermos Ads': 'Introducing the Adventure Thermos – your ideal companion for outdoor excursions! Engineered for durability and optimum insulation, this thermos keeps your beverages hot or cold in any terrain. Whether you’re hiking, camping, or simply enjoying the great outdoors, trust PeakPro to keep your drinks at the perfect temperature throughout your adventure. Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.',
+    'How to become an Uber driver': 'Embark on a flexible and rewarding journey by becoming an Uber driver today! Getting started is easy – simply visit the Uber website or download the app to begin your driver application. Provide the required documents, including a valid driver’s license, insurance, and vehicle registration, and undergo a straightforward background check. Once approved, you’re ready to hit the road, set your own schedule, and earn money on your terms. Join the community of Uber drivers and turn your car into a source of income and independence.',
+    'Crypto vs S&P500': 'Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable, showcasing its resilience in the face of traditional market fluctuations. Investors find solace in the consistent performance of cryptocurrencies, highlighting their potential as a diversification strategy. As the S&P undergoes correction, the crypto market’s steadiness prompts a reevaluation of investment portfolios in the ever-evolving financial landscape.',
+    'Used boots for sale': 'For sale: Gently-used rubber boots in excellent condition! These reliable boots are ready for their next adventure, offering comfort and durability. Don’t miss the chance to snag a great pair at a fantastic price!',
+    'EU central bank fights inflation': 'In a bold move to tackle inflationary pressures, the European Union’s central bank has announced an increase in its key interest rate. This strategic measure aims to curb rising inflation and maintain economic stability within the EU. Investors and economists will closely monitor the impacts of this decision on financial markets and the broader economic landscape.',
+    'VW tries to resurrect the Bus': 'Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine. Combining nostalgia with environmental consciousness, the electric VW Bus aims to redefine road-tripping for the modern era. Get ready to experience the classic charm of the VW Bus with a sustainable twist, as Volkswagen pioneers a new chapter in electric mobility.',
+}
+
+df = pd.DataFrame([], columns=classes, index=[])
+for caption, text in texts.items():
+    class_probabilities = compute_embedding(text, classes)
+    df.loc[caption] = class_probabilities
+
+print(df.idxmax(axis=1))
+print(df.round(4).to_markdown())
+```
+
+```text
+Have: 38 classes in total
+
+Thermos Ads                          Food & Drink
+How to become an Uber driver        Advertisement
+Crypto vs S&P500                    Advertisement
+Used boots for sale                 Advertisement
+EU central bank fights inflation         Politics
+VW tries to resurrect the Bus       Advertisement
+```
+
+|                                  | Advertisement |   Arts |   Auto |   Beauty | Business | College |   Comedy |  Crime | Culture | Economics | Education | Entertainment |   Environment | Finance | Food & Drink |   Good News |   Green |   Health | Home & Living | Impact |   Media |   Money |   News | Parenting | Politics | Religion | Science |  Sports |   Style |  Taste |   Tech | Tourism | Travel | Weddings | Weird News | Wellness |  Women | World News |
+|:---------------------------------|--------------:|-------:|-------:|---------:|---------:|--------:|---------:|-------:|--------:|----------:|----------:|--------------:|--------------:|--------:|-------------:|------------:|--------:|---------:|--------------:|-------:|--------:|--------:|-------:|----------:|---------:|---------:|--------:|--------:|--------:|-------:|-------:|--------:|-------:|---------:|-----------:|---------:|-------:|-----------:|
+| Thermos Ads                      |        0.0671 | 0.0308 | 0.0336 |   0.0322 |   0.0305 |  0.0254 |   0.0316 | 0.0313 |  0.0375 |    0.0224 |    0.0374 |        0.0518 |        0.0528 |  0.0252 |       0.1636 |      0.0381 |  0.0223 |   0.0316 |        0.0791 | 0.0456 |  0.0343 |  0.0329 | 0.0304 |    0.0391 |   0.0302 |   0.0265 |  0.0288 |  0.0333 |  0.0423 | 0.0393 | 0.0331 |  0.0389 | 0.0465 |   0.0347 |     0.0214 |   0.0390 | 0.0254 |     0.0278 |
+| How to become an Uber driver     |        0.3571 | 0.1689 | 0.1912 |   0.1163 |   0.1716 |  0.1343 |   0.1743 | 0.0800 |  0.1518 |    0.1060 |    0.1546 |        0.1772 |        0.2145 |  0.1698 |       0.0451 |      0.1751 |  0.1536 |   0.1251 |        0.1444 | 0.2439 |  0.2033 |  0.3217 | 0.1848 |    0.1486 |   0.1233 |   0.0864 |  0.1282 |  0.1196 |  0.2127 | 0.2450 | 0.1570 |  0.1002 | 0.2705 |   0.0864 |     0.0495 |   0.1541 | 0.0986 |     0.1042 |
+| Crypto vs S&P500                 |        0.2528 | 0.0936 | 0.1147 |   0.0506 |   0.0549 |  0.0618 |   0.1009 | 0.0598 |  0.0717 |    0.0469 |    0.0403 |        0.0502 |        0.1089 |  0.0679 |       0.0060 |      0.0696 |  0.0632 |   0.0325 |        0.0221 | 0.1979 |  0.1121 |  0.0929 | 0.1217 |    0.0235 |   0.0483 |   0.0328 |  0.0682 |  0.0529 |  0.1475 | 0.1246 | 0.0850 |  0.0185 | 0.0341 |   0.0206 |     0.0276 |   0.0847 | 0.0260 |     0.0410 |
+| Used boots for sale              |        0.5045 | 0.0430 | 0.0564 |   0.0842 |   0.0527 |  0.0311 |   0.0154 | 0.0250 |  0.0959 |    0.0209 |    0.0525 |        0.2897 |        0.2669 |  0.0331 |       0.3168 |      0.1004 |  0.0353 |   0.0893 |        0.0747 | 0.1783 |  0.0431 |  0.1089 | 0.0295 |    0.0916 |   0.0288 |   0.0102 |  0.0207 |  0.1112 |  0.3576 | 0.1675 | 0.0469 |  0.0622 | 0.1675 |   0.0888 |     0.0615 |   0.0906 | 0.1818 |     0.0112 |
+| EU central bank fights inflation |        0.0592 | 0.0055 | 0.0077 |   0.0066 |   0.0090 |  0.0063 |   0.0106 | 0.0073 |  0.0076 |    0.0743 |    0.0049 |        0.0061 |        0.0777 |  0.0122 |       0.0015 |      0.0225 |  0.0081 |   0.0035 |        0.0092 | 0.0662 |  0.0085 |  0.0136 | 0.0078 |    0.0024 |   0.1194 |   0.0037 |  0.0071 |  0.0066 |  0.0111 | 0.0207 | 0.0079 |  0.0020 | 0.0040 |   0.0037 |     0.0108 |   0.0099 | 0.0051 |     0.0083 |
+| VW tries to resurrect the Bus    |        0.3772 | 0.3122 | 0.2554 |   0.1225 |   0.1652 |  0.1197 |   0.1381 | 0.1072 |  0.2291 |    0.1302 |    0.1730 |        0.2965 |        0.2283 |  0.1300 |       0.0645 |      0.1673 |  0.1314 |   0.1313 |        0.1310 | 0.3150 |  0.2098 |  0.1638 | 0.2000 |    0.1107 |   0.1243 |   0.0880 |  0.1645 |  0.1596 |  0.2972 | 0.2203 | 0.1733 |  0.1177 | 0.2383 |   0.0740 |     0.0585 |   0.1219 | 0.0770 |     0.0970 |
 
 #### Pros and Cons
 
@@ -188,7 +246,7 @@ class_probabilities = compute_embeddings(list(texts.values()))
 
 df = pd.DataFrame(class_probabilities, columns=classes, index=list(texts.keys()))
 print(df.idxmax(axis=1))
-print(df.to_markdown())
+print(df.round(4).to_markdown())
 ```
 
 The most probable category for each text:
@@ -266,7 +324,29 @@ A text in such model is processed in multiple stages, similar to the **Text Clas
 
 #### Computation
 
-TODO
+I am going to use the model [sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2){:target=_blank}. 
+
+You need to install the `sentence-transformers` library.
+
+```python
+from sentence_transformers import SentenceTransformer
+
+model_name = 'sentence-transformers/all-mpnet-base-v2'
+model = SentenceTransformer(model_name)
+
+texts = {
+    'Thermos Ads': 'Introducing the Adventure Thermos – your ideal companion for outdoor excursions! Engineered for durability and optimum insulation, this thermos keeps your beverages hot or cold in any terrain. Whether you’re hiking, camping, or simply enjoying the great outdoors, trust PeakPro to keep your drinks at the perfect temperature throughout your adventure. Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.',
+    'How to become an Uber driver': 'Embark on a flexible and rewarding journey by becoming an Uber driver today! Getting started is easy – simply visit the Uber website or download the app to begin your driver application. Provide the required documents, including a valid driver’s license, insurance, and vehicle registration, and undergo a straightforward background check. Once approved, you’re ready to hit the road, set your own schedule, and earn money on your terms. Join the community of Uber drivers and turn your car into a source of income and independence.',
+    'Crypto vs S&P500': 'Amidst a correction in the S&P index, the cryptocurrency market remains remarkably stable, showcasing its resilience in the face of traditional market fluctuations. Investors find solace in the consistent performance of cryptocurrencies, highlighting their potential as a diversification strategy. As the S&P undergoes correction, the crypto market’s steadiness prompts a reevaluation of investment portfolios in the ever-evolving financial landscape.',
+    'Used boots for sale': 'For sale: Gently-used rubber boots in excellent condition! These reliable boots are ready for their next adventure, offering comfort and durability. Don’t miss the chance to snag a great pair at a fantastic price!',
+    'EU central bank fights inflation': 'In a bold move to tackle inflationary pressures, the European Union’s central bank has announced an increase in its key interest rate. This strategic measure aims to curb rising inflation and maintain economic stability within the EU. Investors and economists will closely monitor the impacts of this decision on financial markets and the broader economic landscape.',
+    'VW tries to resurrect the Bus': 'Volkswagen is making waves with the revival of the iconic VW Bus, now featuring a state-of-the-art electric engine. Combining nostalgia with environmental consciousness, the electric VW Bus aims to redefine road-tripping for the modern era. Get ready to experience the classic charm of the VW Bus with a sustainable twist, as Volkswagen pioneers a new chapter in electric mobility.',
+}
+
+embeddings = model.encode(list(texts.values()))
+```
+
+
 
 #### Pros and Cons
 
@@ -278,6 +358,22 @@ I.e. we cannot know what is the meaning of the n-th dimension, what this number 
 
 Nevertheless, we often do not need interpretability for the task of text comparison.
 All we need is the ability to compare different texts and measure their similarity.
+
+### 5. OpenAI
+
+#### Description
+
+TODO
+
+#### Computation
+
+TODO
+
+
+#### Pros and Cons
+
+TODO
+
 
 ## Dealing With Long Texts
 
