@@ -1,6 +1,6 @@
 ---
 date: 2022-06-20
-title: "Text Embeddings Explanation"
+title: "Text Embeddings (1/3) - Explanation"
 excerpt: "Did some research and experiments on how to compare texts. Sharing my knowledge here."
 category: machine-learning
 tags: nlp embedding transformers
@@ -13,10 +13,16 @@ This is "yet another explanation of text embeddings for beginners".
 Sometimes I have to explain potential clients the concept of **text embeddings**.
 That is why I have created this article.
 
-### What is the problem of comparing two texts?
+This is the first of three articles on text embeddings for beginners:
+1. **Text Embeddings (1/3): Explanation** (you are here)
+2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"}
+3. [Text Embeddings (3/3): Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target=_blank}
+
+
+### What is the Problem of Comparing Texts?
 
 Almost anyone can easily compare texts.
-But when you need to process and compare many texts - you may want to use a machine for this task.
+But when you need to process and compare **many** texts - you may want to use a machine for this task.
 
 The task of comparing texts often arises in many areas. Just a few examples:
 - You need to recognize user interests by studying the webpages, he visited.
@@ -26,7 +32,6 @@ The task of comparing texts often arises in many areas. Just a few examples:
   This is when you build a search tool over some knowledge base.
 - You are building a recommendation system and need to compare descriptions of products or services (or movies).
   Using a vector representation simplified the task.
-- etc.
 
 Working with raw texts is not very practical if you need to process and compare them programmatically:
 - They can be of arbitrary lengths.
@@ -111,6 +116,8 @@ to more sophisticated techniques like text embeddings.
    It revolutionized natural language processing tasks, including text comparison,
    by considering the entire context of a word within a sentence.
 
+<hr/>
+
 ## Text Embeddings Step-by-Step
 
 Now I'm going to walk you through the idea of how to represent a text (of arbitrary length)
@@ -132,6 +139,7 @@ Whether you're hiking, camping, or simply enjoying the great outdoors,
 trust PeakPro to keep your drinks at the perfect temperature throughout your adventure.
 Upgrade your outdoor experience with the Adventure Thermos – where every sip is an exploration in refreshment.
 </details>
+<br/><br/>
 
 **How to become an Uber driver**
 <br/>
@@ -145,6 +153,7 @@ and undergo a straightforward background check.
 Once approved, you're ready to hit the road, set your own schedule, and earn money on your terms.
 Join the community of Uber drivers and turn your car into a source of income and independence.
 </details>
+<br/><br/>
 
 **Crypto vs S&P500**
 <br/>
@@ -158,6 +167,7 @@ highlighting their potential as a diversification strategy.
 As the S&P undergoes correction, the crypto market's steadiness prompts a reevaluation of
 investment portfolios in the ever-evolving financial landscape.
 </details>
+<br/><br/>
 
 **Used boots for sale**
 <br/>
@@ -168,6 +178,7 @@ For sale: Gently-used rubber boots in excellent condition!
 These reliable boots are ready for their next adventure, offering comfort and durability.
 Don't miss the chance to snag a great pair at a fantastic price!
 </details>
+<br/><br/>
 
 **EU central bank fights inflation**
 <br/>
@@ -180,6 +191,7 @@ This strategic measure aims to curb rising inflation and maintain economic stabi
 Investors and economists will closely monitor the impacts of this decision on financial markets
 and the broader economic landscape.
 </details>
+<br/><br/>
 
 **VW tries to resurrect the Bus**
 <br/>
@@ -192,6 +204,7 @@ the electric VW Bus aims to redefine road-tripping for the modern era.
 Get ready to experience the classic charm of the VW Bus with a sustainable twist,
 as Volkswagen pioneers a new chapter in electric mobility.
 </details>
+<br/><br/>
 
 ### Measure one dimension: Physical product vs. Service
 
@@ -269,65 +282,10 @@ This helps to slightly decrease the computations when working with a large amoun
 
 {% include figure image_path="/assets/img/text-embed-6.jpg" alt="From Cosine Distance to Dot Product" caption="Normalizing vectors can slightly reduce computations required to compute their similarity" %}
 
-## Computing Text Embeddings
+<hr/>
 
-I am going to describe several methods of how text embeddings can be computed:
-1. Text Classification
-2. Zero-Shot Classification
-3. Sentence Transformers
+**Navigate to other articles of the series**
 
-You may find these methods in the [Second Part]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"},
-with code examples. 
-
-## Additional Notes
-
-### Dealing With Long Texts
-
-Most of attention-based models have limitation of only 512 input tokens.
-Because self-attention approach has a quadratic complexity O(n²) in terms of the sequence length n.
-This is roughly equivalent to nearly 200 words.
-
-![](/assets/img/text-embed-7.jpg)
-
-Typical approaches are:
-1. Use only one part of a text to compute embeddings (first, middle or last).
-2. Split text into chunks, process each of them individually and combine the results back together.
-3. Use chunks (as in option 2) but feed the output token for each chunk to another network to produce the final result.
-
-Processing Long Texts by Chunks looks like this:
-
-![](/assets/img/text-embed-8.jpg)
-
-
-## Pros and Cons of Text Embeddings
-
-### Pros
-
-1. Text embeddings estimate the true semantic relationship between texts.
-   This works much better than any of keywords search or words statistics comparison.
-   This provides the possibility to search for similar texts and to compare texts.
-
-### Cons
-
-1. Sometimes text embedding methods struggle to deal with negation.
-   For example: `I like coffee` and `I do not like coffee` can produce text embeddings,
-   which are located very close to each other in the embeddings space,
-   despite having an opposite meaning.
-
-2. The number of dimensions of embeddings is fixed.
-   We still do not know what is the optimal dimensionality to describe the world,
-   nor how to add new dimensions to already pre-trained word embeddings, if we find out it is not enough.
-   A typical NLP system lacks any tools to change embeddings dimensionality.
-
-3. Text embeddings are fixed.
-   Because they are produced by a model with fixed weights on the base of word embeddings, which are also fixed.
-   A typical NLP system lacks any tools to adjust model weights to new information.
-   This is different from how human brain is changing when it grasps new ideas and concepts.
-
-
-## Conclusion
-
-Text embeddings revolutionized text comparison and processing.
-
-Yet I believe this is not the end stop, as there are ways for improvement.
-A better and adjustable solution is yet to be discovered.
+1. **Text Embeddings (1/3): Explanation** (you are here)
+2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"}
+3. [Text Embeddings (3/3): Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target=_blank}
