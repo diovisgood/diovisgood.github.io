@@ -29,11 +29,11 @@ Here you may find my concluding thoughts on text embeddings.
 
 ### Cons
 
-1. Sometimes text embedding methods struggle to deal with negation.
+1. Text embedding methods I've studied so far all struggle to understand negation.
    For example: `I like coffee` and `I do not like coffee` can produce text embeddings,
    which are located very close to each other in the embeddings space,
    despite having an opposite meaning.
-
+   
 2. The number of dimensions of embeddings is fixed.
    We still do not know what is the optimal dimensionality to describe the world,
    nor how to add new dimensions to already pre-trained word embeddings, if it is not enough.
@@ -63,3 +63,30 @@ find "mean value" of two texts and do other vector tricks.
 
 Yet I believe this is not the end stop, as there are ways for improvement.
 A better and adjustable solution is yet to be discovered.
+
+If you decide what method to choose to compute text embeddings,
+I would recommend the **Sentence Transformers** method.
+- its models, typically, run very fast;
+- they can even be used without GPU (CPU only);
+- they are free to use in commercial purpose;
+- embeddings they produce are very good for text comparison.
+ 
+<hr/>
+
+#### Links and Resources
+
+1. [Key Word in Context (KWIC)](https://en.wikipedia.org/wiki/Key_Word_in_Context){:target="_blank"}
+2. [Vector Space Models (VSM)](http://mlwiki.org/index.php/Vector_Space_Models){:target="_blank"}
+3. [Term Frequency-Inverse Document Frequency (TF-IDF)](http://mlwiki.org/index.php/TF-IDF){:target="_blank"}
+4. [Latent Semantic Analysis (LSA)](http://mlwiki.org/index.php/Latent_Semantic_Analysis){:target="_blank"}
+5. [Word2Vec Wiki](https://en.wikipedia.org/wiki/Word2vec){:target="_blank"}
+6. [GloVe Wiki](https://en.wikipedia.org/wiki/GloVe){:target="_blank"}
+7. [Transformer Wiki](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)){:target="_blank"}
+8. [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf){:target=_blank}
+9. [Natural Language Inference (NLI)](https://en.wikipedia.org/wiki/Textual_entailment){:target="_blank"}
+10. [HuggingFace - Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification){:target=_blank})
+11. [Sentence Transformers Library](https://www.sbert.net/){:target="_blank"}
+12. [Reddit: compare openai and Sentence Transformer](https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/){:target="_blank"}
+13. [Some benchmark table of different models](https://huggingface.co/spaces/mteb/leaderboard){:target="_blank"}
+14. [Private opinion on opeanai embeddings](https://iamnotarobot.substack.com/p/should-you-use-openais-embeddings){:target="_blank"}
+15. [Embeddings - OpenAI API](https://platform.openai.com/docs/guides/embeddings/use-cases){:target="_blank"}
