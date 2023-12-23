@@ -9,9 +9,9 @@ tags: nlp embedding transformers pytorch python
 ## Introduction
 
 This is the second of three articles on text embeddings for beginners:
-1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target=_blank}
+1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target="_blank"}
 2. **Text Embeddings (2/3) - Computation** (you are here)
-3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target=_blank}
+3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target="_blank"}
 
 Here you may find several ways of how to compute text embeddings with code samples.
 
@@ -33,13 +33,8 @@ Below I will be using a function `plot_heatmap` to show you
 how different texts are similar to each in the embeddings space.
 Here is its source code:
 
-<details>
-<summary>Show code</summary>
-
 Note: you need to install the `matplotlib` and `numpy` Python libraries.
 But I am absolutely sure you already have them installed ;)
-
-<div>
 
 ```python
 from typing import Optional, Sequence, Union
@@ -73,10 +68,6 @@ def plot_heatmap(m: np.ndarray,
     fig.tight_layout()
     plt.show()
 ```
-
-</div>
-
-</details>
 
 <hr/>
 
@@ -337,7 +328,7 @@ But still not as I would expect them to be.
 
 #### Pros and Cons
 
-Experiments show that embeddings produced this way are correct and suitable for the task of text comparison.
+Experiments show that embeddings produced this can be used for the task of text comparison.
 
 This approach has the benefit as the dimensions of an embedding vector are interpretable.
 I.e. each dimension corresponds to some category.
@@ -347,7 +338,7 @@ The drawback here is that it takes too much time to compute embedding of a text 
 It may take up to minute to compute embedding for a text on a server with GPU!
 This method is not practical.
 
-Additionally, this method fails to grasp differences in texts.
+Additionally, this method does not grasp differences between texts very well.
 And it is not good at the simple negation test.
 
 <hr/>
@@ -359,7 +350,7 @@ And it is not good at the simple negation test.
 The task of text classification is as easy as it sounds:
 given a text we somehow assign one of pre-defined labels to it.
 
-In the simplest case of [Sentiment Analysis](https://huggingface.co/blog/sentiment-analysis-python){:target=_blank}
+In the simplest case of [Sentiment Analysis](https://huggingface.co/blog/sentiment-analysis-python){:target="_blank"}
 there are only two classes: `positive` and `negative`. Sentiment Analysis is used, for example,
 to compute the [Bitcoin Sentiment](https://www.augmento.ai/bitcoin-sentiment/)
 or to programmatically find negative comments about some company in a social network.
@@ -367,7 +358,7 @@ or to programmatically find negative comments about some company in a social net
 Of course, any number of classes can be used.
 As it has been described earlier, the more numbers we have - the better we can describe a text.
 
-For example lets have a look at the model [cssupport/bert-news-class](https://huggingface.co/cssupport/bert-news-class){:target=_blank}. 
+For example lets have a look at the model [cssupport/bert-news-class](https://huggingface.co/cssupport/bert-news-class){:target="_blank"}. 
 It is trained to categorize text for 41 classes:
 
 | Classes        | Classes        | Classes        | Classes      | Classes        | Classes    |
@@ -381,12 +372,12 @@ It is trained to categorize text for 41 classes:
 | Crime          | Good News      | Money          | Sports       | U.S. News      |            |
 
 
-This particular model is a fine-tuned version of [bert-base-uncased](https://huggingface.co/bert-base-uncased){:target=_blank}
+This particular model is a fine-tuned version of [bert-base-uncased](https://huggingface.co/bert-base-uncased){:target="_blank"}
 model under the hood.
 
 BERT is acronym for: Bidirectional Encoder Representations from Transformers.
 Today **BERT-based** models are the de facto standard for
-[text classification](https://huggingface.co/docs/transformers/tasks/sequence_classification){:target=_blank}
+[text classification](https://huggingface.co/docs/transformers/tasks/sequence_classification){:target="_blank"}
 tasks. 
 
 A text in such model is processed in multiple stages:
@@ -532,7 +523,7 @@ If we take the best of both methods we end up with a **Sentence Transformer** me
 
 Here we use a BERT-based model, which is specially trained to produce text embeddings most suitable for comparison.
 The idea of how to train BERT-based networks for the task of text comparison was first described in the paper:
-[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf){:target=_blank}.
+[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf){:target="_blank"} .
 
 To achieve the best results for the task of semantic text similarity authors used the **Triplet Objective Function**.
 
@@ -560,7 +551,7 @@ A text in such model is processed in multiple stages, similar to the **Text Clas
 
 #### Computation
 
-I am going to use the model [sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2){:target=_blank}. 
+I am going to use the model [sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2){:target="_blank"}. 
 
 You need to install the `sentence-transformers` library.
 
@@ -642,7 +633,7 @@ Since OpenAI was the first company to present the state-of-the-art model in text
 I want to show how to get text embeddings using the OpenAI API.
 
 I am going to use the model: `text-embedding-ada-002`, which is described here:
-[OpenAI Blog - New and improved embedding model](https://openai.com/blog/new-and-improved-embedding-model){:target=_blank}
+[OpenAI Blog - New and improved embedding model](https://openai.com/blog/new-and-improved-embedding-model){:target="_blank"}
 
 #### Computation
 
@@ -757,6 +748,6 @@ Processing Long Texts by Chunks looks like this:
 
 **Navigate to other articles of the series**
 
-1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target=_blank}
+1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target="_blank"}
 2. **Text Embeddings (2/3) - Computation** (you are here)
-3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target=_blank}
+3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target="_blank"}

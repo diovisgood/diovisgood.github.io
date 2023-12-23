@@ -9,7 +9,7 @@ tags: nlp embedding transformers
 ## Introduction
 
 This is the third of three articles on text embeddings for beginners:
-1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target=_blank}
+1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target="_blank"}
 2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"}
 3. **Text Embeddings (3/3) - Conclusion** (you are here)
 
@@ -64,11 +64,15 @@ find "mean value" of two texts and do other vector tricks.
 Yet I believe this is not the end stop, as there are ways for improvement.
 A better and adjustable solution is yet to be discovered.
 
+From the practical point of view, embeddings computed with **Sentence Transformers** and **OpenAI API** methods
+produce the best results.
+Yet, as of today, the embeddings from **Sentence Transformers** are slightly better.
+
 If you decide what method to choose to compute text embeddings,
 I would recommend the **Sentence Transformers** method.
 - its models, typically, run very fast;
 - they can even be used without GPU (CPU only);
-- they are free to use in commercial purpose;
+- they are free to use for commercial purpose;
 - embeddings they produce are very good for text comparison.
  
 <hr/>
@@ -82,9 +86,9 @@ I would recommend the **Sentence Transformers** method.
 5. [Word2Vec Wiki](https://en.wikipedia.org/wiki/Word2vec){:target="_blank"}
 6. [GloVe Wiki](https://en.wikipedia.org/wiki/GloVe){:target="_blank"}
 7. [Transformer Wiki](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)){:target="_blank"}
-8. [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf){:target=_blank}
+8. [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf){:target="_blank"}
 9. [Natural Language Inference (NLI)](https://en.wikipedia.org/wiki/Textual_entailment){:target="_blank"}
-10. [HuggingFace - Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification){:target=_blank})
+10. [HuggingFace - Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification){:target="_blank"})
 11. [Sentence Transformers Library](https://www.sbert.net/){:target="_blank"}
 12. [Reddit: compare openai and Sentence Transformer](https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/){:target="_blank"}
 13. [Some benchmark table of different models](https://huggingface.co/spaces/mteb/leaderboard){:target="_blank"}
