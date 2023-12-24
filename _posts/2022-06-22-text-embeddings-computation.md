@@ -30,7 +30,7 @@ Here are described several methods of how text embeddings can be computed:
 ### Before we begin
 
 Below I will be using a function `plot_heatmap` to show you
-how different texts are similar to each in the embeddings space.
+how different texts are similar to each other in the embeddings space.
 Here is its source code:
 
 Note: you need to install the `matplotlib` and `numpy` Python libraries.
@@ -91,7 +91,7 @@ The simplest solution to compute text embedding is to take the mean value over a
 
 #### Computation
 
-You need to install the `gensim` Python library.
+You need to install the `gensim`, `numpy` and `scikit-learn` Python libraries.
 It gives you access to many pre-trained word embeddings dictionaries:
 - `fasttext-wiki-news-subwords-300`
 - `conceptnet-numberbatch-17-06-300`
@@ -147,6 +147,10 @@ Because they are not interpretable. I.e.: we do not know what a particular dimen
 Instead, I plot the similarity matrix of texts:
 
 ![](/assets/img/text-embed-words-result.png)
+
+> Note: Cosine similarity values occupy the range: [-1, 1].
+> Where -1 means `vectors ape opposite to each other`, 0 means `vectors are perpendecular`,
+> and 1 means `vectors are oriented in the same direction`.
 
 Note the pair of most similar texts (similarity=0.952):
 - "Crypto vs S&P500"
@@ -220,7 +224,7 @@ the measurement of a text across a category.
 Lets use the following model for zero-shot classification:
 [MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli](https://huggingface.co/MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli){:target="_blank"}.
 
-To run this code you need to install the `transformers` library.
+To run this code you need to install the `transformers`, `pandas` and `scikit-learn` libraries.
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -302,7 +306,7 @@ The similarity matrix of texts:
 ![](/assets/img/text-embed-zeroshot-result.png)
 
 In general, the results are ok. Yet I consider the computed top-classes for each text are not good.
-Yet, I believe, this is mostly due to the selected model, not due to the method itself.
+I believe, this is due to the selected model, not due to the method itself.
 
 Note the pair of most similar texts (similarity=0.963):
 - "How to become an Uber driver"
@@ -397,6 +401,8 @@ Typically, the category with the highest probability is taken as the final outco
 But in our task we would instead keep all **41 numbers as the text embedding**.
 
 #### Computation
+
+To run the following code you need to install the `transformers`, `pandas` and `scikit-learn` Python libraries.
 
 Here is the source code of how to compute such text embeddings:
 
@@ -553,7 +559,7 @@ A text in such model is processed in multiple stages, similar to the **Text Clas
 
 I am going to use the model [sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2){:target="_blank"}. 
 
-You need to install the `sentence-transformers` library.
+You need to install the `sentence-transformers` and `scikit-learn` Python libraries.
 
 ```python
 from sentence_transformers import SentenceTransformer
@@ -637,7 +643,7 @@ I am going to use the model: `text-embedding-ada-002`, which is described here:
 
 #### Computation
 
-You first need to install the `openai` Python library.
+You first need to install the `openai` and `scikit-learn` Python libraries.
 
 ```python
 import openai
@@ -708,8 +714,11 @@ Well, this is not awful, but still not perfect.
 
 #### Pros and Cons
 
-According to some sources embeddings produced by OpenAI are not very good for the task
-of text comparison.
+According to some [sources](https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/){:target="_blank"}
+embeddings produced by OpenAI are not very good for the task of text comparison.
+
+OpenAI does not disclose the details of how the model `text-embedding-ada-002` has been trained,
+what was the training dataset and loss function.
 
 There is a special benchmark to compare the performance of different models on the task of text comparison:
 [benchmark](https://huggingface.co/spaces/mteb/leaderboard){:target="_blank"}.

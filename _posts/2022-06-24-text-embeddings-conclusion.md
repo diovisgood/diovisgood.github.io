@@ -74,6 +74,9 @@ I would recommend the **Sentence Transformers** method.
 - they can even be used without GPU (CPU only);
 - they are free to use for commercial purpose;
 - embeddings they produce are very good for text comparison.
+
+You can choose a particular **Sentence Transformer** model
+using this [benchmark](https://huggingface.co/spaces/mteb/leaderboard){:target="_blank"}.
  
 <hr/>
 
@@ -87,7 +90,7 @@ I would recommend the **Sentence Transformers** method.
 6. [GloVe Wiki](https://en.wikipedia.org/wiki/GloVe){:target="_blank"}
 7. [Transformer Wiki](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)){:target="_blank"}
 8. [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf){:target="_blank"}
-9. [Natural Language Inference (NLI)](https://en.wikipedia.org/wiki/Textual_entailment){:target="_blank"}
+9. [Natural Language Inference (NLI) Wiki](https://en.wikipedia.org/wiki/Textual_entailment){:target="_blank"}
 10. [HuggingFace - Text Classification](https://huggingface.co/docs/transformers/tasks/sequence_classification){:target="_blank"})
 11. [Sentence Transformers Library](https://www.sbert.net/){:target="_blank"}
 12. [Reddit: compare openai and Sentence Transformer](https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/){:target="_blank"}
