@@ -714,7 +714,8 @@ Well, this is not awful, but still not perfect.
 
 #### Pros and Cons
 
-According to some [sources](https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/){:target="_blank"}
+According to some sources: [1](https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/){:target="_blank"},
+[2](https://iamnotarobot.substack.com/p/should-you-use-openais-embeddings){:target="_blank"} -
 embeddings produced by OpenAI are not very good for the task of text comparison.
 
 OpenAI does not disclose the details of how the model `text-embedding-ada-002` has been trained,
@@ -724,7 +725,7 @@ There is a special benchmark to compare the performance of different models on t
 [benchmark](https://huggingface.co/spaces/mteb/leaderboard){:target="_blank"}.
 Unfortunately, there is no result for the latest OpenAI model `text-embedding-ada-002`.
 
-In the resulting similarities matrix I can see that similarities are still quite high.
+In the resulting similarities matrix I can see that similarities are still quite high: ~0.7.
 I would suggest the model **did not grasp the differences between texts well enough**.
 
 Additionally, the results of the simple negation test are not impressive.

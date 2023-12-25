@@ -82,6 +82,9 @@ using this [benchmark](https://huggingface.co/spaces/mteb/leaderboard){:target="
 
 #### Links and Resources
 
+The source code for this article is freely available here:
+[text-embeddings.ipynb ](https://gist.github.com/diovisgood/ed226fa670076fdba65c5ce556d289eb){:target="_blank"}
+
 1. [Key Word in Context (KWIC)](https://en.wikipedia.org/wiki/Key_Word_in_Context){:target="_blank"}
 2. [Vector Space Models (VSM)](http://mlwiki.org/index.php/Vector_Space_Models){:target="_blank"}
 3. [Term Frequency-Inverse Document Frequency (TF-IDF)](http://mlwiki.org/index.php/TF-IDF){:target="_blank"}
