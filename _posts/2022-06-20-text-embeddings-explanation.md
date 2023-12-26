@@ -15,8 +15,8 @@ That is why I have created this article.
 
 This is the first of three articles on text embeddings for beginners:
 1. **Text Embeddings (1/3): Explanation** (you are here)
-2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"}
-3. [Text Embeddings (3/3): Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target="_blank"}
+2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %})
+3. [Text Embeddings (3/3): Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %})
 
 
 ### What is the Problem of Comparing Texts?
@@ -287,5 +287,5 @@ This helps to slightly decrease the computations when working with a large amoun
 **Navigate to other articles of the series**
 
 1. **Text Embeddings (1/3): Explanation** (you are here)
-2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"}
-3. [Text Embeddings (3/3): Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target="_blank"}
+2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %})
+3. [Text Embeddings (3/3): Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %})

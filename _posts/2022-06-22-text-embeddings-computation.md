@@ -9,9 +9,9 @@ tags: nlp embedding transformers pytorch python
 ## Introduction
 
 This is the second of three articles on text embeddings for beginners:
-1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target="_blank"}
+1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %})
 2. **Text Embeddings (2/3) - Computation** (you are here)
-3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target="_blank"}
+3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %})
 
 Here you may find several ways of how to compute text embeddings with code samples.
 
@@ -758,6 +758,6 @@ Processing Long Texts by Chunks looks like this:
 
 **Navigate to other articles of the series**
 
-1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target="_blank"}
+1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %})
 2. **Text Embeddings (2/3) - Computation** (you are here)
-3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %}){:target="_blank"}
+3. [Text Embeddings (3/3) - Conclusion]({% post_url 2022-06-24-text-embeddings-conclusion %})

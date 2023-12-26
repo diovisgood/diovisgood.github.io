@@ -9,8 +9,8 @@ tags: nlp embedding transformers
 ## Introduction
 
 This is the third of three articles on text embeddings for beginners:
-1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %}){:target="_blank"}
-2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %}){:target="_blank"}
+1. [Text Embeddings (1/3) - Explanation]({% post_url 2022-06-20-text-embeddings-explanation %})
+2. [Text Embeddings (2/3): Computation]({% post_url 2022-06-22-text-embeddings-computation %})
 3. **Text Embeddings (3/3) - Conclusion** (you are here)
 
 Here you may find my concluding thoughts on text embeddings.
@@ -83,7 +83,7 @@ using this [benchmark](https://huggingface.co/spaces/mteb/leaderboard){:target="
 #### Links and Resources
 
 The source code for this article is freely available here:
-[text-embeddings.ipynb ](https://gist.github.com/diovisgood/ed226fa670076fdba65c5ce556d289eb){:target="_blank"}
+[text-embeddings.ipynb](https://gist.github.com/diovisgood/ed226fa670076fdba65c5ce556d289eb){:target="_blank"}
 
 1. [Key Word in Context (KWIC)](https://en.wikipedia.org/wiki/Key_Word_in_Context){:target="_blank"}
 2. [Vector Space Models (VSM)](http://mlwiki.org/index.php/Vector_Space_Models){:target="_blank"}
